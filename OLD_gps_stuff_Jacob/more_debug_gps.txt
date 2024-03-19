@@ -1,0 +1,1500 @@
+Read GPS Data: 0 time: 3236 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 32 fix: 88                                                                       4211712
+Read GPS Data: 0 time: 3236 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 34 fix: 91                                                                       0426112
+Read GPS Data: 0 time: 3236 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 37 fix: 94                                                                       9747712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 39 fix: 97                                                                       5962112
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 42 fix: 10                                                                       15283712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 44 fix: 10                                                                       41498112
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 46 fix: 10                                                                       80819712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 49 fix: 11                                                                       07034112
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 51 fix: 11                                                                       46355712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 54 fix: 11                                                                       72570112
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 56 fix: 12                                                                       11891712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 59 fix: 12                                                                       51213312
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 61 fix: 12                                                                       77427712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 64 fix: 13                                                                       16749312
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 66 fix: 13                                                                       42963712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 69 fix: 13                                                                       82285312
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 71 fix: 14                                                                       08499712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 74 fix: 14                                                                       47821312
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 76 fix: 14                                                                       74035712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 79 fix: 15                                                                       13357312
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 82 fix: 15                                                                       39571712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 84 fix: 15                                                                       78893312
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 87 fix: 16                                                                       05107712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 89 fix: 16                                                                       44429312
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 92 fix: 16                                                                       70643712
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 94 fix: 17                                                                       09965312
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 97 fix: 17                                                                       44175104
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 99 fix: 17                                                                       70389504
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 102 fix: 1                                                                       809711104
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 105 fix: 1                                                                       835925504
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 107 fix: 1                                                                       875247104
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 110 fix: 1                                                                       901461504
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 112 fix: 1                                                                       940783104
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 115 fix: 1                                                                       966997504
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 118 fix: 2                                                                       006319104
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 121 fix: 2                                                                       032533504
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 123 fix: 2                                                                       071855104
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 126 fix: 2                                                                       098069504
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 128 fix: 2                                                                       137391104
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 131 fix: -                                                                       2131361792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 133 fix: -                                                                       2092040192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 136 fix: -                                                                       2065825792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 138 fix: -                                                                       2026504192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 141 fix: -                                                                       2000289792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 144 fix: -                                                                       1960968192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 146 fix: -                                                                       1934753792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 149 fix: -                                                                       1895432192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 151 fix: -                                                                       1869217792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 154 fix: -1829896192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 156 fix: -1803681792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 159 fix: -1764360192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 161 fix: -1738145792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 164 fix: -1698824192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 166 fix: -1672609792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 169 fix: -1633288192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 171 fix: -1607073792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 174 fix: -1567752192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 176 fix: -1541537792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 179 fix: -1502216192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 181 fix: -1476001792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 184 fix: -1436680192
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 186 fix: -1410465792
+Read GPS Data: 0 time: 1980 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 189 fix: -1371144192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 191 fix: -1344929792
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 193 fix: -1305608192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 196 fix: -1279393792
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 198 fix: -1240072192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 201 fix: -1213857792
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 203 fix: -1174536192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 206 fix: -1148321792
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 208 fix: -1109000192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 211 fix: -1082785792
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 213 fix: -1043464192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 216 fix: -1004142592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 218 fix: -977928192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 221 fix: -938606592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 223 fix: -912392192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 226 fix: -873070592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 228 fix: -846856192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 231 fix: -807534592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 234 fix: -781320192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 236 fix: -741998592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 239 fix: -715784192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 241 fix: -676462592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 244 fix: -650248192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 246 fix: -610926592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 249 fix: -584712192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 251 fix: -545390592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 255 fix: -519176192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 1 fix: -479854592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 4 fix: -453640192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 6 fix: -414318592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 9 fix: -388104192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 12 fix: -348782592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 14 fix: -322568192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 17 fix: -283246592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 19 fix: -257032192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 22 fix: -217710592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 24 fix: -191496192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 27 fix: -152174592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 29 fix: -125960192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 32 fix: -86638592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 34 fix: -60424192
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 37 fix: -21102592
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 39 fix: 5111808
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 42 fix: 44433408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 44 fix: 70647808
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 47 fix: 109969408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 50 fix: 136183808
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 53 fix: 175505408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 55 fix: 201719808
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 58 fix: 241041408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 60 fix: 267255808
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 63 fix: 306577408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 65 fix: 332791808
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 67 fix: 372113408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 70 fix: 398327808
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 72 fix: 437649408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 75 fix: 460193792
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 77 fix: 503185408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 80 fix: 542507008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 82 fix: 568721408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 85 fix: 608043008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 87 fix: 634257408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 90 fix: 673579008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 1 check: 92 fix: 699793408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 95 fix: 739115008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 0 0 0 0 check: 97 fix: 765329408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 100 fix: 804651008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 103 fix: 830865408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 105 fix: 870187008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 108 fix: 896401408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 110 fix: 935723008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 113 fix: 961937408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 115 fix: 1001259008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 118 fix: 1027473408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 0 check: 120 fix: 1066795008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 124 fix: 1093009408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 1 0 0 0 1 0 0 1 check: 126 fix: 1132331008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 0 check: 129 fix: 1158545408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 0 check: 132 fix: 1197867008
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 0 1 check: 134 fix: 1224081408
+Read GPS Data: 0 time: 2023 sea: -17000 debug: 0 0 0 0 1 0 1 1 check: 137 fix: 1263403008
+Read GPS Data: 0 time: 2023 sea: 269768 debug: 0 0 0 0 1 0 1 1 check: 139 fix: 1289617409
+Read GPS Data: 20 time: 2023 sea: 269508 debug: 1 0 0 0 1 0 0 0 check: 141 fix: 1328611329
+Read GPS Data: 24 time: 2023 sea: 268863 debug: 0 0 0 0 1 0 0 1 check: 144 fix: 1354825729
+Read GPS Data: 13 time: 2023 sea: 268656 debug: 1 0 0 0 1 0 0 1 check: 146 fix: 1394147329
+Read GPS Data: 10 time: 2023 sea: 268178 debug: 0 0 0 0 1 0 0 0 check: 149 fix: 1420361729
+Read GPS Data: 13 time: 2023 sea: 268047 debug: 1 0 0 0 1 0 0 0 check: 151 fix: 1459683329
+Read GPS Data: 15 time: 2023 sea: 267779 debug: 0 0 0 0 1 0 0 1 check: 154 fix: 1485897729
+Read GPS Data: 9 time: 2023 sea: 267054 debug: 0 0 0 0 1 0 1 1 check: 157 fix: 1525219329
+Read GPS Data: 15 time: 2023 sea: 266365 debug: 0 0 0 0 1 0 0 0 check: 159 fix: 1551433729
+Read GPS Data: 4 time: 2023 sea: 265594 debug: 0 0 0 0 1 0 1 0 check: 162 fix: 1590755329
+Read GPS Data: 9 time: 2023 sea: 264930 debug: 0 0 0 0 1 0 0 1 check: 164 fix: 1616969729
+Read GPS Data: 17 time: 2023 sea: 264104 debug: 0 0 0 0 1 0 1 1 check: 167 fix: 1656291329
+Read GPS Data: 13 time: 2023 sea: 263593 debug: 0 0 0 0 1 0 0 0 check: 169 fix: 1682505729
+Read GPS Data: 8 time: 2023 sea: 263076 debug: 0 0 0 0 1 0 1 0 check: 172 fix: 1721827329
+Read GPS Data: 24 time: 2023 sea: 262972 debug: 0 0 0 0 1 0 0 1 check: 174 fix: 1748041729
+Read GPS Data: 16 time: 2023 sea: 262990 debug: 0 0 0 0 1 0 1 1 check: 177 fix: 1787363329
+Read GPS Data: 16 time: 2023 sea: 262914 debug: 0 0 0 0 1 0 0 0 check: 179 fix: 1813577729
+Read GPS Data: 16 time: 2023 sea: 262820 debug: 0 0 0 0 1 0 1 0 check: 182 fix: 1852899329
+Read GPS Data: 10 time: 2023 sea: 262718 debug: 0 0 0 0 1 0 0 1 check: 184 fix: 1879113729
+Read GPS Data: 21 time: 2023 sea: 262675 debug: 0 0 0 0 1 0 1 1 check: 187 fix: 1918435329
+Read GPS Data: 17 time: 2023 sea: 262568 debug: 0 0 0 0 1 0 0 0 check: 189 fix: 1944649729
+Read GPS Data: 6 time: 2023 sea: 262214 debug: 0 0 0 0 1 0 1 0 check: 192 fix: 1983971329
+Read GPS Data: 15 time: 2023 sea: 261948 debug: 0 0 0 0 1 0 0 1 check: 194 fix: 2010185729
+Read GPS Data: 23 time: 2023 sea: 261803 debug: 0 0 0 0 1 0 1 1 check: 197 fix: 2049507329
+Read GPS Data: 15 time: 2023 sea: 261723 debug: 0 0 0 0 1 0 0 0 check: 199 fix: 2075721729
+Read GPS Data: 9 time: 2023 sea: 261755 debug: 0 0 0 0 1 0 1 0 check: 202 fix: 2115043329
+Read GPS Data: 10 time: 2023 sea: 261731 debug: 0 0 0 0 1 0 0 1 check: 204 fix: 2141257729
+Read GPS Data: 12 time: 2023 sea: 261747 debug: 0 0 0 0 1 0 1 1 check: 207 fix: -2114387967
+Read GPS Data: 4 time: 2023 sea: 261680 debug: 0 0 0 0 1 0 0 0 check: 209 fix: -2088173567
+Read GPS Data: 4 time: 2023 sea: 261422 debug: 0 0 0 0 0 0 0 1 check: 211 fix: -2048851967
+Read GPS Data: 6 time: 2023 sea: 261242 debug: 0 0 0 0 1 0 0 1 check: 214 fix: -2022637567
+Read GPS Data: 3 time: 2023 sea: 260962 debug: 0 0 0 0 0 0 0 0 check: 216 fix: -1983315967
+Read GPS Data: 10 time: 2023 sea: 260770 debug: 0 0 0 0 1 0 0 0 check: 219 fix: -1957101567
+Read GPS Data: 7 time: 2023 sea: 260591 debug: 0 0 0 0 0 0 0 1 check: 221 fix: -1917779967
+Read GPS Data: 7 time: 2023 sea: 260552 debug: 0 0 0 0 1 0 0 1 check: 224 fix: -1895235583
+Read GPS Data: 8 time: 2023 sea: 260481 debug: 0 0 0 0 0 0 0 0 check: 226 fix: -1852243967
+Read GPS Data: 2 time: 2023 sea: 260450 debug: 0 0 0 0 1 0 0 0 check: 229 fix: -1812922367
+Read GPS Data: 10 time: 2023 sea: 260360 debug: 0 0 0 0 0 0 0 1 check: 231 fix: -1786707967
+Read GPS Data: 4 time: 2023 sea: 260345 debug: 0 0 0 0 1 0 0 1 check: 235 fix: -1747386367
+Read GPS Data: 4 time: 2023 sea: 260294 debug: 0 0 0 0 0 0 0 0 check: 237 fix: -1721171967
+Read GPS Data: 4 time: 2023 sea: 260266 debug: 1 0 0 0 1 0 0 0 check: 240 fix: -1681850367
+Read GPS Data: 2 time: 2023 sea: 260335 debug: 0 0 0 0 0 0 0 1 check: 242 fix: -1655635967
+Read GPS Data: 13 time: 2023 sea: 260488 debug: 1 0 0 0 1 0 0 1 check: 245 fix: -1616314367
+Read GPS Data: 14 time: 2023 sea: 260544 debug: 0 0 0 0 0 0 0 0 check: 247 fix: -1590099967
+Read GPS Data: 18 time: 2023 sea: 260535 debug: 1 0 0 0 1 0 0 0 check: 250 fix: -1550778367
+Read GPS Data: 6 time: 2023 sea: 260524 debug: 0 0 0 0 1 0 0 1 check: 253 fix: -1524563967
+Read GPS Data: 12 time: 2023 sea: 260545 debug: 1 0 0 0 1 0 0 1 check: 255 fix: -1485242367
+Read GPS Data: 1 time: 2023 sea: 260615 debug: 0 0 0 0 1 0 0 0 check: 2 fix: -1459027967
+Read GPS Data: 6 time: 2023 sea: 260663 debug: 1 0 0 0 1 0 0 0 check: 4 fix: -1419706367
+Read GPS Data: 6 time: 2023 sea: 260714 debug: 0 0 0 0 1 0 0 1 check: 7 fix: -1393491967
+Read GPS Data: 8 time: 2023 sea: 260727 debug: 1 0 0 0 1 0 0 1 check: 9 fix: -1354170367
+Read GPS Data: 8 time: 2023 sea: 260798 debug: 0 0 0 0 1 0 0 0 check: 12 fix: -1327955967
+Read GPS Data: 12 time: 2023 sea: 260820 debug: 1 0 0 0 1 0 0 0 check: 14 fix: -1288634367
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 9 time: 2023 sea: 265524 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 1018232833
+Read GPS Data: 16 time: 2023 sea: 265660 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: 1057554433
+Read GPS Data: 7 time: 2023 sea: 265759 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 1083768833
+Read GPS Data: 3 time: 2023 sea: 265914 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: 1123090433
+Read GPS Data: 11 time: 2023 sea: 266025 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 1149304833
+Read GPS Data: 11 time: 2023 sea: 266209 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: 1188626433
+Read GPS Data: 8 time: 2023 sea: 266327 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 1214840833
+Read GPS Data: 13 time: 2023 sea: 266491 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: 1254162433
+Read GPS Data: 10 time: 2023 sea: 266605 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 1280376833
+Read GPS Data: 10 time: 2023 sea: 266788 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: 1319698433
+Read GPS Data: 7 time: 2023 sea: 266918 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 1345912833
+Read GPS Data: 9 time: 2023 sea: 267101 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: 1385234433
+Read GPS Data: 4 time: 2023 sea: 267207 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 1411448833
+Read GPS Data: 6 time: 2023 sea: 267331 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: 1450770433
+Read GPS Data: 8 time: 2023 sea: 267416 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 1476984833
+Read GPS Data: 3 time: 2023 sea: 267538 debug: 0 0 0 0 0 debug pt.2: 100 0 0 0 fix: 1516306433
+Read GPS Data: 4 time: 2023 sea: 267598 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 1542520833
+Read GPS Data: 3 time: 2023 sea: 267712 debug: 0 0 0 0 1 debug pt.2: 100 0 0 0 fix: 1581842433
+Read GPS Data: 1 time: 2023 sea: 267796 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 1608056833
+Read GPS Data: 8 time: 2023 sea: 267905 debug: 0 0 0 0 0 debug pt.2: 100 0 0 0 fix: 1647378433
+Read GPS Data: 10 time: 2023 sea: 267991 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 1673592833
+Read GPS Data: 13 time: 2023 sea: 268086 debug: 0 0 0 0 1 debug pt.2: 100 0 0 0 fix: 1712914433
+Read GPS Data: 12 time: 2023 sea: 268132 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 1735458817
+Read GPS Data: 17 time: 2023 sea: 268193 debug: 0 0 0 0 0 debug pt.2: 100 0 0 0 fix: 1778450433
+Read GPS Data: 13 time: 2023 sea: 268232 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 1817772033
+Read GPS Data: 11 time: 2023 sea: 268272 debug: 0 0 0 0 1 debug pt.2: 100 0 0 0 fix: 1843986433
+Read GPS Data: 10 time: 2023 sea: 268291 debug: 1 1 0 0 1 debug pt.2: 100 0 0 0 fix: 1883308033
+Read GPS Data: 8 time: 2023 sea: 268327 debug: 0 0 0 0 0 debug pt.2: 100 0 0 0 fix: 1909522433
+Read GPS Data: 8 time: 2023 sea: 268371 debug: 1 1 0 0 0 debug pt.2: 100 0 0 0 fix: 1948844033
+Read GPS Data: 14 time: 2023 sea: 268460 debug: 0 0 0 0 1 debug pt.2: 100 0 0 0 fix: 1975058433
+Read GPS Data: 10 time: 2023 sea: 268526 debug: 1 1 0 0 1 debug pt.2: 100 0 0 0 fix: 2014380033
+Read GPS Data: 8 time: 2023 sea: 268625 debug: 0 0 0 0 0 debug pt.2: 100 0 0 0 fix: 2040594433
+Read GPS Data: 10 time: 2023 sea: 268680 debug: 1 1 0 0 0 debug pt.2: 100 0 0 0 fix: 2079916033
+Read GPS Data: 17 time: 2023 sea: 268735 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 2106130433
+Read GPS Data: 14 time: 2023 sea: 268786 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 2145452033
+Read GPS Data: 7 time: 2023 sea: 268848 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -2123300863
+Read GPS Data: 9 time: 2023 sea: 268896 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: -2083979263
+Read GPS Data: 9 time: 2023 sea: 268986 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -2057764863
+Read GPS Data: 6 time: 2023 sea: 269066 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: -2018443263
+Read GPS Data: 5 time: 2023 sea: 269197 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1992228863
+Read GPS Data: 5 time: 2023 sea: 269285 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1952907263
+Read GPS Data: 8 time: 2023 sea: 269424 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1926692863
+Read GPS Data: 9 time: 2023 sea: 269521 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1887371263
+Read GPS Data: 9 time: 2023 sea: 269689 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1861156863
+Read GPS Data: 15 time: 2023 sea: 269877 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -1821835263
+Read GPS Data: 9 time: 2023 sea: 269998 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1795620863
+Read GPS Data: 6 time: 2023 sea: 270161 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -1756299263
+Read GPS Data: 13 time: 2023 sea: 270282 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1730084863
+Read GPS Data: 5 time: 2023 sea: 270486 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -1690763263
+Read GPS Data: 10 time: 2023 sea: 270637 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1664548863
+Read GPS Data: 4 time: 2023 sea: 270829 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -1625227263
+Read GPS Data: 9 time: 2023 sea: 270957 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1599012863
+Read GPS Data: 14 time: 2023 sea: 271134 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -1559691263
+Read GPS Data: 1 time: 2023 sea: 271249 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1533476863
+Read GPS Data: 9 time: 2023 sea: 271385 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -1494155263
+Read GPS Data: 6 time: 2023 sea: 271463 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1467940863
+Read GPS Data: 5 time: 2023 sea: 271587 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -1428619263
+Read GPS Data: 9 time: 2023 sea: 271663 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1402404863
+Read GPS Data: 10 time: 2023 sea: 271772 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -1363083263
+Read GPS Data: 10 time: 2023 sea: 271849 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1336868863
+Read GPS Data: 8 time: 2023 sea: 271973 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -1297547263
+Read GPS Data: 6 time: 2023 sea: 272039 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1271332863
+Read GPS Data: 6 time: 2023 sea: 272119 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -1232011263
+Read GPS Data: 6 time: 2023 sea: 272178 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1205796863
+Read GPS Data: 1 time: 2023 sea: 272273 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -1166475263
+Read GPS Data: 9 time: 2023 sea: 272339 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1140260863
+Read GPS Data: 15 time: 2023 sea: 272425 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -1100939263
+Read GPS Data: 16 time: 2023 sea: 272476 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1074724863
+Read GPS Data: 7 time: 2023 sea: 272580 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: -1035403263
+Read GPS Data: 10 time: 2023 sea: 272550 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1009188863
+Read GPS Data: 16 time: 2023 sea: 272482 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: -969867263
+Read GPS Data: 15 time: 2023 sea: 272489 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -943652863
+Read GPS Data: 3 time: 2023 sea: 272590 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: -904331263
+Read GPS Data: 2 time: 2023 sea: 272617 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -878116863
+Read GPS Data: 9 time: 2023 sea: 272631 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: -838795263
+Read GPS Data: 11 time: 2023 sea: 272630 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -799473663
+Read GPS Data: 13 time: 2023 sea: 272640 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: -773259263
+Read GPS Data: 12 time: 2023 sea: 272679 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -733937663
+Read GPS Data: 13 time: 2023 sea: 272736 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: -707723263
+Read GPS Data: 10 time: 2023 sea: 272766 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: -668401663
+Read GPS Data: 6 time: 2023 sea: 272826 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: -642187263
+Read GPS Data: 13 time: 2023 sea: 272866 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: -602865663
+Read GPS Data: 19 time: 2023 sea: 272921 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: -576651263
+Read GPS Data: 27 time: 2023 sea: 272956 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: -537329663
+Read GPS Data: 16 time: 2023 sea: 273005 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: -511115263
+Read GPS Data: 25 time: 2023 sea: 273040 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: -471793663
+Read GPS Data: 22 time: 2023 sea: 273095 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -445579263
+Read GPS Data: 28 time: 2023 sea: 273130 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: -406257663
+Read GPS Data: 26 time: 2023 sea: 273180 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -380043263
+Read GPS Data: 17 time: 2023 sea: 273215 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: -340721663
+Read GPS Data: 20 time: 2023 sea: 273262 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -314507263
+Read GPS Data: 15 time: 2023 sea: 273289 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: -275185663
+Read GPS Data: 6 time: 2023 sea: 273318 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -248971263
+Read GPS Data: 11 time: 2023 sea: 273338 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: -209649663
+Read GPS Data: 6 time: 2023 sea: 273360 debug: 0 1 0 0 0 debug pt.2: 66 0 0 0 fix: -183435263
+Read GPS Data: 11 time: 2023 sea: 273382 debug: 1 1 0 0 0 debug pt.2: 80 0 0 0 fix: -144113663
+Read GPS Data: 12 time: 2023 sea: 273413 debug: 0 1 0 0 1 debug pt.2: 87 0 0 0 fix: -117899263
+Read GPS Data: 14 time: 2023 sea: 273435 debug: 1 1 0 0 1 debug pt.2: 90 0 0 0 fix: -78577663
+Read GPS Data: 9 time: 2023 sea: 273468 debug: 0 1 0 0 0 debug pt.2: 92 0 0 0 fix: -52363263
+Read GPS Data: 3 time: 2023 sea: 273496 debug: 0 1 0 1 0 debug pt.2: 93 0 0 0 fix: -13041663
+Read GPS Data: 4 time: 2023 sea: 273517 debug: 0 1 0 0 1 debug pt.2: 94 0 0 0 fix: 13172737
+Read GPS Data: 11 time: 2023 sea: 273548 debug: 0 1 0 1 1 debug pt.2: 95 0 0 0 fix: 52494337
+Read GPS Data: 21 time: 2023 sea: 273564 debug: 0 1 0 0 0 debug pt.2: 95 0 0 0 fix: 78708737
+Read GPS Data: 12 time: 2023 sea: 273594 debug: 0 1 0 1 0 debug pt.2: 96 0 0 0 fix: 118030337
+Read GPS Data: 10 time: 2023 sea: 273603 debug: 0 1 0 0 1 debug pt.2: 96 0 0 0 fix: 144244737
+Read GPS Data: 6 time: 2023 sea: 273616 debug: 0 1 0 1 1 debug pt.2: 96 0 0 0 fix: 183566337
+Read GPS Data: 15 time: 2023 sea: 273631 debug: 0 1 0 0 0 debug pt.2: 96 0 0 0 fix: 209780737
+Read GPS Data: 20 time: 2023 sea: 273659 debug: 0 1 0 1 0 debug pt.2: 97 0 0 0 fix: 249102337
+Read GPS Data: 23 time: 2023 sea: 273682 debug: 0 1 0 0 1 debug pt.2: 97 0 0 0 fix: 275316737
+Read GPS Data: 17 time: 2023 sea: 273720 debug: 0 1 0 1 1 debug pt.2: 97 0 0 0 fix: 314638337
+Read GPS Data: 15 time: 2023 sea: 273738 debug: 0 1 0 0 0 debug pt.2: 97 0 0 0 fix: 340852737
+Read GPS Data: 10 time: 2023 sea: 273768 debug: 0 1 0 1 0 debug pt.2: 97 0 0 0 fix: 380174337
+Read GPS Data: 14 time: 2023 sea: 273792 debug: 0 1 0 0 1 debug pt.2: 97 0 0 0 fix: 406388737
+Read GPS Data: 10 time: 2023 sea: 273831 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: 445710337
+Read GPS Data: 6 time: 2023 sea: 273857 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 471924737
+Read GPS Data: 5 time: 2023 sea: 273901 debug: 0 1 0 1 0 debug pt.2: 98 0 0 0 fix: 511246337
+Read GPS Data: 8 time: 2023 sea: 273931 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: 537460737
+Read GPS Data: 9 time: 2023 sea: 273981 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: 576782337
+Read GPS Data: 14 time: 2023 sea: 274009 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 602996737
+Read GPS Data: 17 time: 2023 sea: 274037 debug: 0 1 0 1 0 debug pt.2: 98 0 0 0 fix: 642318337
+Read GPS Data: 7 time: 2023 sea: 274053 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: 668532737
+Read GPS Data: 12 time: 2023 sea: 274074 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: 707854337
+Read GPS Data: 4 time: 2023 sea: 274083 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 734068737
+Read GPS Data: 15 time: 2023 sea: 274085 debug: 0 0 0 0 1 debug pt.2: 98 0 0 0 fix: 773390337
+Read GPS Data: 19 time: 2023 sea: 274087 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: 799604737
+Read GPS Data: 11 time: 2023 sea: 274092 debug: 0 0 0 0 0 debug pt.2: 98 0 0 0 fix: 838926337
+Read GPS Data: 12 time: 2023 sea: 274091 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 865140737
+Read GPS Data: 15 time: 2023 sea: 274078 debug: 0 0 0 0 1 debug pt.2: 98 0 0 0 fix: 904462337
+Read GPS Data: 11 time: 2023 sea: 274059 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: 930676737
+Read GPS Data: 3 time: 2023 sea: 274030 debug: 0 0 0 0 0 debug pt.2: 98 0 0 0 fix: 969998337
+Read GPS Data: 3 time: 2023 sea: 274013 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 1009319937
+Read GPS Data: 9 time: 2023 sea: 273974 debug: 0 0 0 0 1 debug pt.2: 98 0 0 0 fix: 1035534337
+Read GPS Data: 6 time: 2023 sea: 273950 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: 1074855937
+Read GPS Data: 15 time: 2023 sea: 273906 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: 1101070337
+Read GPS Data: 4 time: 2023 sea: 273876 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1140391937
+Read GPS Data: 12 time: 2023 sea: 273835 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: 1166606337
+Read GPS Data: 3 time: 2023 sea: 273813 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1205927937
+Read GPS Data: 11 time: 2023 sea: 273778 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: 1232142337
+Read GPS Data: 12 time: 2023 sea: 273752 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1271463937
+Read GPS Data: 3 time: 2023 sea: 273718 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1297678337
+Read GPS Data: 10 time: 2023 sea: 273694 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1336999937
+Read GPS Data: 6 time: 2023 sea: 273655 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1363214337
+Read GPS Data: 17 time: 2023 sea: 273630 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1402535937
+Read GPS Data: 28 time: 2023 sea: 273588 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1428750337
+Read GPS Data: 23 time: 2023 sea: 273561 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1468071937
+Read GPS Data: 15 time: 2023 sea: 273514 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1494286337
+Read GPS Data: 22 time: 2023 sea: 273479 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1533607937
+Read GPS Data: 7 time: 2023 sea: 273427 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1559822337
+Read GPS Data: 7 time: 2023 sea: 273396 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1599143937
+Read GPS Data: 12 time: 2023 sea: 273347 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1625358337
+Read GPS Data: 11 time: 2023 sea: 273315 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1664679937
+Read GPS Data: 15 time: 2023 sea: 273263 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1690894337
+Read GPS Data: 2 time: 2023 sea: 273203 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 1730215937
+Read GPS Data: 6 time: 2023 sea: 273163 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: 1756430337
+Read GPS Data: 10 time: 2023 sea: 273102 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: 1795751937
+Read GPS Data: 15 time: 2023 sea: 273064 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 1821966337
+Read GPS Data: 10 time: 2023 sea: 273001 debug: 0 1 0 1 0 debug pt.2: 98 0 0 0 fix: 1861287937
+Read GPS Data: 20 time: 2023 sea: 272961 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: 1887502337
+Read GPS Data: 19 time: 2023 sea: 272893 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: 1926823937
+Read GPS Data: 7 time: 2023 sea: 272849 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 1953038337
+Read GPS Data: 15 time: 2023 sea: 272783 debug: 0 1 0 1 0 debug pt.2: 98 0 0 0 fix: 1992359937
+Read GPS Data: 4 time: 2023 sea: 272745 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: 2018574337
+Read GPS Data: 7 time: 2023 sea: 272690 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: 2057895937
+Read GPS Data: 15 time: 2023 sea: 272653 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 2084110337
+Read GPS Data: 16 time: 2023 sea: 272600 debug: 0 1 0 1 0 debug pt.2: 98 0 0 0 fix: 2123431937
+Read GPS Data: 23 time: 2023 sea: 272564 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: -2145320959
+Read GPS Data: 15 time: 2023 sea: 272513 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: -2105999359
+Read GPS Data: 6 time: 2023 sea: 272478 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -2079784959
+Read GPS Data: 3 time: 2023 sea: 272427 debug: 0 1 0 1 0 debug pt.2: 98 0 0 0 fix: -2040463359
+Read GPS Data: 4 time: 2023 sea: 272394 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: -2014248959
+Read GPS Data: 5 time: 2023 sea: 272353 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: -1974927359
+Read GPS Data: 4 time: 2023 sea: 272325 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1948712959
+Read GPS Data: 5 time: 2023 sea: 272289 debug: 0 1 0 1 0 debug pt.2: 98 0 0 0 fix: -1909391359
+Read GPS Data: 12 time: 2023 sea: 272266 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1883176959
+Read GPS Data: 7 time: 2023 sea: 272223 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -1843855359
+Read GPS Data: 11 time: 2023 sea: 272197 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1817640959
+Read GPS Data: 9 time: 2023 sea: 272162 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -1778319359
+Read GPS Data: 16 time: 2023 sea: 272139 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1752104959
+Read GPS Data: 14 time: 2023 sea: 272109 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: -1712783359
+Read GPS Data: 7 time: 2023 sea: 272089 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -1686568959
+Read GPS Data: 8 time: 2023 sea: 272057 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: -1647247359
+Read GPS Data: 6 time: 2023 sea: 272037 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -1621032959
+Read GPS Data: 2 time: 2023 sea: 271485 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: -795279359
+Read GPS Data: 11 time: 2023 sea: 271455 debug: 1 1 0 0 1 debug pt.2: 100 0 0 0 fix: -755957759
+Read GPS Data: 11 time: 2023 sea: 271405 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: -729743359
+Read GPS Data: 5 time: 2023 sea: 271383 debug: 1 1 0 0 0 debug pt.2: 100 0 0 0 fix: -690421759
+Read GPS Data: 9 time: 2023 sea: 271352 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: -664207359
+Read GPS Data: 1 time: 2023 sea: 271329 debug: 1 1 0 0 1 debug pt.2: 100 0 0 0 fix: -624885759
+Read GPS Data: 3 time: 2023 sea: 271302 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: -598671359
+Read GPS Data: 7 time: 2023 sea: 271283 debug: 1 1 0 0 0 debug pt.2: 100 0 0 0 fix: -559349759
+Read GPS Data: 7 time: 2023 sea: 271255 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: -533135359
+Read GPS Data: 8 time: 2023 sea: 271233 debug: 1 1 0 0 1 debug pt.2: 100 0 0 0 fix: -493813759
+Read GPS Data: 7 time: 2023 sea: 271194 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: -467599359
+Read GPS Data: 9 time: 2023 sea: 271168 debug: 1 1 0 0 0 debug pt.2: 100 0 0 0 fix: -428277759
+Read GPS Data: 15 time: 2023 sea: 271126 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: -402063359
+Read GPS Data: 14 time: 2023 sea: 271096 debug: 1 1 0 0 1 debug pt.2: 100 0 0 0 fix: -362741759
+Read GPS Data: 2 time: 2023 sea: 271059 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: -336527359
+Read GPS Data: 8 time: 2023 sea: 271035 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: -297205759
+Read GPS Data: 15 time: 2023 sea: 271019 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: -270991359
+Read GPS Data: 15 time: 2023 sea: 270994 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: -231669759
+Read GPS Data: 14 time: 2023 sea: 270981 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: -205455359
+Read GPS Data: 28 time: 2023 sea: 270965 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: -166133759
+Read GPS Data: 11 time: 2023 sea: 270960 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: -139919359
+Read GPS Data: 13 time: 2023 sea: 270960 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: -100597759
+Read GPS Data: 6 time: 2023 sea: 270968 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: -74383359
+Read GPS Data: 17 time: 2023 sea: 270983 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: -35061759
+Read GPS Data: 17 time: 2023 sea: 270995 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: -8847359
+Read GPS Data: 18 time: 2023 sea: 271016 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: 30474241
+Read GPS Data: 8 time: 2023 sea: 271033 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 56688641
+Read GPS Data: 14 time: 2023 sea: 271056 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: 96010241
+Read GPS Data: 1 time: 2023 sea: 271074 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 122224641
+Read GPS Data: 6 time: 2023 sea: 271100 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: 161546241
+Read GPS Data: 12 time: 2023 sea: 271117 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 187760641
+Read GPS Data: 20 time: 2023 sea: 271143 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: 227082241
+Read GPS Data: 11 time: 2023 sea: 271157 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 253296641
+Read GPS Data: 10 time: 2023 sea: 271185 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: 292618241
+Read GPS Data: 9 time: 2023 sea: 271204 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 318832641
+Read GPS Data: 9 time: 2023 sea: 271225 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: 358154241
+Read GPS Data: 17 time: 2023 sea: 271248 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 384368641
+Read GPS Data: 20 time: 2023 sea: 271286 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: 423690241
+Read GPS Data: 14 time: 2023 sea: 271315 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 449904641
+Read GPS Data: 11 time: 2023 sea: 271363 debug: 0 1 0 1 0 debug pt.2: 100 0 0 0 fix: 489226241
+Read GPS Data: 23 time: 2023 sea: 271400 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 515440641
+Read GPS Data: 11 time: 2023 sea: 271453 debug: 0 1 0 1 1 debug pt.2: 100 0 0 0 fix: 554762241
+Read GPS Data: 5 time: 2023 sea: 271485 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 580976641
+Read GPS Data: 10 time: 2023 sea: 271533 debug: 0 0 0 0 1 debug pt.2: 100 0 0 0 fix: 620298241
+Read GPS Data: 11 time: 2023 sea: 271566 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 646512641
+Read GPS Data: 10 time: 2023 sea: 271616 debug: 0 0 0 0 0 debug pt.2: 100 0 0 0 fix: 685834241
+Read GPS Data: 12 time: 2023 sea: 271643 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 712048641
+Read GPS Data: 18 time: 2023 sea: 271695 debug: 0 0 0 0 1 debug pt.2: 100 0 0 0 fix: 751370241
+Read GPS Data: 14 time: 2023 sea: 271733 debug: 0 1 0 0 1 debug pt.2: 100 0 0 0 fix: 777584641
+Read GPS Data: 7 time: 2023 sea: 271807 debug: 0 0 0 0 0 debug pt.2: 100 0 0 0 fix: 816906241
+Read GPS Data: 7 time: 2023 sea: 271856 debug: 0 1 0 0 0 debug pt.2: 100 0 0 0 fix: 856227841
+Read GPS Data: 3 time: 2023 sea: 271932 debug: 0 0 0 0 1 debug pt.2: 100 0 0 0 fix: 882442241
+Read GPS Data: 6 time: 2023 sea: 271977 debug: 1 1 0 0 1 debug pt.2: 100 0 0 0 fix: 921763841
+Read GPS Data: 5 time: 2023 sea: 272037 debug: 0 0 0 0 0 debug pt.2: 100 0 0 0 fix: 947978241
+Read GPS Data: 12 time: 2023 sea: 272079 debug: 1 1 0 0 0 debug pt.2: 100 0 0 0 fix: 987299841
+Read GPS Data: 15 time: 2023 sea: 272139 debug: 0 0 0 0 1 debug pt.2: 100 0 0 0 fix: 1013514241
+Read GPS Data: 13 time: 2023 sea: 272175 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1052835841
+Read GPS Data: 2 time: 2023 sea: 272221 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: 1079050241
+Read GPS Data: 5 time: 2023 sea: 272253 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1118371841
+Read GPS Data: 8 time: 2023 sea: 272299 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1144586241
+Read GPS Data: 18 time: 2023 sea: 272328 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1183907841
+Read GPS Data: 6 time: 2023 sea: 272375 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1210122241
+Read GPS Data: 3 time: 2023 sea: 272405 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1249443841
+Read GPS Data: 11 time: 2023 sea: 272453 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1275658241
+Read GPS Data: 4 time: 2023 sea: 272475 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1314979841
+Read GPS Data: 21 time: 2023 sea: 272488 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1341194241
+Read GPS Data: 36 time: 2023 sea: 272492 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1380515841
+Read GPS Data: 37 time: 2023 sea: 272496 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1406730241
+Read GPS Data: 34 time: 2023 sea: 272499 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1446051841
+Read GPS Data: 32 time: 2023 sea: 272499 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1472266241
+Read GPS Data: 20 time: 2023 sea: 272496 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1511587841
+Read GPS Data: 4 time: 2023 sea: 272486 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1537802241
+Read GPS Data: 9 time: 2023 sea: 272469 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 1577123841
+Read GPS Data: 12 time: 2023 sea: 272460 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1603338241
+Read GPS Data: 8 time: 2023 sea: 272449 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: 1642659841
+Read GPS Data: 8 time: 2023 sea: 272441 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1668874241
+Read GPS Data: 13 time: 2023 sea: 272421 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 1708195841
+Read GPS Data: 15 time: 2023 sea: 272404 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1734410241
+Read GPS Data: 14 time: 2023 sea: 272387 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: 1773731841
+Read GPS Data: 14 time: 2023 sea: 272373 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1799946241
+Read GPS Data: 11 time: 2023 sea: 272350 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 1839267841
+Read GPS Data: 8 time: 2023 sea: 272333 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1865482241
+Read GPS Data: 4 time: 2023 sea: 272309 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: 1904803841
+Read GPS Data: 10 time: 2023 sea: 272288 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1931018241
+Read GPS Data: 10 time: 2023 sea: 272247 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 1970339841
+Read GPS Data: 5 time: 2023 sea: 272214 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1996554241
+Read GPS Data: 17 time: 2023 sea: 272159 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: 2035875841
+Read GPS Data: 15 time: 2023 sea: 272118 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 2062090241
+Read GPS Data: 30 time: 2023 sea: 272061 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 2101411841
+Read GPS Data: 13 time: 2023 sea: 272028 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 2127626241
+Read GPS Data: 27 time: 2023 sea: 271978 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -2128019455
+Read GPS Data: 21 time: 2023 sea: 271942 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -2101805055
+Read GPS Data: 13 time: 2023 sea: 271893 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -2062483455
+Read GPS Data: 11 time: 2023 sea: 271863 debug: 0 1 0 0 0 debug pt.2: 0 0 0 0 fix: -2036269055
+Read GPS Data: 12 time: 2023 sea: 271824 debug: 0 1 0 1 0 debug pt.2: 66 0 0 0 fix: -1996947455
+Read GPS Data: 2 time: 2023 sea: 271795 debug: 0 1 0 0 1 debug pt.2: 83 0 0 0 fix: -1970733055
+Read GPS Data: 12 time: 2023 sea: 271738 debug: 0 1 0 1 1 debug pt.2: 87 0 0 0 fix: -1931411455
+Read GPS Data: 10 time: 2023 sea: 271693 debug: 0 1 0 0 0 debug pt.2: 90 0 0 0 fix: -1905197055
+Read GPS Data: 18 time: 2023 sea: 271634 debug: 0 0 0 0 1 debug pt.2: 92 0 0 0 fix: -1865875455
+Read GPS Data: 8 time: 2023 sea: 271596 debug: 0 1 0 0 1 debug pt.2: 93 0 0 0 fix: -1839661055
+Read GPS Data: 10 time: 2023 sea: 271535 debug: 0 0 0 0 0 debug pt.2: 94 0 0 0 fix: -1800339455
+Read GPS Data: 13 time: 2023 sea: 271493 debug: 0 1 0 0 0 debug pt.2: 95 0 0 0 fix: -1774125055
+Read GPS Data: 6 time: 2023 sea: 271356 debug: 0 0 0 0 1 debug pt.2: 95 0 0 0 fix: -1734803455
+Read GPS Data: 6 time: 2023 sea: 271210 debug: 0 1 0 0 1 debug pt.2: 96 0 0 0 fix: -1708589055
+Read GPS Data: 14 time: 2023 sea: 271032 debug: 0 0 0 0 0 debug pt.2: 96 0 0 0 fix: -1669267455
+Read GPS Data: 20 time: 2023 sea: 270911 debug: 0 1 0 0 0 debug pt.2: 96 0 0 0 fix: -1643053055
+Read GPS Data: 23 time: 2023 sea: 270757 debug: 0 0 0 0 1 debug pt.2: 97 0 0 0 fix: -1603731455
+Read GPS Data: 25 time: 2023 sea: 270658 debug: 0 1 0 0 1 debug pt.2: 97 0 0 0 fix: -1564409855
+Read GPS Data: 23 time: 2023 sea: 270493 debug: 0 0 0 0 0 debug pt.2: 97 0 0 0 fix: -1538195455
+Read GPS Data: 23 time: 2023 sea: 270381 debug: 1 1 0 0 0 debug pt.2: 97 0 0 0 fix: -1498873855
+Read GPS Data: 21 time: 2023 sea: 270226 debug: 0 0 0 0 1 debug pt.2: 97 0 0 0 fix: -1472659455
+Read GPS Data: 21 time: 2023 sea: 270130 debug: 1 1 0 0 1 debug pt.2: 97 0 0 0 fix: -1433337855
+Read GPS Data: 18 time: 2023 sea: 269987 debug: 0 0 0 0 0 debug pt.2: 97 0 0 0 fix: -1407123455
+Read GPS Data: 20 time: 2023 sea: 269890 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1367801855
+Read GPS Data: 20 time: 2023 sea: 269745 debug: 0 0 0 0 1 debug pt.2: 98 0 0 0 fix: -1341587455
+Read GPS Data: 26 time: 2023 sea: 269649 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1302265855
+Read GPS Data: 24 time: 2023 sea: 269503 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1276051455
+Read GPS Data: 19 time: 2023 sea: 269400 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1236729855
+Read GPS Data: 12 time: 2023 sea: 269234 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1210515455
+Read GPS Data: 11 time: 2023 sea: 269120 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1171193855
+Read GPS Data: 13 time: 2023 sea: 268953 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1144979455
+Read GPS Data: 9 time: 2023 sea: 268842 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1105657855
+Read GPS Data: 14 time: 2023 sea: 268664 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1079443455
+Read GPS Data: 16 time: 2023 sea: 268541 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1040121855
+Read GPS Data: 20 time: 2023 sea: 268350 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1013907455
+Read GPS Data: 17 time: 2023 sea: 268223 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: -974585855
+Read GPS Data: 4 time: 2023 sea: 268032 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: -948371455
+Read GPS Data: 3 time: 2023 sea: 267910 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: -909049855
+Read GPS Data: 8 time: 2023 sea: 267742 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -882835455
+Read GPS Data: 7 time: 2023 sea: 267641 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: -843513855
+Read GPS Data: 7 time: 2023 sea: 267499 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: -817299455
+Read GPS Data: 10 time: 2023 sea: 267365 debug: 0 1 0 1 1 debug pt.2: 98 0 0 0 fix: -777977855
+Read GPS Data: 18 time: 2023 sea: 267282 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -751763455
+Read GPS Data: 17 time: 2023 sea: 267168 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -712441855
+Read GPS Data: 10 time: 2023 sea: 267091 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -686227455
+Read GPS Data: 6 time: 2023 sea: 266978 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -646905855
+Read GPS Data: 6 time: 2023 sea: 266897 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -620691455
+Read GPS Data: 9 time: 2023 sea: 266769 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -581369855
+Read GPS Data: 9 time: 2023 sea: 266685 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -555155455
+Read GPS Data: 10 time: 2023 sea: 266570 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -515833855
+Read GPS Data: 15 time: 2023 sea: 266501 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -489619455
+Read GPS Data: 16 time: 2023 sea: 266388 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -450297855
+Read GPS Data: 11 time: 2023 sea: 266321 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -424083455
+Read GPS Data: 6 time: 2023 sea: 266220 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -384761855
+Read GPS Data: 7 time: 2023 sea: 266157 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -358547455
+Read GPS Data: 9 time: 2023 sea: 266068 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -319225855
+Read GPS Data: 7 time: 2023 sea: 266013 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -293011455
+Read GPS Data: 4 time: 2023 sea: 265934 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -253689855
+Read GPS Data: 6 time: 2023 sea: 265887 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -227475455
+Read GPS Data: 11 time: 2023 sea: 265824 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: -188153855
+Read GPS Data: 10 time: 2023 sea: 265778 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -161939455
+Read GPS Data: 4 time: 2023 sea: 265708 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: -122617855
+Read GPS Data: 8 time: 2023 sea: 265667 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: -96403455
+Read GPS Data: 12 time: 2023 sea: 265614 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: -57081855
+Read GPS Data: 15 time: 2023 sea: 265581 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: -30867455
+Read GPS Data: 6 time: 2023 sea: 265524 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: 8454145
+Read GPS Data: 3 time: 2023 sea: 265481 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 34668545
+Read GPS Data: 5 time: 2023 sea: 265422 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: 73990145
+Read GPS Data: 6 time: 2023 sea: 265382 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 100204545
+Read GPS Data: 6 time: 2023 sea: 265326 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: 139526145
+Read GPS Data: 8 time: 2023 sea: 265303 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 178847745
+Read GPS Data: 13 time: 2023 sea: 265282 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: 205062145
+Read GPS Data: 15 time: 2023 sea: 265264 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 244383745
+Read GPS Data: 13 time: 2023 sea: 265238 debug: 0 0 0 0 0 debug pt.2: 99 0 0 0 fix: 270598145
+Read GPS Data: 6 time: 2023 sea: 265207 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 309919745
+Read GPS Data: 3 time: 2023 sea: 265174 debug: 0 0 0 0 1 debug pt.2: 99 0 0 0 fix: 336134145
+Read GPS Data: 7 time: 2023 sea: 265146 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 375455745
+Read GPS Data: 7 time: 2023 sea: 265106 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 401670145
+Read GPS Data: 4 time: 2023 sea: 265087 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 440991745
+Read GPS Data: 3 time: 2023 sea: 265064 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 467206145
+Read GPS Data: 6 time: 2023 sea: 265053 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 506527745
+Read GPS Data: 14 time: 2023 sea: 265024 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 532742145
+Read GPS Data: 10 time: 2023 sea: 265004 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 572063745
+Read GPS Data: 2 time: 2023 sea: 264971 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 598278145
+Read GPS Data: 5 time: 2023 sea: 264948 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 637599745
+Read GPS Data: 13 time: 2023 sea: 264912 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 663814145
+Read GPS Data: 11 time: 2023 sea: 264884 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 703135745
+Read GPS Data: 4 time: 2023 sea: 264846 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 729350145
+Read GPS Data: 4 time: 2023 sea: 264820 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 768671745
+Read GPS Data: 8 time: 2023 sea: 264770 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 794886145
+Read GPS Data: 11 time: 2023 sea: 264721 debug: 1 1 0 0 0 debug pt.2: 99 0 0 0 fix: 834207745
+Read GPS Data: 2 time: 2023 sea: 264653 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 860422145
+Read GPS Data: 7 time: 2023 sea: 264604 debug: 1 1 0 0 1 debug pt.2: 99 0 0 0 fix: 899743745
+Read GPS Data: 14 time: 2023 sea: 264529 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 925958145
+Read GPS Data: 10 time: 2023 sea: 264454 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: 965279745
+Read GPS Data: 2 time: 2023 sea: 264404 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 991494145
+Read GPS Data: 7 time: 2023 sea: 264334 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 1030815745
+Read GPS Data: 14 time: 2023 sea: 264286 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1057030145
+Read GPS Data: 17 time: 2023 sea: 264215 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: 1096351745
+Read GPS Data: 10 time: 2023 sea: 264166 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1122566145
+Read GPS Data: 4 time: 2023 sea: 264093 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 1161887745
+Read GPS Data: 5 time: 2023 sea: 264045 debug: 0 1 0 0 0 debug pt.2: 99 0 0 0 fix: 1188102145
+Read GPS Data: 7 time: 2023 sea: 263977 debug: 0 1 0 1 0 debug pt.2: 99 0 0 0 fix: 1227423745
+Read GPS Data: 4 time: 2023 sea: 263933 debug: 0 1 0 0 1 debug pt.2: 99 0 0 0 fix: 1253638145
+Read GPS Data: 2 time: 2023 sea: 263860 debug: 0 1 0 1 1 debug pt.2: 99 0 0 0 fix: 1292959745
+Read GPS Data: 9 time: 2023 sea: 263806 debug: 0 1 0 0 0 debug pt.2: 0 0 0 0 fix: 1319174145
+Read GPS Data: 11 time: 2023 sea: 263712 debug: 0 1 0 1 0 debug pt.2: 66 0 0 0 fix: 1358495745
+Read GPS Data: 6 time: 2023 sea: 263644 debug: 0 1 0 0 1 debug pt.2: 83 0 0 0 fix: 1384710145
+Read GPS Data: 2 time: 2023 sea: 263538 debug: 0 1 0 1 1 debug pt.2: 87 0 0 0 fix: 1424031745
+Read GPS Data: 8 time: 2023 sea: 263456 debug: 0 1 0 0 0 debug pt.2: 90 0 0 0 fix: 1450246145
+Read GPS Data: 12 time: 2023 sea: 263344 debug: 0 1 0 1 0 debug pt.2: 92 0 0 0 fix: 1489567745
+Read GPS Data: 8 time: 2023 sea: 263284 debug: 0 1 0 0 1 debug pt.2: 93 0 0 0 fix: 1515782145
+Read GPS Data: 3 time: 2023 sea: 263201 debug: 0 1 0 1 1 debug pt.2: 94 0 0 0 fix: 1555103745
+Read GPS Data: 5 time: 2023 sea: 263139 debug: 0 1 0 0 0 debug pt.2: 95 0 0 0 fix: 1581318145
+Read GPS Data: 9 time: 2023 sea: 263034 debug: 0 1 0 1 0 debug pt.2: 95 0 0 0 fix: 1620639745
+Read GPS Data: 9 time: 2023 sea: 262959 debug: 0 1 0 0 1 debug pt.2: 96 0 0 0 fix: 1646854145
+Read GPS Data: 6 time: 2023 sea: 262832 debug: 0 1 0 1 1 debug pt.2: 96 0 0 0 fix: 1686175745
+Read GPS Data: 6 time: 2023 sea: 262752 debug: 0 1 0 0 0 debug pt.2: 96 0 0 0 fix: 1712390145
+Read GPS Data: 12 time: 2023 sea: 262612 debug: 0 1 0 1 0 debug pt.2: 96 0 0 0 fix: 1751711745
+Read GPS Data: 9 time: 2023 sea: 262534 debug: 0 1 0 0 1 debug pt.2: 97 0 0 0 fix: 1777926145
+Read GPS Data: 4 time: 2023 sea: 262428 debug: 0 1 0 1 1 debug pt.2: 97 0 0 0 fix: 1817247745
+Read GPS Data: 8 time: 2023 sea: 262364 debug: 0 1 0 0 0 debug pt.2: 97 0 0 0 fix: 1843462145
+Read GPS Data: 13 time: 2023 sea: 262270 debug: 0 0 0 0 1 debug pt.2: 97 0 0 0 fix: 1882783745
+Read GPS Data: 14 time: 2023 sea: 262212 debug: 0 1 0 0 1 debug pt.2: 97 0 0 0 fix: 1908998145
+Read GPS Data: 5 time: 2023 sea: 262087 debug: 0 0 0 0 0 debug pt.2: 97 0 0 0 fix: 1948319745
+Read GPS Data: 4 time: 2023 sea: 262024 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: 1974534145
+Read GPS Data: 11 time: 2023 sea: 261845 debug: 0 0 0 0 1 debug pt.2: 98 0 0 0 fix: 2013855745
+Read GPS Data: 10 time: 2023 sea: 261761 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: 2036400129
+Read GPS Data: 6 time: 2023 sea: 261573 debug: 0 0 0 0 0 debug pt.2: 98 0 0 0 fix: 2079391745
+Read GPS Data: 4 time: 2023 sea: 261467 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: 2118713345
+Read GPS Data: 12 time: 2023 sea: 261313 debug: 0 0 0 0 1 debug pt.2: 98 0 0 0 fix: 2144927745
+Read GPS Data: 17 time: 2023 sea: 261180 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: -2110717951
+Read GPS Data: 12 time: 2023 sea: 261033 debug: 0 0 0 0 0 debug pt.2: 98 0 0 0 fix: -2084503551
+Read GPS Data: 4 time: 2023 sea: 260951 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: -2045181951
+Read GPS Data: 8 time: 2023 sea: 260808 debug: 0 0 0 0 1 debug pt.2: 98 0 0 0 fix: -2018967551
+Read GPS Data: 14 time: 2023 sea: 260710 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1979645951
+Read GPS Data: 10 time: 2023 sea: 260586 debug: 0 0 0 0 0 debug pt.2: 98 0 0 0 fix: -1953431551
+Read GPS Data: 4 time: 2023 sea: 260505 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1914109951
+Read GPS Data: 5 time: 2023 sea: 260387 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1887895551
+Read GPS Data: 9 time: 2023 sea: 260313 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1848573951
+Read GPS Data: 10 time: 2023 sea: 260200 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1822359551
+Read GPS Data: 2 time: 2023 sea: 260126 debug: 1 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1783037951
+Read GPS Data: 10 time: 2023 sea: 260009 debug: 0 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1756823551
+Read GPS Data: 17 time: 2023 sea: 259936 debug: 1 1 0 0 1 debug pt.2: 98 0 0 0 fix: -1717501951
+Read GPS Data: 16 time: 2023 sea: 259833 debug: 0 1 0 0 0 debug pt.2: 98 0 0 0 fix: -1691287551
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0
+Read GPS Data: 0 time: 2023 sea: 269384 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -559874047
+Read GPS Data: 7 time: 2023 sea: 269454 debug: 0 1 0 1 0 debug pt.2: 0 0 48 0 fix: -520552447
+Read GPS Data: 9 time: 2023 sea: 269500 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -494338047
+Read GPS Data: 12 time: 2023 sea: 269561 debug: 0 1 0 1 1 debug pt.2: 0 0 49 0 fix: -455016447
+Read GPS Data: 4 time: 2023 sea: 269603 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -428802047
+Read GPS Data: 4 time: 2023 sea: 269664 debug: 0 1 0 1 0 debug pt.2: 0 0 49 0 fix: -389480447
+Read GPS Data: 11 time: 2023 sea: 269709 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -363266047
+Read GPS Data: 13 time: 2023 sea: 269779 debug: 0 0 0 0 0 debug pt.2: 0 0 49 0 fix: -323944447
+Read GPS Data: 9 time: 2023 sea: 269826 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -297730047
+Read GPS Data: 2 time: 2023 sea: 269893 debug: 0 0 0 0 1 debug pt.2: 0 0 49 0 fix: -258408447
+Read GPS Data: 7 time: 2023 sea: 269938 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -232194047
+Read GPS Data: 11 time: 2023 sea: 269999 debug: 0 0 0 0 0 debug pt.2: 0 0 49 0 fix: -192872447
+Read GPS Data: 10 time: 2023 sea: 270037 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -166658047
+Read GPS Data: 2 time: 2023 sea: 270095 debug: 0 0 0 0 1 debug pt.2: 0 0 49 0 fix: -127336447
+Read GPS Data: 6 time: 2023 sea: 270131 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -88014847
+Read GPS Data: 14 time: 2023 sea: 270188 debug: 0 0 0 0 0 debug pt.2: 0 0 49 0 fix: -61800447
+Read GPS Data: 16 time: 2023 sea: 270225 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: -22478847
+Read GPS Data: 8 time: 2023 sea: 270283 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 3735553
+Read GPS Data: 3 time: 2023 sea: 270323 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 43057153
+Read GPS Data: 7 time: 2023 sea: 270378 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 69271553
+Read GPS Data: 14 time: 2023 sea: 270410 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 108593153
+Read GPS Data: 13 time: 2023 sea: 270458 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 134807553
+Read GPS Data: 5 time: 2023 sea: 270482 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 174129153
+Read GPS Data: 4 time: 2023 sea: 270513 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 200343553
+Read GPS Data: 14 time: 2023 sea: 270536 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 239665153
+Read GPS Data: 14 time: 2023 sea: 270568 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 265879553
+Read GPS Data: 11 time: 2023 sea: 270591 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 305201153
+Read GPS Data: 3 time: 2023 sea: 270624 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 331415553
+Read GPS Data: 2 time: 2023 sea: 270646 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 370737153
+Read GPS Data: 7 time: 2023 sea: 270681 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 396951553
+Read GPS Data: 3 time: 2023 sea: 270697 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 436273153
+Read GPS Data: 5 time: 2023 sea: 270717 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 462487553
+Read GPS Data: 6 time: 2023 sea: 270725 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 501809153
+Read GPS Data: 14 time: 2023 sea: 270733 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 528023553
+Read GPS Data: 12 time: 2023 sea: 270737 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 567345153
+Read GPS Data: 2 time: 2023 sea: 270740 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 593559553
+Read GPS Data: 5 time: 2023 sea: 270744 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 632881153
+Read GPS Data: 10 time: 2023 sea: 270743 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 659095553
+Read GPS Data: 11 time: 2023 sea: 270740 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: 698417153
+Read GPS Data: 2 time: 2023 sea: 270734 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 724631553
+Read GPS Data: 4 time: 2023 sea: 270726 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 763953153
+Read GPS Data: 17 time: 2023 sea: 270723 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 790167553
+Read GPS Data: 18 time: 2023 sea: 270716 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 829489153
+Read GPS Data: 10 time: 2023 sea: 270713 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 855703553
+Read GPS Data: 1 time: 2023 sea: 270710 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 895025153
+Read GPS Data: 6 time: 2023 sea: 270706 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 921239553
+Read GPS Data: 11 time: 2023 sea: 270698 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 960561153
+Read GPS Data: 9 time: 2023 sea: 270688 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 986775553
+Read GPS Data: 4 time: 2023 sea: 270676 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1026097153
+Read GPS Data: 3 time: 2023 sea: 270665 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1052311553
+Read GPS Data: 5 time: 2023 sea: 270653 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1091633153
+Read GPS Data: 5 time: 2023 sea: 270644 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1117847553
+Read GPS Data: 1 time: 2023 sea: 270629 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1157169153
+Read GPS Data: 10 time: 2023 sea: 270620 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1183383553
+Read GPS Data: 11 time: 2023 sea: 270613 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1222705153
+Read GPS Data: 12 time: 2023 sea: 270608 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1248919553
+Read GPS Data: 3 time: 2023 sea: 270600 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1288241153
+Read GPS Data: 11 time: 2023 sea: 270599 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1314455553
+Read GPS Data: 16 time: 2023 sea: 270601 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1353777153
+Read GPS Data: 17 time: 2023 sea: 270603 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1379991553
+Read GPS Data: 8 time: 2023 sea: 270604 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 1419313153
+Read GPS Data: 4 time: 2023 sea: 270606 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1445527553
+Read GPS Data: 11 time: 2023 sea: 270608 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 1484849153
+Read GPS Data: 13 time: 2023 sea: 270611 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1524170753
+Read GPS Data: 1 time: 2023 sea: 270620 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 1550385153
+Read GPS Data: 5 time: 2023 sea: 270630 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1589706753
+Read GPS Data: 10 time: 2023 sea: 270640 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 1615921153
+Read GPS Data: 15 time: 2023 sea: 270645 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1655242753
+Read GPS Data: 11 time: 2023 sea: 270650 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 1681457153
+Read GPS Data: 3 time: 2023 sea: 270651 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1720778753
+Read GPS Data: 8 time: 2023 sea: 270657 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 1746993153
+Read GPS Data: 11 time: 2023 sea: 270658 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1786314753
+Read GPS Data: 12 time: 2023 sea: 270662 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 1812529153
+Read GPS Data: 5 time: 2023 sea: 270667 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1851850753
+Read GPS Data: 8 time: 2023 sea: 270677 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1878065153
+Read GPS Data: 14 time: 2023 sea: 270690 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1917386753
+Read GPS Data: 17 time: 2023 sea: 270713 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1943601153
+Read GPS Data: 11 time: 2023 sea: 270735 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1982922753
+Read GPS Data: 2 time: 2023 sea: 270774 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2009137153
+Read GPS Data: 6 time: 2023 sea: 270804 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2048458753
+Read GPS Data: 9 time: 2023 sea: 270860 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 2074673153
+Read GPS Data: 4 time: 2023 sea: 270897 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 2113994753
+Read GPS Data: 5 time: 2023 sea: 270953 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2140209153
+Read GPS Data: 10 time: 2023 sea: 270990 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2115436543
+Read GPS Data: 17 time: 2023 sea: 271046 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2089222143
+Read GPS Data: 12 time: 2023 sea: 271081 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2049900543
+Read GPS Data: 5 time: 2023 sea: 271131 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2023686143
+Read GPS Data: 10 time: 2023 sea: 271182 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1984364543
+Read GPS Data: 15 time: 2023 sea: 271211 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1958150143
+Read GPS Data: 17 time: 2023 sea: 271252 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1918828543
+Read GPS Data: 2 time: 2023 sea: 271283 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1892614143
+Read GPS Data: 6 time: 2023 sea: 271333 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1853292543
+Read GPS Data: 13 time: 2023 sea: 271374 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1827078143
+Read GPS Data: 17 time: 2023 sea: 271415 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1787756543
+Read GPS Data: 10 time: 2023 sea: 271448 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1761542143
+Read GPS Data: 2 time: 2023 sea: 271501 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1722220543
+Read GPS Data: 4 time: 2023 sea: 271537 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1696006143
+Read GPS Data: 9 time: 2023 sea: 271593 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1656684543
+Read GPS Data: 2 time: 2023 sea: 271677 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1630470143
+Read GPS Data: 8 time: 2023 sea: 271819 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1591148543
+Read GPS Data: 18 time: 2023 sea: 271920 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1564934143
+Read GPS Data: 26 time: 2023 sea: 272073 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1525612543
+Read GPS Data: 22 time: 2023 sea: 272182 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1499398143
+Read GPS Data: 13 time: 2023 sea: 272339 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1460076543
+Read GPS Data: 1 time: 2023 sea: 272437 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1433862143
+Read GPS Data: 5 time: 2023 sea: 272571 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1394540543
+Read GPS Data: 8 time: 2023 sea: 272655 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1368326143
+Read GPS Data: 2 time: 2023 sea: 272789 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1329004543
+Read GPS Data: 8 time: 2023 sea: 272871 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1302790143
+Read GPS Data: 17 time: 2023 sea: 272996 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1263468543
+Read GPS Data: 17 time: 2023 sea: 273083 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1237254143
+Read GPS Data: 10 time: 2023 sea: 273210 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1197932543
+Read GPS Data: 2 time: 2023 sea: 273293 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1171718143
+Read GPS Data: 8 time: 2023 sea: 273428 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1132396543
+Read GPS Data: 11 time: 2023 sea: 273516 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1093074943
+Read GPS Data: 2 time: 2023 sea: 273648 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1066860543
+Read GPS Data: 11 time: 2023 sea: 273736 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1027538943
+Read GPS Data: 14 time: 2023 sea: 273861 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1001324543
+Read GPS Data: 19 time: 2023 sea: 273950 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -962002943
+Read GPS Data: 9 time: 2023 sea: 274077 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -935788543
+Read GPS Data: 3 time: 2023 sea: 274162 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -896466943
+Read GPS Data: 11 time: 2023 sea: 274281 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -870252543
+Read GPS Data: 14 time: 2023 sea: 274362 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -830930943
+Read GPS Data: 15 time: 2023 sea: 274465 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -804716543
+Read GPS Data: 6 time: 2023 sea: 274530 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -765394943
+Read GPS Data: 2 time: 2023 sea: 274631 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -739180543
+Read GPS Data: 11 time: 2023 sea: 274705 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -699858943
+Read GPS Data: 13 time: 2023 sea: 274807 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -673644543
+Read GPS Data: 8 time: 2023 sea: 274873 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -634322943
+Read GPS Data: 7 time: 2023 sea: 274968 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -608108543
+Read GPS Data: 11 time: 2023 sea: 275032 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -568786943
+Read GPS Data: 17 time: 2023 sea: 275126 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -542572543
+Read GPS Data: 20 time: 2023 sea: 275219 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -503250943
+Read GPS Data: 7 time: 2023 sea: 275282 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -477036543
+Read GPS Data: 1 time: 2023 sea: 275370 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -437714943
+Read GPS Data: 6 time: 2023 sea: 275426 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -411500543
+Read GPS Data: 9 time: 2023 sea: 275511 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -372178943
+Read GPS Data: 2 time: 2023 sea: 275574 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -345964543
+Read GPS Data: 16 time: 2023 sea: 275660 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -306642943
+Read GPS Data: 29 time: 2023 sea: 275706 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -280428543
+Read GPS Data: 32 time: 2023 sea: 275766 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -241106943
+Read GPS Data: 32 time: 2023 sea: 275802 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -214892543
+Read GPS Data: 21 time: 2023 sea: 275859 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -175570943
+Read GPS Data: 8 time: 2023 sea: 275904 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -149356543
+Read GPS Data: 4 time: 2023 sea: 275976 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -110034943
+Read GPS Data: 2 time: 2023 sea: 276021 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -83820543
+Read GPS Data: 6 time: 2023 sea: 276075 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -44498943
+Read GPS Data: 16 time: 2023 sea: 276114 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -18284543
+Read GPS Data: 21 time: 2023 sea: 276158 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 21037057
+Read GPS Data: 28 time: 2023 sea: 276187 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 47251457
+Read GPS Data: 27 time: 2023 sea: 276219 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 86573057
+Read GPS Data: 14 time: 2023 sea: 276242 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 112787457
+Read GPS Data: 8 time: 2023 sea: 276276 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 152109057
+Read GPS Data: 0 time: 2023 sea: 276303 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 178323457
+Read GPS Data: 2 time: 2023 sea: 276340 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 217645057
+Read GPS Data: 5 time: 2023 sea: 276367 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 243859457
+Read GPS Data: 15 time: 2023 sea: 276400 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 283181057
+Read GPS Data: 20 time: 2023 sea: 276417 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 309395457
+Read GPS Data: 23 time: 2023 sea: 276446 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 348717057
+Read GPS Data: 16 time: 2023 sea: 276468 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 388038657
+Read GPS Data: 4 time: 2023 sea: 276512 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 414253057
+Read GPS Data: 2 time: 2023 sea: 276546 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 453574657
+Read GPS Data: 8 time: 2023 sea: 276592 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 479789057
+Read GPS Data: 7 time: 2023 sea: 276631 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 519110657
+Read GPS Data: 4 time: 2023 sea: 276690 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 545325057
+Read GPS Data: 2 time: 2023 sea: 276730 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 584646657
+Read GPS Data: 4 time: 2023 sea: 276791 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 610861057
+Read GPS Data: 2 time: 2023 sea: 276832 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 650182657
+Read GPS Data: 14 time: 2023 sea: 276897 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 676397057
+Read GPS Data: 18 time: 2023 sea: 276944 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 715718657
+Read GPS Data: 28 time: 2023 sea: 277016 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 741933057
+Read GPS Data: 29 time: 2023 sea: 277063 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 781254657
+Read GPS Data: 22 time: 2023 sea: 277135 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 807469057
+Read GPS Data: 15 time: 2023 sea: 277181 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 846790657
+Read GPS Data: 7 time: 2023 sea: 277242 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 873005057
+Read GPS Data: 2 time: 2023 sea: 277288 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 912326657
+Read GPS Data: 2 time: 2023 sea: 277365 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 938541057
+Read GPS Data: 8 time: 2023 sea: 277450 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 977862657
+Read GPS Data: 15 time: 2023 sea: 277508 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1004077057
+Read GPS Data: 19 time: 2023 sea: 277587 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1043398657
+Read GPS Data: 18 time: 2023 sea: 277639 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1069613057
+Read GPS Data: 15 time: 2023 sea: 277716 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1108934657
+Read GPS Data: 4 time: 2023 sea: 277770 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1135149057
+Read GPS Data: 4 time: 2023 sea: 277856 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1174470657
+Read GPS Data: 6 time: 2023 sea: 277913 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1200685057
+Read GPS Data: 2 time: 2023 sea: 278000 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1240006657
+Read GPS Data: 6 time: 2023 sea: 278058 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1266221057
+Read GPS Data: 9 time: 2023 sea: 278147 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1305542657
+Read GPS Data: 9 time: 2023 sea: 278208 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1331757057
+Read GPS Data: 6 time: 2023 sea: 278310 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1371078657
+Read GPS Data: 2 time: 2023 sea: 278382 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1397293057
+Read GPS Data: 5 time: 2023 sea: 278485 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1436614657
+Read GPS Data: 8 time: 2023 sea: 278553 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1462829057
+Read GPS Data: 5 time: 2023 sea: 278647 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1502150657
+Read GPS Data: 7 time: 2023 sea: 278706 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1528365057
+Read GPS Data: 13 time: 2023 sea: 278802 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1567686657
+Read GPS Data: 21 time: 2023 sea: 278867 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1593901057
+Read GPS Data: 20 time: 2023 sea: 278966 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 1633222657
+Read GPS Data: 13 time: 2023 sea: 279035 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1659437057
+Read GPS Data: 6 time: 2023 sea: 279135 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 1698758657
+Read GPS Data: 2 time: 2023 sea: 279198 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1724973057
+Read GPS Data: 2 time: 2023 sea: 279287 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 1764294657
+Read GPS Data: 2 time: 2023 sea: 279343 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1786839041
+Read GPS Data: 9 time: 2023 sea: 279422 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 1829830657
+Read GPS Data: 13 time: 2023 sea: 279473 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1869152257
+Read GPS Data: 15 time: 2023 sea: 279549 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 1895366657
+Read GPS Data: 12 time: 2023 sea: 279600 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1934688257
+Read GPS Data: 8 time: 2023 sea: 279676 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: 1960902657
+Read GPS Data: 5 time: 2023 sea: 279724 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2000224257
+Read GPS Data: 1 time: 2023 sea: 279799 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: 2026438657
+Read GPS Data: 1 time: 2023 sea: 279844 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 2065760257
+Read GPS Data: 9 time: 2023 sea: 279907 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2091974657
+Read GPS Data: 12 time: 2023 sea: 279946 debug: 0 1 1 0 0 debug pt.2: 100 0 50 0 fix: 2131296257
+Read GPS Data: 19 time: 2023 sea: 279998 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2137456639
+Read GPS Data: 18 time: 2023 sea: 280029 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2098135039
+Read GPS Data: 12 time: 2023 sea: 280072 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2071920639
+Read GPS Data: 5 time: 2023 sea: 280105 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2032599039
+Read GPS Data: 1 time: 2023 sea: 280151 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2006384639
+Read GPS Data: 2 time: 2023 sea: 280179 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1967063039
+Read GPS Data: 5 time: 2023 sea: 280213 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1940848639
+Read GPS Data: 9 time: 2023 sea: 280233 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1901527039
+Read GPS Data: 11 time: 2023 sea: 280242 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1875312639
+Read GPS Data: 14 time: 2023 sea: 280258 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1835991039
+Read GPS Data: 13 time: 2023 sea: 280269 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1809776639
+Read GPS Data: 6 time: 2023 sea: 280291 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1770455039
+Read GPS Data: 2 time: 2023 sea: 280308 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1744240639
+Read GPS Data: 4 time: 2023 sea: 280334 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1704919039
+Read GPS Data: 2 time: 2023 sea: 280348 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1678704639
+Read GPS Data: 7 time: 2023 sea: 280367 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1639383039
+Read GPS Data: 13 time: 2023 sea: 280378 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1613168639
+Read GPS Data: 18 time: 2023 sea: 280388 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1573847039
+Read GPS Data: 19 time: 2023 sea: 280389 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1547632639
+Read GPS Data: 15 time: 2023 sea: 280386 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1508311039
+Read GPS Data: 6 time: 2023 sea: 280380 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1482096639
+Read GPS Data: 5 time: 2023 sea: 280367 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1442775039
+Read GPS Data: 9 time: 2023 sea: 280357 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1416560639
+Read GPS Data: 7 time: 2023 sea: 280333 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1377239039
+Read GPS Data: 4 time: 2023 sea: 280316 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1351024639
+Read GPS Data: 9 time: 2023 sea: 280288 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1311703039
+Read GPS Data: 17 time: 2023 sea: 280261 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1285488639
+Read GPS Data: 19 time: 2023 sea: 280217 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1246167039
+Read GPS Data: 13 time: 2023 sea: 280186 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1219952639
+Read GPS Data: 5 time: 2023 sea: 280136 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1180631039
+Read GPS Data: 8 time: 2023 sea: 280106 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1154416639
+Read GPS Data: 12 time: 2023 sea: 280069 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1115095039
+Read GPS Data: 10 time: 2023 sea: 280045 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1088880639
+Read GPS Data: 6 time: 2023 sea: 280005 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1049559039
+Read GPS Data: 11 time: 2023 sea: 279971 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1010237439
+Read GPS Data: 17 time: 2023 sea: 279920 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -984023039
+Read GPS Data: 18 time: 2023 sea: 279883 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -944701439
+Read GPS Data: 14 time: 2023 sea: 279819 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -918487039
+Read GPS Data: 11 time: 2023 sea: 279781 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -879165439
+Read GPS Data: 10 time: 2023 sea: 279723 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -852951039
+Read GPS Data: 10 time: 2023 sea: 279683 debug: 0 1 1 0 1 debug pt.2: 100 0 50 0 fix: -813629439
+Read GPS Data: 8 time: 2023 sea: 279627 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -787415039
+Read GPS Data: 15 time: 2023 sea: 279592 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -748093439
+Read GPS Data: 17 time: 2023 sea: 279532 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -721879039
+Read GPS Data: 24 time: 2023 sea: 279491 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -682557439
+Read GPS Data: 21 time: 2023 sea: 279427 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -656343039
+Read GPS Data: 19 time: 2023 sea: 279381 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -617021439
+Read GPS Data: 12 time: 2023 sea: 279310 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -590807039
+Read GPS Data: 9 time: 2023 sea: 279264 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -551485439
+Read GPS Data: 11 time: 2023 sea: 279196 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -525271039
+Read GPS Data: 4 time: 2023 sea: 279156 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -485949439
+Read GPS Data: 4 time: 2023 sea: 279101 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -459735039
+Read GPS Data: 6 time: 2023 sea: 279062 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -420413439
+Read GPS Data: 6 time: 2023 sea: 278989 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -394199039
+Read GPS Data: 7 time: 2023 sea: 278945 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -354877439
+Read GPS Data: 9 time: 2023 sea: 278885 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -328663039
+Read GPS Data: 12 time: 2023 sea: 278827 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -289341439
+Read GPS Data: 19 time: 2023 sea: 278784 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -263127039
+Read GPS Data: 5 time: 2023 sea: 277289 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 601948161 debug: 0 0 22 0
+Read GPS Data: 12 time: 2023 sea: 277245 debug: 0 0 0 0 1 debug pt.2: 0 0 48 0 fix: 628162561 debug: 0 0 24 0
+Read GPS Data: 11 time: 2023 sea: 277218 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 667484161 debug: 0 0 27 0
+Read GPS Data: 13 time: 2023 sea: 277179 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 693698561 debug: 0 0 30 0
+Read GPS Data: 15 time: 2023 sea: 277158 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 733020161 debug: 0 0 32 0
+Read GPS Data: 16 time: 2023 sea: 277128 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 759234561 debug: 0 0 35 0
+Read GPS Data: 16 time: 2023 sea: 277109 debug: 1 1 0 0 1 debug pt.2: 0 0 49 0 fix: 798556161 debug: 0 0 37 0
+Read GPS Data: 21 time: 2023 sea: 277087 debug: 0 1 0 0 0 debug pt.2: 0 0 49 0 fix: 824770561 debug: 0 0 40 0
+Read GPS Data: 23 time: 2023 sea: 277074 debug: 1 1 0 0 0 debug pt.2: 0 0 49 0 fix: 864092161 debug: 0 0 42 0
+Read GPS Data: 30 time: 2023 sea: 277057 debug: 0 1 0 0 1 debug pt.2: 0 0 49 0 fix: 890306561 debug: 0 0 45 0
+Read GPS Data: 35 time: 2023 sea: 277047 debug: 1 1 0 0 1 debug pt.2: 0 0 49 0 fix: 929628161 debug: 0 0 47 0
+Read GPS Data: 32 time: 2023 sea: 277043 debug: 0 1 0 0 0 debug pt.2: 0 0 49 0 fix: 955842561 debug: 0 0 50 0
+Read GPS Data: 30 time: 2023 sea: 277042 debug: 1 1 0 0 0 debug pt.2: 0 0 49 0 fix: 995164161 debug: 0 0 52 0
+Read GPS Data: 28 time: 2023 sea: 277046 debug: 0 1 0 0 1 debug pt.2: 0 0 49 0 fix: 1021378561 debug: 0 0 55 0
+Read GPS Data: 28 time: 2023 sea: 277047 debug: 0 1 0 1 1 debug pt.2: 0 0 49 0 fix: 1060700161 debug: 0 0 57 0
+Read GPS Data: 29 time: 2023 sea: 277047 debug: 0 1 0 0 0 debug pt.2: 0 0 49 0 fix: 1086914561 debug: 0 0 60 0
+Read GPS Data: 31 time: 2023 sea: 277046 debug: 0 1 0 1 0 debug pt.2: 0 0 49 0 fix: 1126236161 debug: 0 0 62 0
+Read GPS Data: 33 time: 2023 sea: 277041 debug: 0 1 0 0 1 debug pt.2: 0 0 49 0 fix: 1152450561 debug: 0 0 65 0
+Read GPS Data: 35 time: 2023 sea: 277034 debug: 0 1 0 1 1 debug pt.2: 0 0 49 0 fix: 1191772161 debug: 0 0 67 0
+Read GPS Data: 32 time: 2023 sea: 277031 debug: 0 1 0 0 0 debug pt.2: 0 0 49 0 fix: 1217986561 debug: 0 0 70 0
+Read GPS Data: 29 time: 2023 sea: 277024 debug: 0 1 0 1 0 debug pt.2: 0 0 49 0 fix: 1257308161 debug: 0 0 72 0
+Read GPS Data: 25 time: 2023 sea: 277016 debug: 0 1 0 0 1 debug pt.2: 0 0 49 0 fix: 1283522561 debug: 0 0 75 0
+Read GPS Data: 25 time: 2023 sea: 277008 debug: 0 1 0 1 1 debug pt.2: 0 0 49 0 fix: 1322844161 debug: 0 0 77 0
+Read GPS Data: 27 time: 2023 sea: 277000 debug: 0 1 0 0 0 debug pt.2: 0 0 49 0 fix: 1349058561 debug: 0 0 80 0
+Read GPS Data: 28 time: 2023 sea: 276991 debug: 0 1 0 1 0 debug pt.2: 0 0 49 0 fix: 1388380161 debug: 0 0 82 0
+Read GPS Data: 29 time: 2023 sea: 276985 debug: 0 1 0 0 1 debug pt.2: 0 0 49 0 fix: 1414594561 debug: 0 0 85 0
+Read GPS Data: 31 time: 2023 sea: 276978 debug: 0 1 0 1 1 debug pt.2: 0 0 49 0 fix: 1453916161 debug: 0 0 87 0
+Read GPS Data: 30 time: 2023 sea: 276975 debug: 0 1 0 0 0 debug pt.2: 0 0 49 0 fix: 1480130561 debug: 0 0 90 0
+Read GPS Data: 25 time: 2023 sea: 276970 debug: 0 1 0 1 0 debug pt.2: 0 0 49 0 fix: 1519452161 debug: 0 0 92 0
+Read GPS Data: 20 time: 2023 sea: 276970 debug: 0 1 0 0 1 debug pt.2: 0 0 49 0 fix: 1545666561 debug: 0 0 95 0
+Read GPS Data: 18 time: 2023 sea: 276971 debug: 0 1 0 1 1 debug pt.2: 0 0 49 0 fix: 1584988161 debug: 0 0 97 0
+Read GPS Data: 18 time: 2023 sea: 276971 debug: 0 1 0 0 0 debug pt.2: 0 0 49 0 fix: 1611202561 debug: 0 0 100 0
+Read GPS Data: 11 time: 2023 sea: 276968 debug: 0 1 0 1 0 debug pt.2: 0 0 49 0 fix: 1650524161 debug: 0 0 102 0
+Read GPS Data: 4 time: 2023 sea: 276967 debug: 0 1 0 0 1 debug pt.2: 0 0 49 0 fix: 1676738561 debug: 0 0 105 0
+Read GPS Data: 6 time: 2023 sea: 276964 debug: 0 0 0 0 0 debug pt.2: 0 0 49 0 fix: 1716060161 debug: 0 0 107 0
+Read GPS Data: 13 time: 2023 sea: 276960 debug: 0 1 0 0 0 debug pt.2: 100 0 49 0 fix: 1742274561 debug: 1 0 110 0
+Read GPS Data: 19 time: 2023 sea: 276955 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 1781596161 debug: 1 0 112 0
+Read GPS Data: 25 time: 2023 sea: 276948 debug: 0 1 0 0 1 debug pt.2: 100 0 49 0 fix: 1807810561 debug: 1 0 115 0
+Read GPS Data: 32 time: 2023 sea: 276936 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 1847132161 debug: 1 0 118 0
+Read GPS Data: 37 time: 2023 sea: 276925 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1886453761 debug: 1 0 121 0
+Read GPS Data: 34 time: 2023 sea: 276906 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 1912668161 debug: 1 0 123 0
+Read GPS Data: 36 time: 2023 sea: 276892 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1951989761 debug: 1 0 126 0
+Read GPS Data: 41 time: 2023 sea: 276872 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 1978204161 debug: 1 0 128 0
+Read GPS Data: 43 time: 2023 sea: 276860 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2017525761 debug: 1 0 131 0
+Read GPS Data: 37 time: 2023 sea: 276842 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 2043740161 debug: 1 0 133 0
+Read GPS Data: 35 time: 2023 sea: 276832 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 2083061761 debug: 1 0 136 0
+Read GPS Data: 31 time: 2023 sea: 276819 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2109276161 debug: 1 0 139 0
+Read GPS Data: 31 time: 2023 sea: 276809 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2146369535 debug: 1 0 141 0
+Read GPS Data: 33 time: 2023 sea: 276797 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2120155135 debug: 1 0 144 0
+Read GPS Data: 32 time: 2023 sea: 276789 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2080833535 debug: 1 0 146 0
+Read GPS Data: 33 time: 2023 sea: 276773 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2054619135 debug: 1 0 149 0
+Read GPS Data: 30 time: 2023 sea: 276763 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2015297535 debug: 1 0 151 0
+Read GPS Data: 27 time: 2023 sea: 276752 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1989083135 debug: 1 0 154 0
+Read GPS Data: 26 time: 2023 sea: 276744 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1949761535 debug: 1 0 156 0
+Read GPS Data: 24 time: 2023 sea: 276729 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1923547135 debug: 1 0 159 0
+Read GPS Data: 24 time: 2023 sea: 276718 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1884225535 debug: 1 0 161 0
+Read GPS Data: 26 time: 2023 sea: 276702 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1858011135 debug: 1 0 164 0
+Read GPS Data: 25 time: 2023 sea: 276692 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1818689535 debug: 1 0 166 0
+Read GPS Data: 26 time: 2023 sea: 276677 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1792475135 debug: 1 0 169 0
+Read GPS Data: 30 time: 2023 sea: 276663 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1753153535 debug: 1 0 171 0
+Read GPS Data: 31 time: 2023 sea: 276655 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1726939135 debug: 1 0 174 0
+Read GPS Data: 30 time: 2023 sea: 276638 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1687617535 debug: 1 0 176 0
+Read GPS Data: 26 time: 2023 sea: 276625 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1661403135 debug: 1 0 179 0
+Read GPS Data: 22 time: 2023 sea: 276607 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1622081535 debug: 1 0 181 0
+Read GPS Data: 18 time: 2023 sea: 276596 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1595867135 debug: 1 0 184 0
+Read GPS Data: 18 time: 2023 sea: 276579 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1556545535 debug: 1 0 186 0
+Read GPS Data: 14 time: 2023 sea: 276568 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1530331135 debug: 1 0 189 0
+Read GPS Data: 11 time: 2023 sea: 276558 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1491009535 debug: 1 0 191 0
+Read GPS Data: 9 time: 2023 sea: 276551 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1464795135 debug: 1 0 194 0
+Read GPS Data: 7 time: 2023 sea: 276541 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1425473535 debug: 1 0 196 0
+Read GPS Data: 8 time: 2023 sea: 276533 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1399259135 debug: 1 0 199 0
+Read GPS Data: 11 time: 2023 sea: 276522 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1359937535 debug: 1 0 201 0
+Read GPS Data: 12 time: 2023 sea: 276514 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1333723135 debug: 1 0 204 0
+Read GPS Data: 14 time: 2023 sea: 276502 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1294401535 debug: 1 0 206 0
+Read GPS Data: 13 time: 2023 sea: 276492 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1268187135 debug: 1 0 209 0
+Read GPS Data: 11 time: 2023 sea: 276477 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1228865535 debug: 1 0 211 0
+Read GPS Data: 5 time: 2023 sea: 276467 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1202651135 debug: 2 0 214 0
+Read GPS Data: 7 time: 2023 sea: 276449 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: -1163329535 debug: 2 0 216 0
+Read GPS Data: 7 time: 2023 sea: 276437 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1137115135 debug: 2 0 219 0
+Read GPS Data: 3 time: 2023 sea: 276419 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1097793535 debug: 2 0 222 0
+Read GPS Data: 1 time: 2023 sea: 276407 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1071579135 debug: 2 0 225 0
+Read GPS Data: 5 time: 2023 sea: 276390 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1032257535 debug: 2 0 227 0
+Read GPS Data: 9 time: 2023 sea: 276376 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -992935935 debug: 2 0 230 0
+Read GPS Data: 10 time: 2023 sea: 276356 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -966721535 debug: 2 0 232 0
+Read GPS Data: 10 time: 2023 sea: 276345 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -927399935 debug: 2 0 235 0
+Read GPS Data: 5 time: 2023 sea: 276328 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -901185535 debug: 2 0 237 0
+Read GPS Data: 5 time: 2023 sea: 276318 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -861863935 debug: 2 0 240 0
+Read GPS Data: 8 time: 2023 sea: 276306 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -835649535 debug: 2 0 242 0
+Read GPS Data: 12 time: 2023 sea: 276300 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -796327935 debug: 2 0 245 0
+Read GPS Data: 14 time: 2023 sea: 276293 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -770113535 debug: 2 0 248 0
+Read GPS Data: 16 time: 2023 sea: 276290 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -730791935 debug: 2 0 250 0
+Read GPS Data: 16 time: 2023 sea: 276284 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -704577535 debug: 2 0 253 0
+Read GPS Data: 14 time: 2023 sea: 276278 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -665255935 debug: 2 0 255 0
+Read GPS Data: 11 time: 2023 sea: 276272 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -639041535 debug: 2 0 258 0
+Read GPS Data: 5 time: 2023 sea: 276265 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -599719935 debug: 2 0 260 0
+Read GPS Data: 4 time: 2023 sea: 276257 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -573505535 debug: 2 0 263 0
+Read GPS Data: 3 time: 2023 sea: 276255 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -534183935 debug: 2 0 265 0
+Read GPS Data: 4 time: 2023 sea: 276244 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -507969535 debug: 2 0 268 0
+Read GPS Data: 5 time: 2023 sea: 276232 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -468647935 debug: 2 0 270 0
+Read GPS Data: 10 time: 2023 sea: 276211 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -442433535 debug: 2 0 273 0
+Read GPS Data: 13 time: 2023 sea: 276196 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -403111935 debug: 2 0 275 0
+Read GPS Data: 17 time: 2023 sea: 276186 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -376897535 debug: 2 0 278 0
+Read GPS Data: 18 time: 2023 sea: 276176 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -337575935 debug: 2 0 280 0
+Read GPS Data: 17 time: 2023 sea: 276171 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -311361535 debug: 2 0 283 0
+Read GPS Data: 18 time: 2023 sea: 276164 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -272039935 debug: 2 0 285 0
+Read GPS Data: 16 time: 2023 sea: 276159 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -245825535 debug: 2 0 288 0
+Read GPS Data: 18 time: 2023 sea: 276156 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -206503935 debug: 2 0 290 0
+Read GPS Data: 24 time: 2023 sea: 276151 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -180289535 debug: 2 0 293 0
+Read GPS Data: 25 time: 2023 sea: 276145 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -140967935 debug: 2 0 295 0
+Read GPS Data: 26 time: 2023 sea: 276143 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -114753535 debug: 2 0 298 0
+Read GPS Data: 26 time: 2023 sea: 276138 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -75431935 debug: 2 0 300 0
+Read GPS Data: 22 time: 2023 sea: 276134 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -49217535 debug: 2 0 303 0
+Read GPS Data: 14 time: 2023 sea: 276125 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -9895935 debug: 2 0 305 0
+Read GPS Data: 4 time: 2023 sea: 276120 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 16318465 debug: 2 0 308 0
+Read GPS Data: 6 time: 2023 sea: 276111 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 55640065 debug: 2 0 310 0
+Read GPS Data: 10 time: 2023 sea: 276103 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 81854465 debug: 2 0 313 0
+Read GPS Data: 11 time: 2023 sea: 276096 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: 121176065 debug: 2 0 315 0
+Read GPS Data: 17 time: 2023 sea: 276094 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 147390465 debug: 2 0 318 0
+Read GPS Data: 18 time: 2023 sea: 276086 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 186712065 debug: 2 0 320 0
+Read GPS Data: 14 time: 2023 sea: 276078 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 212926465 debug: 2 0 323 0
+Read GPS Data: 7 time: 2023 sea: 276063 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 252248065 debug: 2 0 325 0
+Read GPS Data: 3 time: 2023 sea: 276051 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 278462465 debug: 2 0 328 0
+Read GPS Data: 2 time: 2023 sea: 276031 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 317784065 debug: 2 0 330 0
+Read GPS Data: 4 time: 2023 sea: 276021 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 340328449 debug: 2 0 333 0
+Read GPS Data: 2 time: 2023 sea: 276028 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 383320065 debug: 2 0 335 0
+Read GPS Data: 14 time: 2023 sea: 276060 debug: 1 1 0 0 0 debug pt.2: 100 0 49 0 fix: 422641665 debug: 2 0 338 0
+Read GPS Data: 18 time: 2023 sea: 276089 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 448856065 debug: 2 0 340 0
+Read GPS Data: 19 time: 2023 sea: 276106 debug: 1 1 0 0 1 debug pt.2: 100 0 49 0 fix: 488177665 debug: 2 0 343 0
+Read GPS Data: 15 time: 2023 sea: 276127 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 514392065 debug: 2 0 345 0
+Read GPS Data: 12 time: 2023 sea: 276138 debug: 1 1 0 0 0 debug pt.2: 100 0 49 0 fix: 553713665 debug: 2 0 348 0
+Read GPS Data: 11 time: 2023 sea: 276154 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 579928065 debug: 2 0 350 0
+Read GPS Data: 13 time: 2023 sea: 276163 debug: 1 1 0 0 1 debug pt.2: 100 0 49 0 fix: 619249665 debug: 2 0 353 0
+Read GPS Data: 12 time: 2023 sea: 276177 debug: 0 1 0 0 0 debug pt.2: 100 0 49 0 fix: 645464065 debug: 2 0 356 0
+Read GPS Data: 14 time: 2023 sea: 276186 debug: 1 1 0 0 0 debug pt.2: 100 0 49 0 fix: 684785665 debug: 2 0 358 0
+Read GPS Data: 16 time: 2023 sea: 276208 debug: 0 1 0 0 1 debug pt.2: 100 0 49 0 fix: 711000065 debug: 2 0 361 0
+Read GPS Data: 15 time: 2023 sea: 276229 debug: 1 1 0 0 1 debug pt.2: 100 0 49 0 fix: 750321665 debug: 2 0 363 0
+Read GPS Data: 14 time: 2023 sea: 276266 debug: 0 1 0 0 0 debug pt.2: 100 0 49 0 fix: 776536065 debug: 2 0 366 0
+Read GPS Data: 15 time: 2023 sea: 276292 debug: 1 1 0 0 0 debug pt.2: 100 0 49 0 fix: 815857665 debug: 2 0 368 0
+Read GPS Data: 16 time: 2023 sea: 276329 debug: 0 1 0 0 1 debug pt.2: 100 0 49 0 fix: 842072065 debug: 2 0 371 0
+Read GPS Data: 16 time: 2023 sea: 276354 debug: 1 1 0 0 1 debug pt.2: 100 0 49 0 fix: 881393665 debug: 2 0 373 0
+Read GPS Data: 21 time: 2023 sea: 276400 debug: 0 1 0 0 0 debug pt.2: 100 0 49 0 fix: 907608065 debug: 2 0 376 0
+Read GPS Data: 25 time: 2023 sea: 276447 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 946929665 debug: 2 0 378 0
+Read GPS Data: 31 time: 2023 sea: 276481 debug: 0 1 0 0 1 debug pt.2: 100 0 49 0 fix: 973144065 debug: 2 0 381 0
+Read GPS Data: 30 time: 2023 sea: 276530 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: 1012465665 debug: 2 0 383 0
+Read GPS Data: 31 time: 2023 sea: 276559 debug: 0 1 0 0 0 debug pt.2: 100 0 49 0 fix: 1038680065 debug: 2 0 386 0
+Read GPS Data: 32 time: 2023 sea: 276595 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 1078001665 debug: 2 0 388 0
+Read GPS Data: 33 time: 2023 sea: 276616 debug: 0 1 0 0 1 debug pt.2: 100 0 49 0 fix: 1104216065 debug: 2 0 391 0
+Read GPS Data: 32 time: 2023 sea: 276645 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: 1143537665 debug: 2 0 393 0
+Read GPS Data: 32 time: 2023 sea: 276666 debug: 0 1 0 0 0 debug pt.2: 100 0 49 0 fix: 1169752065 debug: 2 0 396 0
+Read GPS Data: 35 time: 2023 sea: 276701 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 1209073665 debug: 2 0 398 0
+Read GPS Data: 38 time: 2023 sea: 276725 debug: 0 1 0 0 1 debug pt.2: 100 0 49 0 fix: 1235288065 debug: 2 0 401 0
+Read GPS Data: 40 time: 2023 sea: 276758 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: 1274609665 debug: 2 0 403 0
+Read GPS Data: 35 time: 2023 sea: 276782 debug: 0 1 0 0 0 debug pt.2: 100 0 49 0 fix: 1300824065 debug: 2 0 406 0
+Read GPS Data: 32 time: 2023 sea: 276811 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 1340145665 debug: 2 0 408 0
+Read GPS Data: 29 time: 2023 sea: 276828 debug: 0 1 0 0 1 debug pt.2: 100 0 49 0 fix: 1366360065 debug: 2 0 411 0
+Read GPS Data: 26 time: 2023 sea: 276855 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: 1405681665 debug: 2 0 413 0
+Read GPS Data: 22 time: 2023 sea: 276874 debug: 0 1 0 0 0 debug pt.2: 100 0 49 0 fix: 1431896065 debug: 2 0 416 0
+Read GPS Data: 22 time: 2023 sea: 276897 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 1471217665 debug: 2 0 419 0
+Read GPS Data: 22 time: 2023 sea: 276905 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1497432065 debug: 2 0 422 0
+Read GPS Data: 25 time: 2023 sea: 276916 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: 1536753665 debug: 2 0 424 0
+Read GPS Data: 29 time: 2023 sea: 276923 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1562968065 debug: 2 0 427 0
+Read GPS Data: 29 time: 2023 sea: 276925 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 1602289665 debug: 2 0 429 0
+Read GPS Data: 27 time: 2023 sea: 276929 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1628504065 debug: 2 0 432 0
+Read GPS Data: 24 time: 2023 sea: 276935 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 1667825665 debug: 2 0 434 0
+Read GPS Data: 19 time: 2023 sea: 276936 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1694040065 debug: 2 0 437 0
+Read GPS Data: 9 time: 2023 sea: 276937 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 1733361665 debug: 2 0 439 0
+Read GPS Data: 6 time: 2023 sea: 276943 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1772683265 debug: 2 0 442 0
+Read GPS Data: 5 time: 2023 sea: 276950 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 1798897665 debug: 2 0 444 0
+Read GPS Data: 8 time: 2023 sea: 276953 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1838219265 debug: 2 0 447 0
+Read GPS Data: 5 time: 2023 sea: 276961 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 1864433665 debug: 2 0 449 0
+Read GPS Data: 5 time: 2023 sea: 276967 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1903755265 debug: 2 0 452 0
+Read GPS Data: 5 time: 2023 sea: 276979 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 1929969665 debug: 2 0 454 0
+Read GPS Data: 7 time: 2023 sea: 276991 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1969291265 debug: 2 0 457 0
+Read GPS Data: 5 time: 2023 sea: 277010 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 1995505665 debug: 2 0 459 0
+Read GPS Data: 3 time: 2023 sea: 277021 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 2034827265 debug: 2 0 462 0
+Read GPS Data: 0 time: 2023 sea: 277036 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2061041665 debug: 2 0 465 0
+Read GPS Data: 1 time: 2023 sea: 277043 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 2100363265 debug: 2 0 467 0
+Read GPS Data: 6 time: 2023 sea: 277053 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 2126577665 debug: 2 0 470 0
+Read GPS Data: 7 time: 2023 sea: 277057 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2129068031 debug: 2 0 472 0
+Read GPS Data: 6 time: 2023 sea: 277057 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2102853631 debug: 2 0 475 0
+Read GPS Data: 5 time: 2023 sea: 277054 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -2063532031 debug: 2 0 477 0
+Read GPS Data: 9 time: 2023 sea: 277048 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -2037317631 debug: 2 0 480 0
+Read GPS Data: 11 time: 2023 sea: 277044 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1997996031 debug: 2 0 482 0
+Read GPS Data: 11 time: 2023 sea: 277035 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1971781631 debug: 2 0 485 0
+Read GPS Data: 13 time: 2023 sea: 277026 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1932460031 debug: 2 0 487 0
+Read GPS Data: 16 time: 2023 sea: 277023 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1906245631 debug: 2 0 490 0
+Read GPS Data: 20 time: 2023 sea: 277018 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1866924031 debug: 2 0 492 0
+Read GPS Data: 31 time: 2023 sea: 277016 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1840709631 debug: 2 0 495 0
+Read GPS Data: 32 time: 2023 sea: 277009 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1801388031 debug: 2 0 497 0
+Read GPS Data: 30 time: 2023 sea: 277005 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1775173631 debug: 2 0 500 0
+Read GPS Data: 29 time: 2023 sea: 277003 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1735852031 debug: 2 0 502 0
+Read GPS Data: 26 time: 2023 sea: 277007 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1709637631 debug: 2 0 505 0
+Read GPS Data: 25 time: 2023 sea: 277024 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1670316031 debug: 2 0 507 0
+Read GPS Data: 28 time: 2023 sea: 277036 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1644101631 debug: 2 0 510 0
+Read GPS Data: 30 time: 2023 sea: 277056 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1604780031 debug: 3 0 512 0
+Read GPS Data: 33 time: 2023 sea: 277067 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1578565631 debug: 3 0 515 0
+Read GPS Data: 35 time: 2023 sea: 277073 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1539244031 debug: 3 0 517 0
+Read GPS Data: 33 time: 2023 sea: 277078 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1513029631 debug: 3 0 520 0
+Read GPS Data: 32 time: 2023 sea: 277085 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1473708031 debug: 3 0 523 0
+Read GPS Data: 29 time: 2023 sea: 277089 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1447493631 debug: 3 0 526 0
+Read GPS Data: 25 time: 2023 sea: 277094 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1408172031 debug: 3 0 528 0
+Read GPS Data: 20 time: 2023 sea: 277097 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1381957631 debug: 3 0 531 0
+Read GPS Data: 17 time: 2023 sea: 277100 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1342636031 debug: 3 0 533 0
+Read GPS Data: 14 time: 2023 sea: 277096 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1316421631 debug: 3 0 536 0
+Read GPS Data: 7 time: 2023 sea: 277089 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1277100031 debug: 3 0 538 0
+Read GPS Data: 8 time: 2023 sea: 277087 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1250885631 debug: 3 0 541 0
+Read GPS Data: 13 time: 2023 sea: 277085 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1211564031 debug: 3 0 543 0
+Read GPS Data: 15 time: 2023 sea: 277086 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1189019647 debug: 3 0 546 0
+Read GPS Data: 19 time: 2023 sea: 277084 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1146028031 debug: 3 0 548 0
+Read GPS Data: 20 time: 2023 sea: 277083 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1106706431 debug: 3 0 551 0
+Read GPS Data: 15 time: 2023 sea: 277080 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1080492031 debug: 3 0 553 0
+Read GPS Data: 11 time: 2023 sea: 277078 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1041170431 debug: 3 0 556 0
+Read GPS Data: 8 time: 2023 sea: 277071 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1014956031 debug: 3 0 558 0
+Read GPS Data: 8 time: 2023 sea: 277065 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -975634431 debug: 3 0 561 0
+Read GPS Data: 6 time: 2023 sea: 277065 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -949420031 debug: 3 0 563 0
+Read GPS Data: 5 time: 2023 sea: 277060 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -910098431 debug: 3 0 566 0
+Read GPS Data: 12 time: 2023 sea: 277053 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -883884031 debug: 3 0 569 0
+Read GPS Data: 15 time: 2023 sea: 277048 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -844562431 debug: 3 0 571 0
+Read GPS Data: 16 time: 2023 sea: 277036 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -818348031 debug: 3 0 574 0
+Read GPS Data: 13 time: 2023 sea: 277027 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -779026431 debug: 3 0 576 0
+Read GPS Data: 5 time: 2023 sea: 277014 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -752812031 debug: 3 0 579 0
+Read GPS Data: 5 time: 2023 sea: 277008 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -713490431 debug: 3 0 581 0
+Read GPS Data: 10 time: 2023 sea: 276993 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -687276031 debug: 3 0 584 0
+Read GPS Data: 8 time: 2023 sea: 276980 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -647954431 debug: 3 0 586 0
+Read GPS Data: 7 time: 2023 sea: 276967 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -621740031 debug: 3 0 589 0
+Read GPS Data: 9 time: 2023 sea: 276962 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -582418431 debug: 3 0 591 0
+Read GPS Data: 11 time: 2023 sea: 276962 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -556204031 debug: 3 0 594 0
+Read GPS Data: 12 time: 2023 sea: 276961 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -516882431 debug: 3 0 596 0
+Read GPS Data: 8 time: 2023 sea: 276956 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -490668031 debug: 3 0 599 0
+Read GPS Data: 6 time: 2023 sea: 276950 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -451346431 debug: 3 0 601 0
+Read GPS Data: 3 time: 2023 sea: 276947 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -425132031 debug: 3 0 604 0
+Read GPS Data: 6 time: 2023 sea: 276946 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -385810431 debug: 3 0 606 0
+Read GPS Data: 7 time: 2023 sea: 276945 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -359596031 debug: 3 0 609 0
+Read GPS Data: 5 time: 2023 sea: 276937 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -320274431 debug: 3 0 611 0
+Read GPS Data: 11 time: 2023 sea: 276930 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -294060031 debug: 3 0 614 0
+Read GPS Data: 17 time: 2023 sea: 276927 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -254738431 debug: 3 0 616 0
+Read GPS Data: 26 time: 2023 sea: 276925 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -228524031 debug: 3 0 619 0
+Read GPS Data: 29 time: 2023 sea: 276926 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -189202431 debug: 3 0 621 0
+Read GPS Data: 31 time: 2023 sea: 276927 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -162988031 debug: 3 0 624 0
+Read GPS Data: 30 time: 2023 sea: 276930 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -123666431 debug: 3 0 626 0
+Read GPS Data: 29 time: 2023 sea: 276934 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -97452031 debug: 3 0 629 0
+Read GPS Data: 30 time: 2023 sea: 276936 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -58130431 debug: 3 0 631 0
+Read GPS Data: 30 time: 2023 sea: 276937 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -31916031 debug: 3 0 634 0
+Read GPS Data: 28 time: 2023 sea: 276935 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: 7405569 debug: 3 0 636 0
+Read GPS Data: 21 time: 2023 sea: 276931 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 33619969 debug: 3 0 639 0
+Read GPS Data: 15 time: 2023 sea: 276926 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 72941569 debug: 3 0 641 0
+Read GPS Data: 12 time: 2023 sea: 276926 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 99155969 debug: 3 0 644 0
+Read GPS Data: 10 time: 2023 sea: 276927 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 138477569 debug: 3 0 646 0
+Read GPS Data: 11 time: 2023 sea: 276932 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 164691969 debug: 3 0 649 0
+Read GPS Data: 15 time: 2023 sea: 276939 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 204013569 debug: 3 0 651 0
+Read GPS Data: 16 time: 2023 sea: 276948 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 243335169 debug: 3 0 654 0
+Read GPS Data: 19 time: 2023 sea: 276961 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 269549569 debug: 3 0 656 0
+Read GPS Data: 22 time: 2023 sea: 276970 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 308871169 debug: 3 0 659 0
+Read GPS Data: 28 time: 2023 sea: 276985 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 335085569 debug: 3 0 661 0
+Read GPS Data: 30 time: 2023 sea: 276999 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 374407169 debug: 3 0 664 0
+Read GPS Data: 33 time: 2023 sea: 277018 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 400621569 debug: 3 0 666 0
+Read GPS Data: 36 time: 2023 sea: 277031 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 439943169 debug: 3 0 669 0
+Read GPS Data: 34 time: 2023 sea: 277058 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 466157569 debug: 3 0 672 0
+Read GPS Data: 31 time: 2023 sea: 277077 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 505479169 debug: 3 0 674 0
+Read GPS Data: 29 time: 2023 sea: 277116 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 531693569 debug: 3 0 677 0
+Read GPS Data: 30 time: 2023 sea: 277152 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 571015169 debug: 3 0 679 0
+Read GPS Data: 8 time: 2023 sea: 277711 debug: 0 0 0 0 1 debug pt.2: 0 0 48 0 fix: 1409875969 debug: 0 0 22 0 pass: 0 0 23 0
+Read GPS Data: 6 time: 2023 sea: 277702 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1436090369 debug: 0 0 25 0 pass: 0 0 25 0
+Read GPS Data: 8 time: 2023 sea: 277679 debug: 0 0 0 0 0 debug pt.2: 0 0 49 0 fix: 1475411969 debug: 0 0 27 0 pass: 0 0 28 0
+Read GPS Data: 11 time: 2023 sea: 277664 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 1497956353 debug: 0 0 30 0 pass: 0 0 30 0
+Read GPS Data: 14 time: 2023 sea: 277649 debug: 0 0 0 0 1 debug pt.2: 0 0 49 0 fix: 1540947969 debug: 0 0 32 0 pass: 0 0 33 0
+Read GPS Data: 17 time: 2023 sea: 277637 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1580269569 debug: 0 0 35 0 pass: 0 0 35 0
+Read GPS Data: 22 time: 2023 sea: 277620 debug: 0 0 0 0 0 debug pt.2: 0 0 49 0 fix: 1606483969 debug: 0 0 37 0 pass: 0 0 38 0
+Read GPS Data: 25 time: 2023 sea: 277612 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 1645805569 debug: 0 0 40 0 pass: 0 0 40 0
+Read GPS Data: 25 time: 2023 sea: 277602 debug: 0 0 0 0 1 debug pt.2: 0 0 49 0 fix: 1672019969 debug: 0 0 42 0 pass: 0 0 43 0
+Read GPS Data: 25 time: 2023 sea: 277594 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1711341569 debug: 0 0 45 0 pass: 0 0 45 0
+Read GPS Data: 23 time: 2023 sea: 277573 debug: 0 0 0 0 0 debug pt.2: 0 0 49 0 fix: 1737555969 debug: 0 0 47 0 pass: 0 0 48 0
+Read GPS Data: 22 time: 2023 sea: 277556 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 1776877569 debug: 0 0 50 0 pass: 0 0 50 0
+Read GPS Data: 21 time: 2023 sea: 277530 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1803091969 debug: 0 0 53 0 pass: 0 0 53 0
+Read GPS Data: 21 time: 2023 sea: 277511 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1842413569 debug: 0 0 55 0 pass: 0 0 55 0
+Read GPS Data: 18 time: 2023 sea: 277482 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 1868627969 debug: 0 0 58 0 pass: 0 0 58 0
+Read GPS Data: 20 time: 2023 sea: 277460 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 1907949569 debug: 0 0 60 0 pass: 0 0 60 0
+Read GPS Data: 19 time: 2023 sea: 277428 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1934163969 debug: 0 0 63 0 pass: 0 0 63 0
+Read GPS Data: 16 time: 2023 sea: 277407 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1973485569 debug: 0 0 65 0 pass: 0 0 65 0
+Read GPS Data: 14 time: 2023 sea: 277367 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 1999699969 debug: 0 0 68 0 pass: 0 0 68 0
+Read GPS Data: 11 time: 2023 sea: 277336 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 2039021569 debug: 0 0 70 0 pass: 0 0 70 0
+Read GPS Data: 7 time: 2023 sea: 277285 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 2065235969 debug: 0 0 73 0 pass: 0 0 73 0
+Read GPS Data: 7 time: 2023 sea: 277246 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 2104557569 debug: 0 0 75 0 pass: 0 0 75 0
+Read GPS Data: 6 time: 2023 sea: 277185 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 2130771969 debug: 0 0 78 0 pass: 0 0 78 0
+Read GPS Data: 7 time: 2023 sea: 277125 debug: 0 1 0 1 0 debug pt.2: 0 0 49 0 fix: -2124873727 debug: 0 0 80 0 pass: 0 0 81 0
+Read GPS Data: 12 time: 2023 sea: 277082 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -2098659327 debug: 0 0 83 0 pass: 0 0 83 0
+Read GPS Data: 11 time: 2023 sea: 277005 debug: 0 1 0 1 1 debug pt.2: 0 0 49 0 fix: -2059337727 debug: 0 0 85 0 pass: 0 0 86 0
+Read GPS Data: 5 time: 2023 sea: 276958 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -2033123327 debug: 0 0 88 0 pass: 0 0 88 0
+Read GPS Data: 4 time: 2023 sea: 276880 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -1993801727 debug: 1 0 90 0 pass: 0 0 91 0
+Read GPS Data: 2 time: 2023 sea: 276831 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1967587327 debug: 1 0 93 0 pass: 0 0 93 0
+Read GPS Data: 2 time: 2023 sea: 276772 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -1928265727 debug: 1 0 95 0 pass: 0 0 96 0
+Read GPS Data: 3 time: 2023 sea: 276730 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1902051327 debug: 1 0 99 0 pass: 0 0 98 0
+Read GPS Data: 4 time: 2023 sea: 276674 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1862729727 debug: 1 0 101 0 pass: 0 0 101 0
+Read GPS Data: 5 time: 2023 sea: 276639 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1836515327 debug: 1 0 104 0 pass: 0 0 103 0
+Read GPS Data: 4 time: 2023 sea: 276594 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1797193727 debug: 1 0 106 0 pass: 0 0 106 0
+Read GPS Data: 4 time: 2023 sea: 276569 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1770979327 debug: 1 0 109 0 pass: 0 0 108 0
+Read GPS Data: 1 time: 2023 sea: 276530 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1731657727 debug: 1 0 111 0 pass: 0 0 111 0
+Read GPS Data: 1 time: 2023 sea: 276507 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1705443327 debug: 1 0 114 0 pass: 0 0 113 0
+Read GPS Data: 1 time: 2023 sea: 276475 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: -1666121727 debug: 1 0 116 0 pass: 0 0 116 0
+Read GPS Data: 2 time: 2023 sea: 276452 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1639907327 debug: 1 0 119 0 pass: 0 0 118 0
+Read GPS Data: 2 time: 2023 sea: 276403 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: -1600585727 debug: 1 0 121 0 pass: 0 0 121 0
+Read GPS Data: 1 time: 2023 sea: 276368 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1574371327 debug: 1 0 124 0 pass: 0 0 123 0
+Read GPS Data: 1 time: 2023 sea: 276320 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1535049727 debug: 1 0 126 0 pass: 0 0 126 0
+Read GPS Data: 3 time: 2023 sea: 276293 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1508835327 debug: 1 0 129 0 pass: 0 0 128 0
+Read GPS Data: 1 time: 2023 sea: 276253 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1469513727 debug: 1 0 131 0 pass: 0 0 131 0
+Read GPS Data: 2 time: 2023 sea: 276223 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1443299327 debug: 1 0 134 0 pass: 0 0 133 0
+Read GPS Data: 1 time: 2023 sea: 276170 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1403977727 debug: 1 0 136 0 pass: 0 0 136 0
+Read GPS Data: 4 time: 2023 sea: 276135 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1381433343 debug: 1 0 139 0 pass: 0 0 138 0
+Read GPS Data: 4 time: 2023 sea: 276086 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1338441727 debug: 1 0 141 0 pass: 0 0 141 0
+Read GPS Data: 3 time: 2023 sea: 276056 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1299120127 debug: 1 0 144 0 pass: 0 0 143 0
+Read GPS Data: 3 time: 2023 sea: 275996 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1272905727 debug: 1 0 146 0 pass: 0 0 146 0
+Read GPS Data: 5 time: 2023 sea: 275953 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1233584127 debug: 1 0 149 0 pass: 0 0 148 0
+Read GPS Data: 8 time: 2023 sea: 275890 debug: 0 0 0 0 1 debug pt.2: 100 0 50 0 fix: -1207369727 debug: 1 0 151 0 pass: 0 0 151 0
+Read GPS Data: 7 time: 2023 sea: 275845 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1168048127 debug: 1 0 154 0 pass: 0 0 153 0
+Read GPS Data: 6 time: 2023 sea: 275772 debug: 0 0 0 0 0 debug pt.2: 100 0 50 0 fix: -1141833727 debug: 1 0 156 0 pass: 0 0 156 0
+Read GPS Data: 7 time: 2023 sea: 275726 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1102512127 debug: 1 0 159 0 pass: 0 0 158 0
+Read GPS Data: 10 time: 2023 sea: 275656 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1076297727 debug: 1 0 162 0 pass: 0 0 162 0
+Read GPS Data: 10 time: 2023 sea: 275605 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -1036976127 debug: 1 0 164 0 pass: 0 0 164 0
+Read GPS Data: 11 time: 2023 sea: 275529 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -1010761727 debug: 1 0 167 0 pass: 0 0 167 0
+Read GPS Data: 13 time: 2023 sea: 275480 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -971440127 debug: 1 0 169 0 pass: 0 0 169 0
+Read GPS Data: 13 time: 2023 sea: 275402 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -945225727 debug: 1 0 172 0 pass: 0 0 172 0
+Read GPS Data: 14 time: 2023 sea: 275341 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: -905904127 debug: 1 0 174 0 pass: 0 0 174 0
+Read GPS Data: 15 time: 2023 sea: 275243 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -879689727 debug: 1 0 177 0 pass: 0 0 177 0
+Read GPS Data: 17 time: 2023 sea: 275178 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: -840368127 debug: 1 0 179 0 pass: 0 0 179 0
+Read GPS Data: 14 time: 2023 sea: 275091 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -814153727 debug: 1 0 182 0 pass: 0 0 182 0
+Read GPS Data: 11 time: 2023 sea: 275019 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -774832127 debug: 1 0 184 0 pass: 0 0 185 0
+Read GPS Data: 10 time: 2023 sea: 274969 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -748617727 debug: 1 0 187 0 pass: 0 0 187 0
+Read GPS Data: 10 time: 2023 sea: 274902 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -709296127 debug: 1 0 189 0 pass: 0 0 190 0
+Read GPS Data: 10 time: 2023 sea: 274859 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -683081727 debug: 1 0 192 0 pass: 0 0 192 0
+Read GPS Data: 7 time: 2023 sea: 274809 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -643760127 debug: 1 0 194 0 pass: 0 0 195 0
+Read GPS Data: 8 time: 2023 sea: 274765 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -617545727 debug: 1 0 197 0 pass: 0 0 197 0
+Read GPS Data: 11 time: 2023 sea: 274696 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -578224127 debug: 1 0 199 0 pass: 0 0 200 0
+Read GPS Data: 12 time: 2023 sea: 274650 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -552009727 debug: 1 0 202 0 pass: 0 0 202 0
+Read GPS Data: 13 time: 2023 sea: 274586 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -512688127 debug: 1 0 204 0 pass: 0 0 205 0
+Read GPS Data: 12 time: 2023 sea: 274537 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -486473727 debug: 1 0 207 0 pass: 0 0 207 0
+Read GPS Data: 11 time: 2023 sea: 274468 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -447152127 debug: 1 0 209 0 pass: 0 0 210 0
+Read GPS Data: 10 time: 2023 sea: 274429 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -420937727 debug: 1 0 212 0 pass: 0 0 212 0
+Read GPS Data: 8 time: 2023 sea: 274363 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -381616127 debug: 1 0 214 0 pass: 0 0 215 0
+Read GPS Data: 8 time: 2023 sea: 274315 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -355401727 debug: 1 0 217 0 pass: 0 0 217 0
+Read GPS Data: 9 time: 2023 sea: 274252 debug: 0 1 0 1 0 debug pt.2: 100 0 49 0 fix: -316080127 debug: 1 0 219 0 pass: 0 0 220 0
+Read GPS Data: 9 time: 2023 sea: 274206 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -289865727 debug: 1 0 222 0 pass: 0 0 222 0
+Read GPS Data: 11 time: 2023 sea: 274138 debug: 0 1 0 1 1 debug pt.2: 100 0 49 0 fix: -250544127 debug: 1 0 224 0 pass: 0 0 225 0
+Read GPS Data: 11 time: 2023 sea: 274104 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -224329727 debug: 1 0 227 0 pass: 0 0 227 0
+Read GPS Data: 12 time: 2023 sea: 274052 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: -185008127 debug: 1 0 229 0 pass: 0 0 230 0
+Read GPS Data: 14 time: 2023 sea: 274023 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -158793727 debug: 1 0 232 0 pass: 0 0 232 0
+Read GPS Data: 13 time: 2023 sea: 273982 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: -119472127 debug: 1 0 234 0 pass: 0 0 235 0
+Read GPS Data: 11 time: 2023 sea: 273953 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: -93257727 debug: 1 0 237 0 pass: 0 0 237 0
+Read GPS Data: 13 time: 2023 sea: 273915 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: -53936127 debug: 1 0 239 0 pass: 0 0 240 0
+Read GPS Data: 14 time: 2023 sea: 273897 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: -14614527 debug: 1 0 242 0 pass: 0 0 242 0
+Read GPS Data: 18 time: 2023 sea: 273870 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 11599873 debug: 1 0 244 0 pass: 0 0 245 0
+Read GPS Data: 20 time: 2023 sea: 273849 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 50921473 debug: 1 0 247 0 pass: 0 0 247 0
+Read GPS Data: 23 time: 2023 sea: 273831 debug: 0 0 0 0 1 debug pt.2: 100 0 49 0 fix: 77135873 debug: 1 0 249 0 pass: 0 0 250 0
+Read GPS Data: 15 time: 2023 sea: 273820 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 116457473 debug: 1 0 252 0 pass: 0 0 252 0
+Read GPS Data: 14 time: 2023 sea: 273809 debug: 0 0 0 0 0 debug pt.2: 100 0 49 0 fix: 142671873 debug: 1 0 254 0 pass: 0 0 255 0
+Read GPS Data: 10 time: 2023 sea: 273810 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 181993473 debug: 1 0 257 0 pass: 0 0 257 0
+Read GPS Data: 7 time: 2023 sea: 273819 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 208207873 debug: 1 0 260 0 pass: 0 0 260 0
+Read GPS Data: 6 time: 2023 sea: 273823 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 247529473 debug: 1 0 262 0 pass: 0 0 262 0
+Read GPS Data: 6 time: 2023 sea: 273829 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 273743873 debug: 1 0 265 0 pass: 0 0 265 0
+Read GPS Data: 7 time: 2023 sea: 273837 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 313065473 debug: 1 0 267 0 pass: 0 0 267 0
+Read GPS Data: 4 time: 2023 sea: 273848 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 339279873 debug: 1 0 270 0 pass: 0 0 270 0
+Read GPS Data: 5 time: 2023 sea: 273861 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 378601473 debug: 1 0 273 0 pass: 0 0 272 0
+Read GPS Data: 2 time: 2023 sea: 273884 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 404815873 debug: 1 0 276 0 pass: 0 0 275 0
+Read GPS Data: 2 time: 2023 sea: 273905 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 444137473 debug: 1 0 278 0 pass: 0 0 277 0
+Read GPS Data: 2 time: 2023 sea: 273942 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 470351873 debug: 1 0 281 0 pass: 0 0 280 0
+Read GPS Data: 3 time: 2023 sea: 273967 debug: 1 1 0 0 1 debug pt.2: 100 0 50 0 fix: 509673473 debug: 1 0 283 0 pass: 0 0 282 0
+Read GPS Data: 5 time: 2023 sea: 274015 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 535887873 debug: 1 0 286 0 pass: 0 0 285 0
+Read GPS Data: 4 time: 2023 sea: 274060 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 575209473 debug: 1 0 288 0 pass: 0 0 288 0
+Read GPS Data: 3 time: 2023 sea: 274089 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 601423873 debug: 1 0 291 0 pass: 0 0 290 0
+Read GPS Data: 2 time: 2023 sea: 274133 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 640745473 debug: 1 0 293 0 pass: 0 0 293 0
+Read GPS Data: 2 time: 2023 sea: 274161 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 666959873 debug: 1 0 296 0 pass: 0 0 295 0
+Read GPS Data: 3 time: 2023 sea: 274201 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 706281473 debug: 1 0 298 0 pass: 0 0 298 0
+Read GPS Data: 4 time: 2023 sea: 274229 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 732495873 debug: 1 0 301 0 pass: 0 0 300 0
+Read GPS Data: 4 time: 2023 sea: 274271 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 771817473 debug: 1 0 303 0 pass: 0 0 303 0
+Read GPS Data: 6 time: 2023 sea: 274301 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 798031873 debug: 1 0 306 0 pass: 0 0 305 0
+Read GPS Data: 7 time: 2023 sea: 274344 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 837353473 debug: 1 0 308 0 pass: 0 0 308 0
+Read GPS Data: 5 time: 2023 sea: 274379 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 863567873 debug: 1 0 311 0 pass: 0 0 310 0
+Read GPS Data: 3 time: 2023 sea: 274434 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 902889473 debug: 1 0 313 0 pass: 0 0 313 0
+Read GPS Data: 2 time: 2023 sea: 274474 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 929103873 debug: 1 0 316 0 pass: 0 0 315 0
+Read GPS Data: 2 time: 2023 sea: 274542 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 968425473 debug: 1 0 318 0 pass: 0 0 318 0
+Read GPS Data: 4 time: 2023 sea: 274589 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 994639873 debug: 1 0 321 0 pass: 0 0 320 0
+Read GPS Data: 3 time: 2023 sea: 274660 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1033961473 debug: 1 0 323 0 pass: 0 0 323 0
+Read GPS Data: 4 time: 2023 sea: 274705 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1060175873 debug: 1 0 326 0 pass: 0 0 325 0
+Read GPS Data: 4 time: 2023 sea: 274771 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1099497473 debug: 1 0 328 0 pass: 0 0 328 0
+Read GPS Data: 2 time: 2023 sea: 274813 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1125711873 debug: 1 0 331 0 pass: 0 0 330 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 0 time: 0 sea: 0 debug: 0 0 0 0 0 debug pt.2: 0 0 0 0 fix: 0 debug: 0 0 0 0 pass: 0 0 0 0
+Read GPS Data: 4 time: 2023 sea: 278321 debug: 0 1 0 0 0 debug pt.2: 0 0 51 0 fix: -1111425023 debug: 0 0 23 0 pass: 0 0 22 0
+Read GPS Data: 7 time: 2023 sea: 278367 debug: 0 1 0 1 0 debug pt.2: 0 0 50 0 fix: -1072103423 debug: 0 0 25 0 pass: 0 0 25 0
+Read GPS Data: 9 time: 2023 sea: 278398 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -1045889023 debug: 0 0 28 0 pass: 0 0 27 0
+Read GPS Data: 16 time: 2023 sea: 278451 debug: 0 1 0 1 1 debug pt.2: 0 0 50 0 fix: -1006567423 debug: 0 0 30 0 pass: 0 0 30 0
+Read GPS Data: 13 time: 2023 sea: 278488 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -980353023 debug: 0 0 33 0 pass: 0 0 32 0
+Read GPS Data: 8 time: 2023 sea: 278547 debug: 0 0 0 0 1 debug pt.2: 0 0 50 0 fix: -941031423 debug: 0 0 35 0 pass: 0 0 35 0
+Read GPS Data: 8 time: 2023 sea: 278589 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -914817023 debug: 0 0 38 0 pass: 0 0 37 0
+Read GPS Data: 6 time: 2023 sea: 278640 debug: 0 0 0 0 0 debug pt.2: 0 0 50 0 fix: -875495423 debug: 0 0 40 0 pass: 0 0 40 0
+Read GPS Data: 4 time: 2023 sea: 278674 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -849281023 debug: 0 0 43 0 pass: 0 0 42 0
+Read GPS Data: 6 time: 2023 sea: 278720 debug: 0 0 0 0 1 debug pt.2: 0 0 50 0 fix: -809959423 debug: 0 0 45 0 pass: 0 0 45 0
+Read GPS Data: 6 time: 2023 sea: 278747 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -787415039 debug: 0 0 48 0 pass: 0 0 47 0
+Read GPS Data: 6 time: 2023 sea: 278773 debug: 0 0 0 0 0 debug pt.2: 0 0 50 0 fix: -744423423 debug: 0 0 50 0 pass: 0 0 50 0
+Read GPS Data: 6 time: 2023 sea: 278786 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -705101823 debug: 0 0 53 0 pass: 0 0 52 0
+Read GPS Data: 7 time: 2023 sea: 278809 debug: 0 0 0 0 1 debug pt.2: 0 0 50 0 fix: -678887423 debug: 0 0 55 0 pass: 0 0 55 0
+Read GPS Data: 7 time: 2023 sea: 278822 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: -639565823 debug: 0 0 58 0 pass: 0 0 57 0
+Read GPS Data: 3 time: 2023 sea: 278837 debug: 0 0 0 0 0 debug pt.2: 0 0 50 0 fix: -613351423 debug: 0 0 60 0 pass: 0 0 60 0
+Read GPS Data: 3 time: 2023 sea: 278848 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: -574029823 debug: 0 0 63 0 pass: 0 0 62 0
+Read GPS Data: 1 time: 2023 sea: 278854 debug: 0 0 0 0 1 debug pt.2: 0 0 50 0 fix: -547815423 debug: 0 0 65 0 pass: 0 0 65 0
+Read GPS Data: 3 time: 2023 sea: 278853 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: -508493823 debug: 0 0 68 0 pass: 0 0 67 0
+Read GPS Data: 5 time: 2023 sea: 278852 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -482279423 debug: 0 0 71 0 pass: 0 0 70 0
+Read GPS Data: 6 time: 2023 sea: 278853 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: -442957823 debug: 0 0 73 0 pass: 0 0 72 0
+Read GPS Data: 6 time: 2023 sea: 278839 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -416743423 debug: 0 0 76 0 pass: 0 0 75 0
+Read GPS Data: 7 time: 2023 sea: 278829 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: -377421823 debug: 0 0 78 0 pass: 0 0 77 0
+Read GPS Data: 4 time: 2023 sea: 278815 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -351207423 debug: 0 0 81 0 pass: 0 0 80 0
+Read GPS Data: 1 time: 2023 sea: 278808 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: -311885823 debug: 0 0 83 0 pass: 0 0 82 0
+Read GPS Data: 1 time: 2023 sea: 278805 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -285671423 debug: 0 0 86 0 pass: 0 0 85 0
+Read GPS Data: 1 time: 2023 sea: 278796 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: -246349823 debug: 0 0 88 0 pass: 0 0 87 0
+Read GPS Data: 6 time: 2023 sea: 278780 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -220135423 debug: 0 0 91 0 pass: 0 0 90 0
+Read GPS Data: 7 time: 2023 sea: 278769 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: -180813823 debug: 0 0 93 0 pass: 0 0 92 0
+Read GPS Data: 9 time: 2023 sea: 278743 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -154599423 debug: 0 0 96 0 pass: 0 0 95 0
+Read GPS Data: 11 time: 2023 sea: 278713 debug: 0 1 0 1 1 debug pt.2: 0 0 50 0 fix: -115277823 debug: 0 0 98 0 pass: 0 0 98 0
+Read GPS Data: 8 time: 2023 sea: 278689 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: -89063423 debug: 0 0 101 0 pass: 0 0 100 0
+Read GPS Data: 7 time: 2023 sea: 278660 debug: 0 1 0 1 0 debug pt.2: 0 0 50 0 fix: -49741823 debug: 0 0 103 0 pass: 0 0 103 0
+Read GPS Data: 7 time: 2023 sea: 278629 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: -23527423 debug: 0 0 106 0 pass: 0 0 105 0
+Read GPS Data: 8 time: 2023 sea: 278584 debug: 0 1 0 1 1 debug pt.2: 0 0 50 0 fix: 15794177 debug: 0 0 108 0 pass: 0 0 108 0
+Read GPS Data: 7 time: 2023 sea: 278559 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 42008577 debug: 0 0 111 0 pass: 0 0 110 0
+Read GPS Data: 9 time: 2023 sea: 278527 debug: 0 1 0 1 0 debug pt.2: 0 0 50 0 fix: 81330177 debug: 0 0 113 0 pass: 0 0 113 0
+Read GPS Data: 11 time: 2023 sea: 278503 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 107544577 debug: 0 0 116 0 pass: 0 0 115 0
+Read GPS Data: 13 time: 2023 sea: 278459 debug: 0 1 0 1 1 debug pt.2: 0 0 50 0 fix: 146866177 debug: 0 0 118 0 pass: 0 0 118 0
+Read GPS Data: 16 time: 2023 sea: 278431 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 173080577 debug: 0 0 121 0 pass: 0 0 120 0
+Read GPS Data: 14 time: 2023 sea: 278391 debug: 0 1 0 1 0 debug pt.2: 0 0 50 0 fix: 212402177 debug: 0 0 123 0 pass: 0 0 123 0
+Read GPS Data: 11 time: 2023 sea: 278371 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 238616577 debug: 0 0 126 0 pass: 0 0 125 0
+Read GPS Data: 9 time: 2023 sea: 278339 debug: 0 1 0 1 1 debug pt.2: 0 0 50 0 fix: 277938177 debug: 0 0 128 0 pass: 0 0 128 0
+Read GPS Data: 8 time: 2023 sea: 278322 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 304152577 debug: 0 0 131 0 pass: 0 0 130 0
+Read GPS Data: 5 time: 2023 sea: 278302 debug: 0 1 0 1 0 debug pt.2: 0 0 50 0 fix: 343474177 debug: 0 0 133 0 pass: 0 0 133 0
+Read GPS Data: 6 time: 2023 sea: 278292 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 369688577 debug: 0 0 136 0 pass: 0 0 135 0
+Read GPS Data: 6 time: 2023 sea: 278289 debug: 0 1 0 1 1 debug pt.2: 0 0 50 0 fix: 409010177 debug: 0 0 138 0 pass: 0 0 138 0
+Read GPS Data: 9 time: 2023 sea: 278288 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 435224577 debug: 0 0 141 0 pass: 0 0 140 0
+Read GPS Data: 8 time: 2023 sea: 278275 debug: 0 1 0 1 0 debug pt.2: 0 0 50 0 fix: 474546177 debug: 0 0 143 0 pass: 0 0 143 0
+Read GPS Data: 6 time: 2023 sea: 278263 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 500760577 debug: 0 0 146 0 pass: 0 0 145 0
+Read GPS Data: 2 time: 2023 sea: 278253 debug: 0 1 0 1 1 debug pt.2: 0 0 50 0 fix: 540082177 debug: 0 0 148 0 pass: 0 0 148 0
+Read GPS Data: 3 time: 2023 sea: 278247 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 566296577 debug: 0 0 151 0 pass: 0 0 150 0
+Read GPS Data: 4 time: 2023 sea: 278232 debug: 0 0 0 0 1 debug pt.2: 0 0 50 0 fix: 605618177 debug: 0 0 153 0 pass: 0 0 153 0
+Read GPS Data: 1 time: 2023 sea: 278219 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 631832577 debug: 0 0 156 0 pass: 0 0 155 0
+Read GPS Data: 3 time: 2023 sea: 278192 debug: 0 0 0 0 0 debug pt.2: 0 0 50 0 fix: 671154177 debug: 0 0 158 0 pass: 0 0 158 0
+Read GPS Data: 4 time: 2023 sea: 278175 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 693698561 debug: 0 0 161 0 pass: 0 0 160 0
+Read GPS Data: 6 time: 2023 sea: 278151 debug: 0 0 0 0 1 debug pt.2: 0 0 50 0 fix: 736690177 debug: 0 0 163 0 pass: 0 0 163 0
+Read GPS Data: 5 time: 2023 sea: 278133 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 776011777 debug: 0 0 166 0 pass: 0 0 165 0
+Read GPS Data: 1 time: 2023 sea: 278101 debug: 0 0 0 0 0 debug pt.2: 0 0 50 0 fix: 802226177 debug: 0 0 168 0 pass: 0 0 168 0
+Read GPS Data: 3 time: 2023 sea: 278080 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 841547777 debug: 0 0 171 0 pass: 0 0 170 0
+Read GPS Data: 9 time: 2023 sea: 278056 debug: 0 0 0 0 1 debug pt.2: 0 0 50 0 fix: 867762177 debug: 0 0 173 0 pass: 0 0 173 0
+Read GPS Data: 6 time: 2023 sea: 278042 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 907083777 debug: 0 0 176 0 pass: 0 0 175 0
+Read GPS Data: 2 time: 2023 sea: 278032 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 933298177 debug: 0 0 179 0 pass: 0 0 178 0
+Read GPS Data: 2 time: 2023 sea: 278024 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 972619777 debug: 0 0 181 0 pass: 0 0 180 0
+Read GPS Data: 1 time: 2023 sea: 278007 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 998834177 debug: 0 0 184 0 pass: 0 0 183 0
+Read GPS Data: 2 time: 2023 sea: 277996 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1038155777 debug: 0 0 186 0 pass: 0 0 185 0
+Read GPS Data: 3 time: 2023 sea: 277978 debug: 0 1 0 0 0 debug pt.2: 0 0 50 0 fix: 1064370177 debug: 0 0 189 0 pass: 0 0 188 0
+Read GPS Data: 5 time: 2023 sea: 277966 debug: 1 1 0 0 0 debug pt.2: 0 0 50 0 fix: 1103691777 debug: 0 0 191 0 pass: 0 0 190 0
+Read GPS Data: 6 time: 2023 sea: 277956 debug: 0 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1129906177 debug: 0 0 194 0 pass: 0 0 193 0
+Read GPS Data: 6 time: 2023 sea: 277944 debug: 1 1 0 0 1 debug pt.2: 0 0 50 0 fix: 1169227777 debug: 0 0 196 0 pass: 0 0 195 0
+Read GPS Data: 6 time: 2023 sea: 277927 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1195442177 debug: 1 0 199 0 pass: 0 0 198 0
+Read GPS Data: 1 time: 2023 sea: 277921 debug: 1 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1234763777 debug: 1 0 201 0 pass: 0 0 200 0
+Read GPS Data: 2 time: 2023 sea: 277917 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1260978177 debug: 1 0 204 0 pass: 0 0 203 0
+Read GPS Data: 4 time: 2023 sea: 277920 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1300299777 debug: 1 0 207 0 pass: 0 0 206 0
+Read GPS Data: 3 time: 2023 sea: 277924 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1326514177 debug: 1 0 210 0 pass: 0 0 208 0
+Read GPS Data: 1 time: 2023 sea: 277920 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1365835777 debug: 1 0 212 0 pass: 0 0 211 0
+Read GPS Data: 9 time: 2023 sea: 277916 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1392050177 debug: 1 0 215 0 pass: 0 0 213 0
+Read GPS Data: 12 time: 2023 sea: 277916 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1431371777 debug: 1 0 217 0 pass: 0 0 216 0
+Read GPS Data: 14 time: 2023 sea: 277924 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1457586177 debug: 1 0 220 0 pass: 0 0 218 0
+Read GPS Data: 15 time: 2023 sea: 277935 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1496907777 debug: 2 0 222 0 pass: 0 0 221 0
+Read GPS Data: 10 time: 2023 sea: 277942 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1523122177 debug: 2 0 225 0 pass: 0 0 223 0
+Read GPS Data: 8 time: 2023 sea: 277969 debug: 0 1 0 1 1 debug pt.2: 100 0 50 0 fix: 1562443777 debug: 2 0 227 0 pass: 0 0 226 0
+Read GPS Data: 3 time: 2023 sea: 277992 debug: 0 1 0 0 0 debug pt.2: 100 0 50 0 fix: 1588658177 debug: 2 0 231 0 pass: 0 0 228 0
+Read GPS Data: 2 time: 2023 sea: 278027 debug: 0 1 0 1 0 debug pt.2: 100 0 50 0 fix: 1627979777 debug: 2 0 233 0 pass: 0 0 231 0
+Read GPS Data: 1 time: 2023 sea: 278055 debug: 0 1 0 0 1 debug pt.2: 100 0 50 0 fix: 1654194177 debug: 2 0 236 0 pass: 0 0 233 0
+R
