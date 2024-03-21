@@ -67,6 +67,99 @@ TIM_HandleTypeDef htim4;
 TIM_HandleTypeDef htim15;
 
 /* USER CODE BEGIN PV */
+#define LCD_WIDTH 240
+#define LCD_HEIGHT 320
+
+typedef enum{
+  CMD_MADCTL_MY  = 0x80,
+  CMD_MADCTL_MX  = 0x40,
+  CMD_MADCTL_MV  = 0x20,
+  CMD_MADCTL_ML  = 0x10,
+  CMD_MADCTL_RGB = 0x00,
+  CMD_MADCTL_BGR = 0x08,
+  CMD_MADCTL_MH  = 0x04,
+  CMD_NOP        = 0x00,
+  CMD_SWRESET    = 0x01,
+  CMD_RDDID      = 0x04,
+  CMD_RDDST      = 0x09,
+  CMD_SLPIN      = 0x10,
+  CMD_SLPOUT     = 0x11,
+  CMD_PTLON      = 0x12,
+  CMD_NORON      = 0x13,
+  CMD_INVOFF     = 0x20,
+  CMD_INVON      = 0x21,
+  CMD_GAMSET     = 0x26,
+  CMD_DISPOFF    = 0x28,
+  CMD_DISPON     = 0x29,
+  CMD_CASET      = 0x2A,
+  CMD_RASET      = 0x2B,
+  CMD_RAMWR      = 0x2C,
+  CMD_RAMRD      = 0x2E,
+  CMD_PTLAR      = 0x30,
+  CMD_MADCTL     = 0x36,
+  CMD_IDMOFF     = 0x38,
+  CMD_IDMON      = 0x39,
+  CMD_COLMOD     = 0x3A,
+  CMD_RAMCTRL    = 0xB0,
+  CMD_FRMCTR1    = 0xB1,
+  CMD_RGBCTRL    = 0xB1,
+  CMD_FRMCTR2    = 0xB2,
+  CMD_PORCTRL    = 0xB2,
+  CMD_FRMCTR3    = 0xB3,
+  CMD_FRCTRL1    = 0xB3,
+  CMD_INVCTR     = 0xB4,
+  CMD_PARCTRL    = 0xB5,
+  CMD_DISSET5    = 0xB6,
+  CMD_GCTRL      = 0xB7,
+  CMD_VCOMS      = 0xBB,
+  CMD_PWCTR1     = 0xC0,
+  CMD_LCMCTRL    = 0xC0,
+  CMD_PWCTR2     = 0xC1,
+  CMD_IDSET      = 0xC1,
+  CMD_PWCTR3     = 0xC2,
+  CMD_VDVVRHEN   = 0xC2,
+  CMD_PWCTR4     = 0xC3,
+  CMD_VRHS       = 0xC3,
+  CMD_PWCTR5     = 0xC4,
+  CMD_VDVS       = 0xC4,
+  CMD_VMCTR1     = 0xC5,
+  CMD_VCMOFSET   = 0xC5,
+  CMD_FRCTRL2    = 0xC6,
+  CMD_PWCTRL1    = 0xD0,
+  CMD_RDID1      = 0xDA,
+  CMD_RDID2      = 0xDB,
+  CMD_RDID3      = 0xDC,
+  CMD_RDID4      = 0xDD,
+  CMD_PWCTR6     = 0xFC,
+  CMD_GMCTRP1    = 0xE0,
+  CMD_GMCTRN1    = 0xE1,
+  CMD_COLOR_MODE_16bit = 0x55,
+  CMD_COLOR_MODE_18bit = 0x66,
+}lcd_cmds;
+
+#define LCD_ROTATION_CMD (CMD_MADCTL_MX | CMD_MADCTL_MY | CMD_MADCTL_RGB)
+
+const uint8_t init_cmd[] = {
+    0,  CMD_SLPOUT,
+    1,  CMD_COLMOD,  CMD_COLOR_MODE_16bit,
+    5,  CMD_PORCTRL, 0x0C, 0x0C, 0x00, 0x33, 0x33,   // Standard porch
+  //5,  CMD_PORCTRL, 0x01, 0x01, 0x00, 0x11, 0x11,   // Minimum porch (7% faster screen refresh rate)
+    1,  CMD_GCTRL,   0x35,                           // Gate Control, Default value
+    1,  CMD_VCOMS,   0x19,                           // VCOM setting 0.725v (default 0.75v for 0x20)
+    1,  CMD_LCMCTRL, 0X2C,                           // LCMCTRL, Default value
+    1,  CMD_VDVVRHEN,0x01,                           // VDV and VRH command Enable, Default value
+    1,  CMD_VRHS,    0x12,                           // VRH set, +-4.45v (default +-4.1v for 0x0B)
+    1,  CMD_VDVS,    0x20,                           // VDV set, Default value
+    1,  CMD_FRCTRL2, 0x0F,                           // Frame rate control in normal mode, Default refresh rate (60Hz)
+  //1,  CMD_FRCTRL2, 0x01,                           // Frame rate control in normal mode, Max refresh rate (111Hz)
+    2,  CMD_PWCTRL1, 0xA4, 0xA1,
+    1,  CMD_MADCTL,  LCD_ROTATION_CMD,
+    14, CMD_GMCTRP1, 0xD0, 0x04, 0x0D, 0x11, 0x13, 0x2B, 0x3F, 0x54, 0x4C, 0x18, 0x0D, 0x0B, 0x1F, 0x23,
+    14, CMD_GMCTRN1, 0xD0, 0x04, 0x0C, 0x11, 0x13, 0x2C, 0x3F, 0x44, 0x51, 0x2F, 0x1F, 0x1F, 0x20, 0x23,
+    0,  CMD_INVON,
+    0,  CMD_NORON
+};
+
 
 /* USER CODE END PV */
 
@@ -102,6 +195,86 @@ static void MX_USB_OTG_FS_USB_Init(void);
 #define SPI_CR1_OFFSET 0x00
 #define SPI_CR2_OFFSET 0x04
 
+static void LCD_WriteCommand(uint8_t *cmd, uint8_t argc)
+  {
+//    setSPI_Size(mode_8bit);
+//    LCD_PIN(LCD_DC,RESET);
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_8, 0); //DC
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_10, 0); //CS
+
+    HAL_SPI_Transmit(&hspi3, cmd, 1, HAL_MAX_DELAY);
+    if(argc){
+
+      HAL_GPIO_WritePin(GPIOE, GPIO_PIN_8, 1);
+      HAL_SPI_Transmit(&hspi3, (cmd+1), argc, HAL_MAX_DELAY);
+    }
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_10, 1); //CS
+  }
+
+void LCD_setPower(uint8_t power)
+{
+  uint8_t cmd[] = { (power ? CMD_DISPON /* TEON */ : CMD_DISPOFF /* TEOFF */) };
+  LCD_WriteCommand(cmd, sizeof(cmd)-1);
+}
+
+void LCD_init(void)
+{
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_10, 1); //CS
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 0); //RST
+  HAL_Delay(1);
+  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 1); //RST
+  HAL_Delay(200);
+  for(uint16_t i=0; i<sizeof(init_cmd); ){
+    LCD_WriteCommand((uint8_t*)&init_cmd[i+1], init_cmd[i]);
+    i += init_cmd[i]+2;
+  }
+
+  LCD_setPower(ENABLE);
+}
+
+
+
+  static void LCD_SetAddressWindow(int16_t x0, int16_t y0, int16_t x1, int16_t y1)
+  {
+    int16_t x_start = x0 /*+ LCD_X_SHIFT*/, x_end = x1 /*+ LCD_X_SHIFT*/;
+    int16_t y_start = y0 /*+ LCD_Y_SHIFT*/, y_end = y1 /*+ LCD_Y_SHIFT*/;
+
+    /* Column Address set */
+    {
+      uint8_t cmd[] = { CMD_CASET, x_start >> 8, x_start & 0xFF, x_end >> 8, x_end & 0xFF };
+      LCD_WriteCommand(cmd, sizeof(cmd)-1);
+    }
+    /* Row Address set */
+    {
+      uint8_t cmd[] = { CMD_RASET, y_start >> 8, y_start & 0xFF, y_end >> 8, y_end & 0xFF };
+      LCD_WriteCommand(cmd, sizeof(cmd)-1);
+    }
+    {
+    /* Write to RAM */
+      uint8_t cmd[] = { CMD_RAMWR };
+      LCD_WriteCommand(cmd, sizeof(cmd)-1);
+    }
+  }
+
+  void LCD_DrawPixel(int16_t x, int16_t y, uint16_t color)
+  {
+    if ((x < 0) || (x > LCD_WIDTH-1) ||
+       (y < 0) || (y > LCD_HEIGHT-1))
+      return;
+
+    uint8_t data[2] = {color >> 8, color & 0xFF};
+
+    LCD_SetAddressWindow(x, y, x, y);
+
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_8, 1); //DC
+
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_10, 0); //CS
+
+    HAL_SPI_Transmit(&hspi3, data, sizeof(data), HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_10, 1); //CS
+  }
+
+
 
 /* USER CODE END 0 */
 
@@ -112,6 +285,8 @@ static void MX_USB_OTG_FS_USB_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+
+
 
 	//SPI3 address 0x40003C00
 	//SPI3_CR1 offset is 0x00
@@ -167,7 +342,7 @@ int main(void)
   //	  int row3;
   //	  int row4;
   //  };
-
+	LCD_init();
   int RowChecker() {
     // struct ROW_RETURN row_return;
 
@@ -241,30 +416,102 @@ int main(void)
     weightCounter++;
   }
 
+
+
+
+
+
+
+
+//  uint8_t data[2] = {0xffc0 >> 8, 0xffc0 & 0xFF};
+//
+//  uint8_t cmd[] = { CMD_CASET, 50 >> 8, 50 & 0xFF, 50 >> 8, 50 & 0xFF };
+//  HAL_SPI_Transmit(&hspi3, cmd, 1, HAL_MAX_DELAY);
+//  HAL_SPI_Transmit(&hspi3, data, sizeof(data), HAL_MAX_DELAY);
+
+
+
+  for(int i =0; i < 240; i++){
+  		  for(int j = 0; j <320; j++){
+  	  LCD_DrawPixel(i, j, 0x0149);
+  		  }
+  	  }
+
+  	  for(int j = 120; j < 240; j++){
+  		LCD_DrawPixel(200, j, 0xffC0);
+  		LCD_DrawPixel(201, j, 0xffC0);
+  		LCD_DrawPixel(202, j, 0xffC0);
+  		LCD_DrawPixel(203, j, 0xffC0);
+  		LCD_DrawPixel(204, j, 0xffC0);
+  		LCD_DrawPixel(205, j, 0xffC0);
+  	  }
+
+  	for(int j = 120; j < 240; j++){
+  	  		LCD_DrawPixel(140, j, 0xffC0);
+  	  		LCD_DrawPixel(141, j, 0xffC0);
+  	  		LCD_DrawPixel(142, j, 0xffC0);
+  	  		LCD_DrawPixel(143, j, 0xffC0);
+  	  		LCD_DrawPixel(144, j, 0xffC0);
+  	  		LCD_DrawPixel(145, j, 0xffC0);
+  	  	  }
+  	for(int i =205; i>144; i--){
+  		LCD_DrawPixel(i, 180, 0xffC0);
+  		LCD_DrawPixel(i, 181, 0xffC0);
+  		LCD_DrawPixel(i, 182, 0xffC0);
+  		LCD_DrawPixel(i, 183, 0xffC0);
+  		  		LCD_DrawPixel(i, 184, 0xffC0);
+  		  		LCD_DrawPixel(i, 185, 0xffC0);
+  	}
+  	for(int j = 120; j < 200; j++){
+  	  	  		LCD_DrawPixel(120, j, 0xffC0);
+  	  	  		LCD_DrawPixel(121, j, 0xffC0);
+  	  	  		LCD_DrawPixel(122, j, 0xffC0);
+  	  	  		LCD_DrawPixel(123, j, 0xffC0);
+  	  	  		LCD_DrawPixel(124, j, 0xffC0);
+  	  	  		LCD_DrawPixel(125, j, 0xffC0);
+  	  	  	  }
+  	for(int j = 220; j < 226; j++){
+  	  	  	  		LCD_DrawPixel(120, j, 0xffC0);
+  	  	  	  		LCD_DrawPixel(121, j, 0xffC0);
+  	  	  	  		LCD_DrawPixel(122, j, 0xffC0);
+  	  	  	  		LCD_DrawPixel(123, j, 0xffC0);
+  	  	  	  		LCD_DrawPixel(124, j, 0xffC0);
+  	  	  	  		LCD_DrawPixel(125, j, 0xffC0);
+  	  	  	  	  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1) {
-    HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 0);
-    val = RowChecker();
-    KeyPadReturn(val, 4);
-    HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 1);
 
-    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 0);
-    val = RowChecker();
-    KeyPadReturn(val, 3);
-    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 1);
 
-    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, 0);
-    val = RowChecker();
-    KeyPadReturn(val, 2);
-    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, 1);
-
-    HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 0);
-    val = RowChecker();
-    KeyPadReturn(val, 1);
-    HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 1);
+//	  LCD_DrawPixel(50, 50, 0x001f);
+//	  LCD_DrawPixel(100, 100, 0xffC0);
+//	  LCD_DrawPixel(100, 100, 0x001f);
+//	  LCD_DrawPixel(1, 1, 0xffC0);
+//	  LCD_DrawPixel(1, 1, 0x001f);
+	  HAL_Delay(500);
+	  // COMMENTING BELOW FOR DISPLAY TESTING
+//    HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 0);
+//    val = RowChecker();
+//    KeyPadReturn(val, 4);
+//    HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 1);
+//
+//    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 0);
+//    val = RowChecker();
+//    KeyPadReturn(val, 3);
+//    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 1);
+//
+//    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, 0);
+//    val = RowChecker();
+//    KeyPadReturn(val, 2);
+//    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, 1);
+//
+//    HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 0);
+//    val = RowChecker();
+//    KeyPadReturn(val, 1);
+//    HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 1);
 
     /* USER CODE END WHILE */
 
@@ -893,7 +1140,7 @@ static void MX_SPI3_Init(void)
   hspi3.Instance = SPI3;
   hspi3.Init.Mode = SPI_MODE_MASTER;
   hspi3.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi3.Init.DataSize = SPI_DATASIZE_16BIT;
+  hspi3.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi3.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi3.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi3.Init.NSS = SPI_NSS_SOFT;
@@ -1263,7 +1510,8 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13|GPIO_PIN_14, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9|GPIO_PIN_11, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10
+                          |GPIO_PIN_11, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PA4 */
   GPIO_InitStruct.Pin = GPIO_PIN_4;
@@ -1285,6 +1533,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PE7 PE8 PE10 */
+  GPIO_InitStruct.Pin = GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_10;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PE9 PE11 */
   GPIO_InitStruct.Pin = GPIO_PIN_9|GPIO_PIN_11;
