@@ -477,6 +477,12 @@ int main(void) {
   }
   // End of "Hi" message
 
+//  for (int i = 0; i < 240; i++) {
+//      for (int j = 0; j < 320; j++) {
+//        LCD_DrawPixel(i, j, 0x0);
+//      }
+//    }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
