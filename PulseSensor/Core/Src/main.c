@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -31,7 +31,19 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define BUF_LENGTH 1500
+#define MAX_VOLT 3.2
+#define BUF_LENGTH 10
+#define SAMPLE_FREQ 50 		// 50 Hz sample frequency
+#define SAMPLE_PERIOD 20	// 20 ms sample frequency
+
+// for bool typedef
+#define true  1
+#define false 0
+
+// other
+#define DICROTIC_BUFFER IBI (IBI * 3) / 5
+#define THRESH_DEFAULT MAX_VOLT / 2.0f
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -46,6 +58,27 @@ TIM_HandleTypeDef htim16;
 
 /* USER CODE BEGIN PV */
 
+// general control variables
+typedef unsigned char bool;
+static unsigned char new_signal = false;
+
+static int BPM = 0;		// Beats Per Minute
+static int IBI = 100;	// Inter-Beat Interval (ms)
+static int rate[BUF_LENGTH];
+
+static float signal;	// signal output by the pulse sensor
+
+// variables used to determine BPM and IBI
+/* initialize thresh, pulse and trough amplitudes to half range */
+static float amp = MAX_VOLT / 10.0f;
+static float thresh = MAX_VOLT / 2.0f;
+static float peak_amp = MAX_VOLT / 2.0f;
+static float trough_amp = MAX_VOLT / 2.0f;
+static bool first_beat = true;		// first beat bool
+static bool second_beat = false; 	// second beat bool
+static bool pulse = false; 		// pulse recognized bool
+static int samples_since_last_beat = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -56,36 +89,102 @@ static void MX_TIM16_Init(void);
 /* USER CODE BEGIN PFP */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim);
 void read_ADC();
+void get_pulse();
 
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-static float pulse_sensor_buffer[500] = {0.0};
-static float* ps_buf_ptr = pulse_sensor_buffer;
-static uint8_t parse_buffer = 0;
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
-	if (parse_buffer) return;
+	if(new_signal) return;
 	read_ADC();
+	new_signal = true;
 }
 
 void read_ADC(void) {
 	uint32_t val;
-	float volts;
 
 	HAL_ADC_Start(&hadc1);
 	HAL_ADC_PollForConversion(&hadc1, 0xFFFFFFFF);
 	val = HAL_ADC_GetValue(&hadc1);
-	volts = val * 3.3f / 4096.0f;
-	*ps_buf_ptr = volts;
-	if ((ps_buf_ptr - pulse_sensor_buffer) == BUF_LENGTH - 1) {
-		ps_buf_ptr = pulse_sensor_buffer;
-		parse_buffer = 1;
-	} else {
-		++ps_buf_ptr;
-	}
+	signal = val * 3.3f / 4096.0f;
+}
+
+void get_pulse() {
+	++samples_since_last_beat;
+	int N = samples_since_last_beat * SAMPLE_PERIOD;
+	if (signal < thresh && N > (IBI / 5) * 3) { // avoid dicrotic noise by waiting 3/5 of last IBI
+	    if (signal < trough_amp) {                        // T is the trough
+	      trough_amp = signal;                            // keep track of lowest point in pulse wave
+	    }
+	  }
+
+	  if (signal > thresh && signal > peak_amp) {       // thresh condition helps avoid noise
+		  peak_amp = signal;                              // P is the peak
+	  }                                          // keep track of highest point in pulse wave
+
+	  //  NOW IT'S TIME TO LOOK FOR THE HEART BEAT
+	  // signal surges up in value every time there is a pulse
+	  if (N > 250) {                             // avoid high frequency noise
+	    if ( (signal > thresh) && (pulse == false) && (N > ((IBI / 5) * 3)) ) {
+	      pulse = true;                             // set the Pulse flag when we think there is a pulse
+	      IBI = N;    // measure time between beats in mS
+	      samples_since_last_beat = 0;
+
+	      if (second_beat) {                      // if this is the second beat, if secondBeat == TRUE
+	        second_beat = false;                    // clear secondBeat flag
+	        for (int i = 0; i < BUF_LENGTH; i++) {       // seed the running total to get a realisitic BPM at startup
+	          rate[i] = IBI;
+	        }
+	      }
+
+	      if (first_beat) {                       // if it's the first time we found a beat, if firstBeat == TRUE
+	    	first_beat = 0;                       // clear firstBeat flag
+	    	second_beat = 1;                      // set the second beat flag
+	        // IBI value is unreliable so discard it
+	        return;
+	      }
+
+
+	      // keep a running total of the last 10 IBI values
+	      int runningTotal = 0;                  // clear the runningTotal variable
+
+	      for (int i = 0; i < BUF_LENGTH - 1; i++) {          // shift data in the rate array
+	        rate[i] = rate[i + 1];                // and drop the oldest IBI value
+	        runningTotal += rate[i];              // add up the 9 oldest IBI values
+	      }
+
+	      rate[BUF_LENGTH - 1] = IBI;                          // add the latest IBI to the rate array
+	      runningTotal += rate[BUF_LENGTH - 1];                // add the latest IBI to runningTotal
+	      runningTotal /= BUF_LENGTH;                     // average the last 10 IBI values
+	      BPM = 60000 / runningTotal;             // how many beats can fit into a minute? that's BPM!
+	      //fadeLevel = MAX_FADE_LEVEL;             // If we're fading, re-light that LED.
+	    }
+	  }
+
+	  if (signal < thresh && pulse) {  // when the values are going down, the beat is over
+	    pulse = false;                         // reset the Pulse flag so we can do it again
+	    amp = peak_amp - trough_amp;                           // get amplitude of the pulse wave
+	    thresh = amp / 2 + trough_amp;                  // set thresh at 50% of the amplitude
+	    peak_amp = thresh;                            // reset these for next time
+	    trough_amp = thresh;
+	  }
+
+	  if (N > 2500) {                          // if 2.5 seconds go by without a beat
+	    thresh = THRESH_DEFAULT;                // set thresh default
+	    peak_amp = THRESH_DEFAULT;                               // set P default
+	    trough_amp = THRESH_DEFAULT;                               // set T default
+	    samples_since_last_beat = 0;          // bring the lastBeatTime up to date
+	    first_beat = true;                      // set these to avoid noise
+	    second_beat = false;                    // when we get the heartbeat back
+	    BPM = 0;
+	    IBI = 600;                  // 600ms per beat = 100 Beats Per Minute (BPM)
+	    pulse = false;
+	    amp = 100;                  // beat amplitude 1/10 of input range.
+
+	  }
 }
 /* USER CODE END 0 */
 
@@ -135,30 +234,9 @@ int main(void)
   int num_peaks;
   while (1)
   {
-    if (parse_buffer){
-
-    	buf_avg = 0;
-    	for (int i = 0; i < BUF_LENGTH; ++i) {
-    		buf_avg += pulse_sensor_buffer[i];
-    	}
-    	buf_avg /= (float)BUF_LENGTH;
-    	int peak_thresh = buf_avg * 1.3;
-
-    	uint8_t is_peak = 0;
-    	num_peaks = 0;
-    	for (int i = 0; i < BUF_LENGTH; ++i) {
-    		if (pulse_sensor_buffer[i] > peak_thresh && !is_peak) {
-    			num_peaks++;
-    			is_peak = 1;
-    		} else if (is_peak && pulse_sensor_buffer[i] <= peak_thresh) {
-    			is_peak = 0;
-    		}
-    	}
-
-    	bpm = num_peaks* 60/(BUF_LENGTH/50);
-
-    	/* allow adc readings again */
-    	parse_buffer = 0;
+    if (new_signal) {
+    	get_pulse();
+    	new_signal = false;
     }
   }
   /* USER CODE END 3 */
