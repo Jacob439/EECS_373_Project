@@ -103,9 +103,9 @@ static void setSPI_Size(int8_t size){
   }
 }
 
-
-#ifdef USE_DMA
 #define DMA_Min_Pixels    32             // Don't use DMA for small transfers? Setting this to 1 will always use DMA
+#ifdef USE_DMA
+//#define DMA_Min_Pixels    32             // Don't use DMA for small transfers? Setting this to 1 will always use DMA
 #define mem_increase      1
 #define mem_fixed         0
 
@@ -121,7 +121,7 @@ static void setDMAMemMode(uint8_t memInc, uint8_t size)
   if(config.dma_sz!=size || config.dma_mem_inc!=memInc){
     config.dma_sz =size;
     config.dma_mem_inc = memInc;
-    __HAL_DMA_DISABLE(LCD_HANDLE.hdmatx);;
+    __HAL_DMA_DISABLE(LCD_HANDLE.hdmatx);
 #ifdef DMA_SxCR_EN
     while((LCD_HANDLE.hdmatx->Instance->CR & DMA_SxCR_EN) != RESET);
 #elif defined DMA_CCR_EN
@@ -369,12 +369,13 @@ void LCD_FillPixels(uint32_t pixels, uint16_t color){
     LCD_WriteData((uint8_t*)&color, pixels);
   else{
 #endif
-    uint16_t fill[/*DMA_Min_Pixels*/32];                                                                // Use a pixel buffer for faster filling, removes overhead.
-    for(uint32_t t=0;t<(pixels/*<DMA_Min_Pixels ? pixels : DMA_Min_Pixels*/);t++){                     // Fill the buffer with the color
+	  // JACOB IF DMA ENABLE OR SOMETHING WEIRD WITH PIXEL WRITING, GO HERE AND JUST DO PIXEL
+    uint16_t fill[DMA_Min_Pixels];                                                                // Use a pixel buffer for faster filling, removes overhead.
+    for(uint32_t t=0;t<(pixels<DMA_Min_Pixels ? pixels : DMA_Min_Pixels);t++){                     // Fill the buffer with the color
       fill[t]=color;
     }
     while(pixels){                                                                                // Send 64 pixel blocks
-      uint32_t sz = (pixels/*<DMA_Min_Pixels ? pixels : DMA_Min_Pixels*/);
+      uint32_t sz = (pixels<DMA_Min_Pixels ? pixels : DMA_Min_Pixels);
       LCD_WriteData((uint8_t*)fill, sz);
       pixels-=sz;
     }
