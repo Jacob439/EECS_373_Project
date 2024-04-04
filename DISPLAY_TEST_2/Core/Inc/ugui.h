@@ -21,6 +21,9 @@
 #ifdef USE_FONT_arial_10X13
   extern UG_FONT FONT_arial_10X13[];
   #endif
+#ifdef USE_FONT_arial_25X28
+  extern UG_FONT FONT_arial_25X28[];
+  #endif
 
 #include <stdlib.h>
 #include "ugui_config.h"

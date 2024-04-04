@@ -1,0 +1,9 @@
+../Core/Src/joystick.c:12:7:JOYSTICK_INIT	8	static
+../Core/Src/joystick.c:15:7:writeRegister	40	static
+../Core/Src/joystick.c:33:7:setI2CAddress	16	static
+../Core/Src/joystick.c:48:11:readRegister	48	static
+../Core/Src/joystick.c:63:12:getHorizontal	16	static
+../Core/Src/joystick.c:70:12:getVertical	16	static
+../Core/Src/joystick.c:77:11:getButton	16	static
+../Core/Src/joystick.c:88:11:checkButton	16	static
+../Core/Src/joystick.c:104:11:threshold	16	static

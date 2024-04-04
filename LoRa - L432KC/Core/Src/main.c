@@ -92,10 +92,16 @@ int main(void)
   lora_sx1276 lora;
 
   // SX1276 compatible module connected to SPI1, NSS pin connected to GPIO with label LORA_NSS
-  uint8_t res = lora_init(&lora, &hspi1, GPIOB, GPIO_PIN_0, LORA_BASE_FREQUENCY_US);
+  uint8_t res = lora_init(&lora, &hspi1, GPIOB, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
   if (res != LORA_OK) {
 	// Initialization failed
   }
+
+  // Send packet can be as simple as
+    res = lora_send_packet(&lora, (uint8_t *)"test", 4);
+    if (res != LORA_OK) {
+      // Send failed
+    }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -103,6 +109,24 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	  // Receive buffer
+//	    uint8_t buffer[32];
+//	    // Put LoRa modem into continuous receive mode
+//	    lora_mode_receive_continuous(&lora);
+//	    // Wait for packet up to 10sec
+//	    uint8_t res;
+//	    uint8_t len = lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+//	    if (res != LORA_OK) {
+//	      // Receive failed
+//	    }
+//	    buffer[len] = 0;  // null terminate string to print it
+//	    printf("'%s'\n", buffer);
+	  res = lora_send_packet(&lora, (uint8_t *)"Jacob is cool", 13);
+	      if (res != LORA_OK) {
+	        // Send failed
+	      }
+	      HAL_Delay(20000);
+
 
     /* USER CODE BEGIN 3 */
   }

@@ -11,6 +11,7 @@
 // Operational frequency
 #define MHZ                                1000000LLU
 #define LORA_BASE_FREQUENCY_US             (915LLU*MHZ)
+#define FREQ_OFFSET						   (6LLU*MHZ)
 #define LORA_BASE_FREQUENCY_EU             (868LLU*MHZ)
 
 // Default settings
