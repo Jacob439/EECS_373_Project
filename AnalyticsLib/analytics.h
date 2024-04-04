@@ -1,6 +1,16 @@
 // analytics header file
 // by mason
 
+/**
+ * USAGE:
+ *    set input period to whatever period you are sending data to analytics
+ *    send call input_data(bpm, speed) at that frequency
+ *    
+ *    call get_strain_factor() all you want, but it
+ *    wont return anything but -1 until useful data
+ *    is available
+*/
+
 #include "main.h"
 
 // data buffer can hold 10 minutes of data
