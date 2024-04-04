@@ -117,20 +117,21 @@ int main(void)
   MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
 
+  // init pulse sensor with adc
+  initPulseSensor(&hadc1);
+
   // start timer
   HAL_TIM_Base_Start_IT(&htim16);
 
   // wait for buffer to fill initially
   // not necessary, but first couple metrics are interpolated
+  // only useful for timer controlled callbacks
   HAL_Delay(BUF_LENGTH * 20);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
-  // init pulse sensor with adc
-  initPulseSensor(&hadc1);
 
   // getting pulse metrics
   int bpm = get_BPM();
