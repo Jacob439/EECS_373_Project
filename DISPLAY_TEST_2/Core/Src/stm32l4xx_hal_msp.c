@@ -375,20 +375,7 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
 
   /* USER CODE END I2C1_MspInit 1 */
   }
-
-}
-
-/**
-* @brief SMBUS MSP Initialization
-* This function configures the hardware resources used in this example
-* @param hsmbus: SMBUS handle pointer
-* @retval None
-*/
-void HAL_SMBUS_MspInit(SMBUS_HandleTypeDef* hsmbus)
-{
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
-  if(hsmbus->Instance==I2C2)
+  else if(hi2c->Instance==I2C2)
   {
   /* USER CODE BEGIN I2C2_MspInit 0 */
 
@@ -409,7 +396,14 @@ void HAL_SMBUS_MspInit(SMBUS_HandleTypeDef* hsmbus)
     PF1     ------> I2C2_SCL
     PF2     ------> I2C2_SMBA
     */
-    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2;
+    GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    GPIO_InitStruct.Alternate = GPIO_AF4_I2C2;
+    HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = GPIO_PIN_2;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
     GPIO_InitStruct.Pull = GPIO_PULLUP;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
@@ -453,18 +447,7 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
 
   /* USER CODE END I2C1_MspDeInit 1 */
   }
-
-}
-
-/**
-* @brief SMBUS MSP De-Initialization
-* This function freeze the hardware resources used in this example
-* @param hsmbus: SMBUS handle pointer
-* @retval None
-*/
-void HAL_SMBUS_MspDeInit(SMBUS_HandleTypeDef* hsmbus)
-{
-  if(hsmbus->Instance==I2C2)
+  else if(hi2c->Instance==I2C2)
   {
   /* USER CODE BEGIN I2C2_MspDeInit 0 */
 

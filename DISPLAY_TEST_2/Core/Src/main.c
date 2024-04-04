@@ -18,11 +18,11 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "lcd.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "TempHumSensor.h"
+#include "lcd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -49,7 +49,7 @@ COMP_HandleTypeDef hcomp1;
 COMP_HandleTypeDef hcomp2;
 
 I2C_HandleTypeDef hi2c1;
-SMBUS_HandleTypeDef hsmbus2;
+I2C_HandleTypeDef hi2c2;
 
 UART_HandleTypeDef hlpuart1;
 UART_HandleTypeDef huart2;
@@ -80,7 +80,7 @@ static void MX_CAN1_Init(void);
 static void MX_COMP1_Init(void);
 static void MX_COMP2_Init(void);
 static void MX_I2C1_Init(void);
-static void MX_I2C2_SMBUS_Init(void);
+static void MX_I2C2_Init(void);
 static void MX_LPUART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_USART3_UART_Init(void);
@@ -140,7 +140,7 @@ int main(void)
   MX_COMP1_Init();
   MX_COMP2_Init();
   MX_I2C1_Init();
-  MX_I2C2_SMBUS_Init();
+  MX_I2C2_Init();
   MX_LPUART1_UART_Init();
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
@@ -157,6 +157,8 @@ int main(void)
 LCD_init();
 keypad_init();
 JOYSTICK_INIT(hi2c1);
+TempHum_t data;
+initTempHumSensor(&hi2c2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -184,7 +186,13 @@ uint8_t current_viewport = 0;
 	  // HOME SCREEN / RUNNER VIEW
 	  if (current_viewport == 0) {
 		  UG_FontSetTransparency(1);
-		  LCD_PutStr(50, 56, "Runner Data", DEFAULT_FONT, C_GREEN, C_BLACK);
+		  data = get_temp_hum();
+		  char buffer[128];
+		  // DO THE BELOW ONLY ON TIME INTERVAL
+		  LCD_Fill(50, 56, 240, 120, C_BLACK);
+		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f", data.temp, data.hum);
+		  LCD_PutStr(50, 56, buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
+//		  LCD_PutStr(50, 56, "Temp: " + data.temp + "\nHumid: " + data.hum, DEFAULT_FONT, C_GREEN, C_BLACK);
 		  HAL_Delay(100);
 	  }
 
@@ -514,7 +522,7 @@ static void MX_I2C1_Init(void)
   * @param None
   * @retval None
   */
-static void MX_I2C2_SMBUS_Init(void)
+static void MX_I2C2_Init(void)
 {
 
   /* USER CODE BEGIN I2C2_Init 0 */
@@ -524,27 +532,30 @@ static void MX_I2C2_SMBUS_Init(void)
   /* USER CODE BEGIN I2C2_Init 1 */
 
   /* USER CODE END I2C2_Init 1 */
-  hsmbus2.Instance = I2C2;
-  hsmbus2.Init.Timing = 0x00707CBB;
-  hsmbus2.Init.AnalogFilter = SMBUS_ANALOGFILTER_ENABLE;
-  hsmbus2.Init.OwnAddress1 = 2;
-  hsmbus2.Init.AddressingMode = SMBUS_ADDRESSINGMODE_7BIT;
-  hsmbus2.Init.DualAddressMode = SMBUS_DUALADDRESS_DISABLE;
-  hsmbus2.Init.OwnAddress2 = 0;
-  hsmbus2.Init.OwnAddress2Masks = SMBUS_OA2_NOMASK;
-  hsmbus2.Init.GeneralCallMode = SMBUS_GENERALCALL_DISABLE;
-  hsmbus2.Init.NoStretchMode = SMBUS_NOSTRETCH_DISABLE;
-  hsmbus2.Init.PacketErrorCheckMode = SMBUS_PEC_DISABLE;
-  hsmbus2.Init.PeripheralMode = SMBUS_PERIPHERAL_MODE_SMBUS_SLAVE;
-  hsmbus2.Init.SMBusTimeout = 0x00008186;
-  if (HAL_SMBUS_Init(&hsmbus2) != HAL_OK)
+  hi2c2.Instance = I2C2;
+  hi2c2.Init.Timing = 0x00707CBB;
+  hi2c2.Init.OwnAddress1 = 0;
+  hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c2.Init.OwnAddress2 = 0;
+  hi2c2.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c2.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c2.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c2) != HAL_OK)
   {
     Error_Handler();
   }
 
-  /** configuration Alert Mode
+  /** Configure Analogue filter
   */
-  if (HAL_SMBUS_EnableAlert_IT(&hsmbus2) != HAL_OK)
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c2, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c2, 0) != HAL_OK)
   {
     Error_Handler();
   }

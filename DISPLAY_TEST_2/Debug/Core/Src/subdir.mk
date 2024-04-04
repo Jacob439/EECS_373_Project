@@ -5,6 +5,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Core/Src/TempHumSensor.c \
 ../Core/Src/arial_10X13.c \
 ../Core/Src/arial_25X28.c \
 ../Core/Src/images.c \
@@ -27,6 +28,7 @@ C_SRCS += \
 ../Core/Src/ugui_textbox.c 
 
 OBJS += \
+./Core/Src/TempHumSensor.o \
 ./Core/Src/arial_10X13.o \
 ./Core/Src/arial_25X28.o \
 ./Core/Src/images.o \
@@ -49,6 +51,7 @@ OBJS += \
 ./Core/Src/ugui_textbox.o 
 
 C_DEPS += \
+./Core/Src/TempHumSensor.d \
 ./Core/Src/arial_10X13.d \
 ./Core/Src/arial_25X28.d \
 ./Core/Src/images.d \
@@ -78,7 +81,7 @@ Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/arial_10X13.cyclo ./Core/Src/arial_10X13.d ./Core/Src/arial_10X13.o ./Core/Src/arial_10X13.su ./Core/Src/arial_25X28.cyclo ./Core/Src/arial_25X28.d ./Core/Src/arial_25X28.o ./Core/Src/arial_25X28.su ./Core/Src/images.cyclo ./Core/Src/images.d ./Core/Src/images.o ./Core/Src/images.su ./Core/Src/joystick.cyclo ./Core/Src/joystick.d ./Core/Src/joystick.o ./Core/Src/joystick.su ./Core/Src/keypad.cyclo ./Core/Src/keypad.d ./Core/Src/keypad.o ./Core/Src/keypad.su ./Core/Src/lcd.cyclo ./Core/Src/lcd.d ./Core/Src/lcd.o ./Core/Src/lcd.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32l4xx_hal_msp.cyclo ./Core/Src/stm32l4xx_hal_msp.d ./Core/Src/stm32l4xx_hal_msp.o ./Core/Src/stm32l4xx_hal_msp.su ./Core/Src/stm32l4xx_it.cyclo ./Core/Src/stm32l4xx_it.d ./Core/Src/stm32l4xx_it.o ./Core/Src/stm32l4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32l4xx.cyclo ./Core/Src/system_stm32l4xx.d ./Core/Src/system_stm32l4xx.o ./Core/Src/system_stm32l4xx.su ./Core/Src/ugui.cyclo ./Core/Src/ugui.d ./Core/Src/ugui.o ./Core/Src/ugui.su ./Core/Src/ugui_button.cyclo ./Core/Src/ugui_button.d ./Core/Src/ugui_button.o ./Core/Src/ugui_button.su ./Core/Src/ugui_checkbox.cyclo ./Core/Src/ugui_checkbox.d ./Core/Src/ugui_checkbox.o ./Core/Src/ugui_checkbox.su ./Core/Src/ugui_image.cyclo ./Core/Src/ugui_image.d ./Core/Src/ugui_image.o ./Core/Src/ugui_image.su ./Core/Src/ugui_progress.cyclo ./Core/Src/ugui_progress.d ./Core/Src/ugui_progress.o ./Core/Src/ugui_progress.su ./Core/Src/ugui_sim.cyclo ./Core/Src/ugui_sim.d ./Core/Src/ugui_sim.o ./Core/Src/ugui_sim.su ./Core/Src/ugui_sim_x11.cyclo ./Core/Src/ugui_sim_x11.d ./Core/Src/ugui_sim_x11.o ./Core/Src/ugui_sim_x11.su ./Core/Src/ugui_textbox.cyclo ./Core/Src/ugui_textbox.d ./Core/Src/ugui_textbox.o ./Core/Src/ugui_textbox.su
+	-$(RM) ./Core/Src/TempHumSensor.cyclo ./Core/Src/TempHumSensor.d ./Core/Src/TempHumSensor.o ./Core/Src/TempHumSensor.su ./Core/Src/arial_10X13.cyclo ./Core/Src/arial_10X13.d ./Core/Src/arial_10X13.o ./Core/Src/arial_10X13.su ./Core/Src/arial_25X28.cyclo ./Core/Src/arial_25X28.d ./Core/Src/arial_25X28.o ./Core/Src/arial_25X28.su ./Core/Src/images.cyclo ./Core/Src/images.d ./Core/Src/images.o ./Core/Src/images.su ./Core/Src/joystick.cyclo ./Core/Src/joystick.d ./Core/Src/joystick.o ./Core/Src/joystick.su ./Core/Src/keypad.cyclo ./Core/Src/keypad.d ./Core/Src/keypad.o ./Core/Src/keypad.su ./Core/Src/lcd.cyclo ./Core/Src/lcd.d ./Core/Src/lcd.o ./Core/Src/lcd.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32l4xx_hal_msp.cyclo ./Core/Src/stm32l4xx_hal_msp.d ./Core/Src/stm32l4xx_hal_msp.o ./Core/Src/stm32l4xx_hal_msp.su ./Core/Src/stm32l4xx_it.cyclo ./Core/Src/stm32l4xx_it.d ./Core/Src/stm32l4xx_it.o ./Core/Src/stm32l4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32l4xx.cyclo ./Core/Src/system_stm32l4xx.d ./Core/Src/system_stm32l4xx.o ./Core/Src/system_stm32l4xx.su ./Core/Src/ugui.cyclo ./Core/Src/ugui.d ./Core/Src/ugui.o ./Core/Src/ugui.su ./Core/Src/ugui_button.cyclo ./Core/Src/ugui_button.d ./Core/Src/ugui_button.o ./Core/Src/ugui_button.su ./Core/Src/ugui_checkbox.cyclo ./Core/Src/ugui_checkbox.d ./Core/Src/ugui_checkbox.o ./Core/Src/ugui_checkbox.su ./Core/Src/ugui_image.cyclo ./Core/Src/ugui_image.d ./Core/Src/ugui_image.o ./Core/Src/ugui_image.su ./Core/Src/ugui_progress.cyclo ./Core/Src/ugui_progress.d ./Core/Src/ugui_progress.o ./Core/Src/ugui_progress.su ./Core/Src/ugui_sim.cyclo ./Core/Src/ugui_sim.d ./Core/Src/ugui_sim.o ./Core/Src/ugui_sim.su ./Core/Src/ugui_sim_x11.cyclo ./Core/Src/ugui_sim_x11.d ./Core/Src/ugui_sim_x11.o ./Core/Src/ugui_sim_x11.su ./Core/Src/ugui_textbox.cyclo ./Core/Src/ugui_textbox.d ./Core/Src/ugui_textbox.o ./Core/Src/ugui_textbox.su
 
 .PHONY: clean-Core-2f-Src
 

@@ -34,20 +34,18 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sai.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sai_ex.h \
- ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_smbus.h \
- ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_smbus_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
- ../Core/Inc/lcd.h ../Core/Inc/images.h ../Core/Inc/ugui.h \
- ../Core/Inc/ugui_config.h ../Core/Inc/ugui_colors.h \
- ../Core/Inc/ugui_theme.h ../Core/Inc/ugui_button.h \
- ../Core/Inc/ugui_checkbox.h ../Core/Inc/ugui_fonts.h \
- ../Core/Inc/ugui_image.h ../Core/Inc/ugui_progress.h \
- ../Core/Inc/ugui_textbox.h ../Core/Inc/main.h
+ ../Core/Inc/TempHumSensor.h ../Core/Inc/main.h ../Core/Inc/lcd.h \
+ ../Core/Inc/images.h ../Core/Inc/ugui.h ../Core/Inc/ugui_config.h \
+ ../Core/Inc/ugui_colors.h ../Core/Inc/ugui_theme.h \
+ ../Core/Inc/ugui_button.h ../Core/Inc/ugui_checkbox.h \
+ ../Core/Inc/ugui_fonts.h ../Core/Inc/ugui_image.h \
+ ../Core/Inc/ugui_progress.h ../Core/Inc/ugui_textbox.h
 ../Core/Inc/main.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
@@ -84,14 +82,14 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sai.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_sai_ex.h:
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_smbus.h:
-../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_smbus_ex.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_spi_ex.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h:
+../Core/Inc/TempHumSensor.h:
+../Core/Inc/main.h:
 ../Core/Inc/lcd.h:
 ../Core/Inc/images.h:
 ../Core/Inc/ugui.h:
@@ -104,4 +102,3 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/ugui_image.h:
 ../Core/Inc/ugui_progress.h:
 ../Core/Inc/ugui_textbox.h:
-../Core/Inc/main.h:
