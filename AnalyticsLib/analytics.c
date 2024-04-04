@@ -17,7 +17,7 @@ static unsigned int data_index = 0;
 static float current_strain;   
 
 // state variable
-static State_t state = k_init_baseline;   
+static State_t state = k_pre_init;   
 
 // strain variables
 static float standard_base_strain;
@@ -32,6 +32,7 @@ static float heart_threshold = INT_MAX;
 
 void init_analytics(int age) {
   heart_threshold = (220-age)*0.5;
+  state = k_init_baseline;
 }
 
 // Requires: speed in meters/s

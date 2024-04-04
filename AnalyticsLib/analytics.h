@@ -22,6 +22,7 @@
 #define SPEED_THRESHOLD 1.5f // speed threshold for start of workout?
 
 typedef enum {
+  k_pre_init,           // must init in order to start analyzing
   k_init_baseline,      // in first 2 minutes (standard baseline)
   k_post_init,          // after baseline but before exercise
   k_exercise_baseline,  // in first 2 minutes of exercise
