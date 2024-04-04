@@ -36,7 +36,7 @@
 #define LCD_WIDTH  240
   #define LCD_HEIGHT 320
 
-#define DEFAULT_FONT FONT_arial_10X13
+#define DEFAULT_FONT FONT_arial_25X28
 
 
 

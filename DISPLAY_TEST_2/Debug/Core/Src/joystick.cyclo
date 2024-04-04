@@ -1,0 +1,9 @@
+../Core/Src/joystick.c:12:7:JOYSTICK_INIT	1
+../Core/Src/joystick.c:15:7:writeRegister	2
+../Core/Src/joystick.c:33:7:setI2CAddress	1
+../Core/Src/joystick.c:48:11:readRegister	2
+../Core/Src/joystick.c:63:12:getHorizontal	1
+../Core/Src/joystick.c:70:12:getVertical	1
+../Core/Src/joystick.c:77:11:getButton	1
+../Core/Src/joystick.c:88:11:checkButton	1
+../Core/Src/joystick.c:104:11:threshold	7
