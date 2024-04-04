@@ -9,6 +9,7 @@
  */
 
 #include "analytics.h"
+#include "limits.h"     // for INT_MAX
 
 /* static variables */
 static float data[DATA_BUFFER_LENGTH];  // vector of strain values
@@ -16,11 +17,22 @@ static unsigned int data_index = 0;
 static float current_strain;   
 
 // state variable
-static State_t state = k_init_baseline;     
+static State_t state = k_init_baseline;   
+
+// strain variables
 static float standard_base_strain;
 static float exercise_base_strain;
 static float current_strain;
 
+// heartbeat threshold variables
+// (calculated from exercise baseline)
+// ~80% of minimum optimal heart rate 0.8 * 0.64*(220-age)
+static int age = 0;
+static float heart_threshold = INT_MAX;
+
+void init_analytics(int age) {
+  heart_threshold = (220-age)*0.5;
+}
 
 // Requires: speed in meters/s
 void input_data(int bpm, float speed) {
@@ -36,7 +48,7 @@ void input_data(int bpm, float speed) {
     case k_post_init:
       // based only on speed now, maybe add HR threshold
       // based on standard baseline
-      if (speed > SPEED_THRESHOLD) {
+      if (speed > SPEED_THRESHOLD || bpm > heart_threshold) {
         state = k_exercise_baseline;
       }
       break;
