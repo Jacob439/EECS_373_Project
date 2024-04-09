@@ -15,6 +15,12 @@
   *
   ******************************************************************************
   */
+
+/**	TODO:
+ * 	 - only poll gps because it is a time hog
+ * 	 - get LoRa running
+ */
+
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
