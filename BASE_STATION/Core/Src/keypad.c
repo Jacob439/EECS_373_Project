@@ -31,8 +31,9 @@ void keypad_init(){
 }
 
 
-
-  uint8_t KeyPadReturn(int row, int col) {
+	//Processes the row (val) and col values to get the number associated with that row and col
+	//weightSel is used to determine if Weight (1) or Age (0) is being input
+  uint8_t KeyPadReturn(int row, int col, int weightSel) {
 	  // Count of currently input characters
 	static uint8_t weightCounter = 0;
     if (row == 0) {
@@ -51,16 +52,22 @@ void keypad_init(){
         // If there is no value for weight, just return
         return 0;
       }
-      // print the weight or height
-      printf("End ASCII value: ");
+      /* print the weight or age
+      /printf("End ASCII value: ");
       for (uint8_t i = 0; i < weightCounter; i++) {
         // print the values here
-        printf("%x ", ASCII_Weight[i]);
+        //printf("%x ", ASCII_Weight[i]);
       }
-      printf("\n");
+      printf("\n");*/
+      if(weightSel){
+          	ASCII_Weight[weightCounter] = '\0';
+      }
+      else{
+    	  ASCII_Age[weightCounter] = '\0';
+      }
       weightCounter = 0;
       // Wipe screen
-      LCD_Fill(50, 56, 50 + 26*3, 50+28, C_BLACK);
+      //LCD_Fill(50, 56, 50 + 26*3, 50+28, C_BLACK);
       return 1;
     } else if (ASCII_Value == 0x2A || weightCounter == max_digits - 2) {
     	// Wipe screen
@@ -72,10 +79,20 @@ void keypad_init(){
       weightCounter = 0;
       return 0;
     }
-    printf("ASCII value: %x\n", ASCII_Value);
-    LCD_PutChar(50 + weightCounter*20, 56, ASCII_Value, DEFAULT_FONT, C_GREEN, C_BLACK);
-    UG_FontSetTransparency(1);
-    ASCII_Weight[weightCounter] = ASCII_Value;
+    //printf("ASCII value: %x\n", ASCII_Value);
+
+
+    if(weightSel){
+    	ASCII_Weight[weightCounter] = ASCII_Value;
+    	LCD_PutChar(105 + weightCounter*20, 5, ASCII_Value, DEFAULT_FONT, C_GREEN, C_BLACK);
+    	UG_FontSetTransparency(1);
+    }
+    else{
+    	ASCII_Age[weightCounter] = ASCII_Value;
+    	LCD_PutChar(80 + weightCounter*20, 5, ASCII_Value, DEFAULT_FONT, C_GREEN, C_BLACK);
+    	UG_FontSetTransparency(1);
+    }
+
     weightCounter++;
     return 0;
   }
@@ -83,34 +100,64 @@ void keypad_init(){
   void running(){
 	  uint8_t finished = 0;
 	  int val = 0;
+	  //Gathers Weight data
+	  LCD_PutStr(5, 5, "Weight: ", DEFAULT_FONT, C_GREEN, C_BLACK);
   while (!finished) {
       HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 0);
       val = RowChecker();
-      finished = KeyPadReturn(val, 4);
+      finished = KeyPadReturn(val, 4, 1);
       HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 1);
-      if (finished) return;
+      if (finished) break;
 
       HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 0);
       val = RowChecker();
-      finished = KeyPadReturn(val, 3);
+      finished = KeyPadReturn(val, 3, 1);
       HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 1);
-      if (finished) return;
+      if (finished) break;
 
       HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, 0);
       val = RowChecker();
-      finished = KeyPadReturn(val, 2);
+      finished = KeyPadReturn(val, 2, 1);
       HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, 1);
-      if (finished) return;
+      if (finished) break;
 
       HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 0);
       val = RowChecker();
-      finished = KeyPadReturn(val, 1);
+      finished = KeyPadReturn(val, 1, 1);
       HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 1);
 
       /* USER CODE END WHILE */
 
       /* USER CODE BEGIN 3 */
     }
+  	  finished = 0;
+  	  LCD_Fill(5, 5, 170, 5+28, C_BLACK);
+  	  //Gathers Age data
+  	  LCD_PutStr(5, 5, "Age: ", DEFAULT_FONT, C_GREEN, C_BLACK);
+  	while (!finished) {
+  	      HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 0);
+  	      val = RowChecker();
+  	      finished = KeyPadReturn(val, 4, 0);
+  	      HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 1);
+  	      if (finished) return;
+
+  	      HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 0);
+  	      val = RowChecker();
+  	      finished = KeyPadReturn(val, 3, 0);
+  	      HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 1);
+  	      if (finished) return;
+
+  	      HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, 0);
+  	      val = RowChecker();
+  	      finished = KeyPadReturn(val, 2, 0);
+  	      HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11, 1);
+  	      if (finished) return;
+
+  	      HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 0);
+  	      val = RowChecker();
+  	      finished = KeyPadReturn(val, 1, 0);
+  	      HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 1);
+  	}
   }
 
 

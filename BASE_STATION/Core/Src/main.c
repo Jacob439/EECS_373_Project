@@ -66,9 +66,10 @@ TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim4;
 TIM_HandleTypeDef htim15;
+TIM_HandleTypeDef htim17;
 
 /* USER CODE BEGIN PV */
-
+uint8_t DISPLAY_TIMER_TRIGGERED;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -93,6 +94,7 @@ static void MX_TIM3_Init(void);
 static void MX_TIM4_Init(void);
 static void MX_TIM15_Init(void);
 static void MX_USB_OTG_FS_USB_Init(void);
+static void MX_TIM17_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -153,6 +155,7 @@ int main(void)
   MX_TIM4_Init();
   MX_TIM15_Init();
   MX_USB_OTG_FS_USB_Init();
+  MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
 LCD_init();
 keypad_init();
@@ -165,7 +168,9 @@ initTempHumSensor(&hi2c2);
   /* USER CODE BEGIN WHILE */
 // 0 = runner view
 // 1 = weight input view
-uint8_t current_viewport = 0;
+uint8_t current_viewport = 0; //determines what screen state you are on
+DISPLAY_TIMER_TRIGGERED = 0;
+HAL_TIM_Base_Start_IT(&htim17);
   while (1)
   {
     /* USER CODE END WHILE */
@@ -180,27 +185,30 @@ uint8_t current_viewport = 0;
 	  if (lr != 0) {
 		  current_viewport = current_viewport ? 0 : 1;
 		  // Clear dirty parts of the screen
-		  LCD_Fill(50, 56, 240, 50+28, C_BLACK);
+		  LCD_Fill(0, 5, 240, 120, C_BLACK);
 	  }
 
 	  // HOME SCREEN / RUNNER VIEW
-	  if (current_viewport == 0) {
+	  if (current_viewport == 0 && DISPLAY_TIMER_TRIGGERED == 1) {
 		  UG_FontSetTransparency(1);
 		  data = get_temp_hum();
 		  char buffer[128];
 		  // DO THE BELOW ONLY ON TIME INTERVAL
-		  LCD_Fill(50, 56, 240, 120, C_BLACK);
+		  LCD_Fill(5, 5, 240, 120, C_BLACK);
 		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f", data.temp, data.hum);
-		  LCD_PutStr(50, 56, buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
+		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
 //		  LCD_PutStr(50, 56, "Temp: " + data.temp + "\nHumid: " + data.hum, DEFAULT_FONT, C_GREEN, C_BLACK);
 		  HAL_Delay(100);
+		  DISPLAY_TIMER_TRIGGERED = 0;
 	  }
 
-	  // WEIGHT INPUT
+	  // WEIGHT AND AGE INPUT
 	  if (current_viewport == 1) {
+
 		  running();
 		  // Go back to runner screen
 		  current_viewport = 0;
+		  DISPLAY_TIMER_TRIGGERED = 1;
 	  }
 
 
@@ -1173,6 +1181,67 @@ static void MX_TIM15_Init(void)
 }
 
 /**
+  * @brief TIM17 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM17_Init(void)
+{
+
+  /* USER CODE BEGIN TIM17_Init 0 */
+
+  /* USER CODE END TIM17_Init 0 */
+
+  TIM_OC_InitTypeDef sConfigOC = {0};
+  TIM_BreakDeadTimeConfigTypeDef sBreakDeadTimeConfig = {0};
+
+  /* USER CODE BEGIN TIM17_Init 1 */
+
+  /* USER CODE END TIM17_Init 1 */
+  htim17.Instance = TIM17;
+  htim17.Init.Prescaler = 2441;
+  htim17.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim17.Init.Period = 65535;
+  htim17.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim17.Init.RepetitionCounter = 0;
+  htim17.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim17) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_OC_Init(&htim17) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_TIMING;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCNPolarity = TIM_OCNPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
+  sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+  if (HAL_TIM_OC_ConfigChannel(&htim17, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
+  sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
+  sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
+  sBreakDeadTimeConfig.DeadTime = 0;
+  sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
+  sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
+  sBreakDeadTimeConfig.AutomaticOutput = TIM_AUTOMATICOUTPUT_DISABLE;
+  if (HAL_TIMEx_ConfigBreakDeadTime(&htim17, &sBreakDeadTimeConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM17_Init 2 */
+
+  /* USER CODE END TIM17_Init 2 */
+
+}
+
+/**
   * @brief USB_OTG_FS Initialization Function
   * @param None
   * @retval None
@@ -1298,6 +1367,16 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	//check which version of the timer triggered this callback and toggle LED
+	if(htim == &htim17){
+		DISPLAY_TIMER_TRIGGERED = 1;
+	}
+}
+
+
 #ifdef __GNUC__
 #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
 #else
