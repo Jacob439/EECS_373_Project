@@ -24,10 +24,10 @@ void req_measurements() {
 // sensor will pull clock down until measurements are done
 TempHumRaw_t read_raw_measurements() {
 	TempHumRaw_t data;
-	uint8_t buf[4];
-	HAL_I2C_Master_Receive(hi2c, SAD_R, buf, 4, 1000);
+	uint8_t buf[6];
+	HAL_I2C_Master_Receive(hi2c, SAD_R, buf, 6, 1000);
 	data.temp = buf[0] << 8 | buf[1];
-	data.hum = buf[2] << 8 | buf[3];
+	data.hum = buf[3] << 8 | buf[4];
 	return data;
 }
 
