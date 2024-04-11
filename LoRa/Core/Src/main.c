@@ -147,6 +147,14 @@ int main(void)
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 
+  // msaon test code
+//  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, 1 );
+//  HAL_Delay(5);
+//  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, 0 );
+//  HAL_Delay(5);
+//  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, 1 );
+//  HAL_Delay(5);
+
 //  uint8_t temporary[3] = {0xde, 0xad, 0xbe};
 //  HAL_SPI_Transmit(&hspi2, &temporary[0], 1, 1000);
 
@@ -168,18 +176,16 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  	    uint8_t buffer[32];
-	  	    // Put LoRa modem into continuous receive mode
-	  	    lora_mode_receive_continuous(&lora);
-	  	    // Wait for packet up to 10sec
-	  	    uint8_t res;
-	  	    uint8_t len = lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
-	  	    if (res != LORA_OK) {
-	  	      // Receive failed
-	  	    }
-	  	    buffer[len] = 0;  // null terminate string to print it
 
     /* USER CODE BEGIN 3 */
+	  uint8_t buffer[32];
+	  lora_mode_receive_continuous(&lora);
+	  uint8_t res;
+	  uint8_t len = lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+	  if (res != LORA_OK) {
+		  // Receive failed
+	  }
+	  buffer[len] = 0; // null terminate string to print it
   }
   /* USER CODE END 3 */
 }
