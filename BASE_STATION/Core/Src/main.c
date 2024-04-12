@@ -175,10 +175,15 @@ initTempHumSensor(&hi2c2);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 // 0 = runner view
-// 1 = weight input view
+// 1 = player 1 view
+// 2 = weight and age input view
 uint8_t current_viewport = 0; //determines what screen state you are on
 DISPLAY_TIMER_TRIGGERED = 0;
 HAL_TIM_Base_Start_IT(&htim17);
+//temp data replace with real data
+float velocity = 10;
+float heart = 11;
+float exhaustion = 12;
   while (1)
   {
     /* USER CODE END WHILE */
@@ -186,14 +191,24 @@ HAL_TIM_Base_Start_IT(&htim17);
     /* USER CODE BEGIN 3 */
 	  // STATE MACHINE HERE
 	  // STATES SO FAR: INPUT WEIGHT, DISPLAY RUNNER DATA
-	  // Joystick allows user to switch between states\
+	  // Joystick allows user to switch between states
 
 	  uint8_t lr = threshold();
-	  // Toggle current_viewport
-	  if (lr != 0) {
-		  current_viewport = current_viewport ? 0 : 1;
+	  // Toggle current_viewport when joystick right
+	  if (lr == 2) {
+		  current_viewport = (current_viewport == 2) ? 2 : 1;
 		  // Clear dirty parts of the screen
 		  LCD_Fill(0, 5, 240, 120, C_BLACK);
+		  //allows for instant transition
+		  DISPLAY_TIMER_TRIGGERED = 1;
+	  }
+	  // Toggle current_viewport when joystick left
+	  else if(lr == 1){
+		  current_viewport = (current_viewport == 2) ? 2 : 0;
+		  // Clear dirty parts of the screen
+		  LCD_Fill(0, 5, 240, 120, C_BLACK);
+		  //allows for instant transition
+		  DISPLAY_TIMER_TRIGGERED = 1;
 	  }
 
 	  // HOME SCREEN / RUNNER VIEW
@@ -202,22 +217,43 @@ HAL_TIM_Base_Start_IT(&htim17);
 		  data = get_temp_hum();
 		  char buffer[128];
 		  // DO THE BELOW ONLY ON TIME INTERVAL
-		  LCD_Fill(5, 5, 240, 120, C_BLACK);
+		  LCD_Fill(80, 5, 240, 120, C_BLACK);
 		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f", data.temp, data.hum);
 		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
 //		  LCD_PutStr(50, 56, "Temp: " + data.temp + "\nHumid: " + data.hum, DEFAULT_FONT, C_GREEN, C_BLACK);
 		  HAL_Delay(100);
 		  DISPLAY_TIMER_TRIGGERED = 0;
 	  }
+	  if(current_viewport == 1 && KeyPadSelect()){
+		  current_viewport = 2;
+		  while(KeyPadSelect() == 1){}
+	  }
+
+	  if (current_viewport == 1 && DISPLAY_TIMER_TRIGGERED == 1) {
+		  UG_FontSetTransparency(1);
+		  //Get the data that will be displayed by each player
+		  char buffer[128];
+		  LCD_Fill(100, 5, 240, 120, C_BLACK);
+		  snprintf(buffer, sizeof(buffer), "Velocity: %.3f\nHeart Rate: %.3f\nExhaustion: %.3f", velocity, heart, exhaustion);
+		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
+		  HAL_Delay(100);
+		  DISPLAY_TIMER_TRIGGERED = 0;
+		  ++velocity;
+		  ++heart;
+		  ++exhaustion;
+	  }
+
 
 	  // WEIGHT AND AGE INPUT
-	  if (current_viewport == 1) {
-
+	  if (current_viewport == 2) {
+		  LCD_Fill(5, 5, 240, 120, C_BLACK);
 		  running();
 		  // Go back to runner screen
-		  current_viewport = 0;
+		  current_viewport = 1;
+		  LCD_Fill(5, 5, 160, 30, C_BLACK);
 		  DISPLAY_TIMER_TRIGGERED = 1;
 	  }
+
 
 
 	  //running();

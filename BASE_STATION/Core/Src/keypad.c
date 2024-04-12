@@ -22,6 +22,19 @@ int RowChecker() {
     return val;
   }
 
+//Checks to see if 'D' was pressed
+	int KeyPadSelect(){
+		int val = 0;
+		HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 0);
+		val = HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_14) == GPIO_PIN_RESET ? 4 : 0;
+		HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 1);
+		if(val != 0){
+			return 1;
+		}
+		return 0;
+	}
+
+
 void keypad_init(){
 	// Setting all the pins to high impedence
 	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, 1);
@@ -71,7 +84,12 @@ void keypad_init(){
       return 1;
     } else if (ASCII_Value == 0x2A || weightCounter == max_digits - 2) {
     	// Wipe screen
-    	LCD_Fill(50, 56, 50 + 26*3, 50+28, C_BLACK);
+    	if(weightSel){
+    		LCD_Fill(105, 5, 170, 5+28, C_BLACK);
+    	}
+    	else{
+    		LCD_Fill(80, 5, 170, 5+28, C_BLACK);
+    	}
       // Reset if '*' is the input
       // Other if statement:
       // -2: there is a ++ at the end, and need a spot for #
@@ -96,6 +114,8 @@ void keypad_init(){
     weightCounter++;
     return 0;
   }
+
+
 
   void running(){
 	  uint8_t finished = 0;
