@@ -70,6 +70,7 @@ TIM_HandleTypeDef htim17;
 
 /* USER CODE BEGIN PV */
 uint8_t DISPLAY_TIMER_TRIGGERED;
+lora_sx1276 lora;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -158,13 +159,20 @@ int main(void)
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 //  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, GPIO_PIN_SET);
-  lora_sx1276 lora;
+
 
 //  ENABLE_LORA_REPEATEDLY(&lora);
+  // IDK why, but the function causes a hard fault, while keeping the loop here is safe
   uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
-  	     if (res != LORA_OK) {
+  	     while (res != LORA_OK) {
   	       // Initialization failed
+  	    	 HAL_Delay(100);
+  	    	 uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
   	     }
+//  uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
+//  	     if (res != LORA_OK) {
+//  	       // Initialization failed
+//  	     }
 LCD_init();
 keypad_init();
 JOYSTICK_INIT(hi2c1);
@@ -1447,11 +1455,11 @@ PUTCHAR_PROTOTYPE
 
 void ENABLE_LORA_REPEATEDLY(lora_sx1276 *lora){
 	// SX1276 compatible module connected to SPI1, NSS pin connected to GPIO with label LORA_NSS
-	     uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
-	     if (res != LORA_OK) {
+	uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
+	     while (res != LORA_OK) {
 	       // Initialization failed
 	    	 HAL_Delay(100);
-	    	 ENABLE_LORA_REPEATEDLY(&lora);
+	    	 uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
 	     }
 }
 

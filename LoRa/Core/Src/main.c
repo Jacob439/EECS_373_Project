@@ -50,6 +50,22 @@
 //    { MODEM_FSK , REG_DIOMAPPING2        , 0x30 },\
 //    { MODEM_LORA, REG_LR_PAYLOADMAXLENGTH, 0x40 },\
 //}
+
+struct gps_data {
+	float longitude;
+	float latitude;
+};
+
+struct arm_to_base {
+	struct gps_data data;
+	float heartrate;
+	uint16_t steps;
+};
+
+// Or were we sending height and weight over LoRa???
+struct base_to_arm {
+	uint8_t buzz;
+};
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -164,10 +180,34 @@ int main(void)
   lora_sx1276 lora;
 
     // SX1276 compatible module connected to SPI1, NSS pin connected to GPIO with label LORA_NSS
-    uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
-    if (res != LORA_OK) {
-      // Initialization failed
-    }
+//    uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
+//    if (res != LORA_OK) {
+//      // Initialization failed
+//    }
+  uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
+ while (res != LORA_OK) {
+   // Initialization failed
+	 HAL_Delay(100);
+	 uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
+ }
+
+ // STRUCTURED LORA TRANSMISSION CODE
+// // RECIEVING
+//  struct arm_to_base incomingdata;
+//  struct base_to_arm outgoingdata;
+//  // Not boolean for debugging purposes
+//  outgoingdata.buzz = 24;
+
+ // SENDING
+  struct arm_to_base outputdata;
+  struct gps_data gps;
+  struct base_to_arm buzzer;
+
+  gps.longitude = 1.2345;
+  gps.latitude = 5.4321;
+  outputdata.data = gps;
+  outputdata.heartrate = 98.54;
+  outputdata.steps = 20000;
 
   /* USER CODE END 2 */
 
@@ -179,14 +219,62 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  uint8_t buffer[32];
-	  lora_mode_receive_continuous(&lora);
-	  uint8_t res;
-	  uint8_t len = lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+	  uint8_t len;
+
+
+
+	  // STRUCTURED LORA TRANSMISSION CODE
+	  // RECIEVING
+//	  lora_mode_receive_continuous(&lora);
+//	  len = lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+////	  float temp;
+//	  memcpy(&incomingdata, &buffer, sizeof(incomingdata));
+//	  if (res != LORA_OK) {
+//		  // Receive failed
+//	  }
+//	  buffer[len] = 0; // null terminate string to print it
+//	  res = lora_send_packet(&lora, &outgoingdata, sizeof(outgoingdata));
+
+	  // SENDING
+//	  res = lora_send_packet(&lora, (uint8_t *)"Jacob is cool", 13);
+	  res = lora_send_packet(&lora, &outputdata, sizeof(outputdata));
 	  if (res != LORA_OK) {
-		  // Receive failed
+		// Send failed
 	  }
-	  buffer[len] = 0; // null terminate string to print it
+//	  HAL_Delay(5000);
+	  // buzz is only 1 byte. This should limit time listening
+	  lora_mode_receive_single(&lora);
+	  len = lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+	  memcpy(&buzzer, &buffer, sizeof(buzzer));
+	  buffer[len] = 0; // Marking end of packet, idk if this is really necessary
+
+
+
+
+
+
+	  // RECIEVING
+//	  uint8_t buffer[32];
+//	  lora_mode_receive_continuous(&lora);
+//	  uint8_t res;
+//	  uint8_t len = lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+//	  float temp;
+//	  memcpy(&temp, &buffer, sizeof(temp));
+//	  if (res != LORA_OK) {
+//		  // Receive failed
+//	  }
+//	  buffer[len] = 0; // null terminate string to print it
+
+	  // SENDING
+////	  res = lora_send_packet(&lora, (uint8_t *)"Jacob is cool", 13);
+//	  float temp = 54.892;
+//	  res = lora_send_packet(&lora, &temp, sizeof(temp));
+//	  if (res != LORA_OK) {
+//		// Send failed
+//	  }
+//	  HAL_Delay(5000);
   }
+
   /* USER CODE END 3 */
 }
 
@@ -895,7 +983,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOG, GPIO_PIN_1, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, GPIO_PIN_SET);
 
   /*Configure GPIO pins : PF0 PF1 PF2 */
   GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2;
