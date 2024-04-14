@@ -69,8 +69,27 @@ TIM_HandleTypeDef htim15;
 TIM_HandleTypeDef htim17;
 
 /* USER CODE BEGIN PV */
-uint8_t DISPLAY_TIMER_TRIGGERED;
 lora_sx1276 lora;
+uint8_t DISPLAY_TIMER_TRIGGERED;
+uint8_t KeyPadSelect = 0;
+uint8_t LoRaTransmit = 0;
+
+//struct gps_data {
+//	float longitude;
+//	float latitude;
+//};
+
+struct arm_to_base {
+//	struct gps_data data;
+	float velocity;
+	float heartrate;
+	uint16_t steps;
+};
+
+// Or were we sending height and weight over LoRa???
+struct base_to_arm {
+	uint8_t buzz;
+};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -174,7 +193,7 @@ int main(void)
 //  	       // Initialization failed
 //  	     }
 LCD_init();
-keypad_init();
+lora_enable_interrupt_rx_done(&lora);
 JOYSTICK_INIT(hi2c1);
 TempHum_t data;
 initTempHumSensor(&hi2c2);
@@ -188,10 +207,26 @@ initTempHumSensor(&hi2c2);
 uint8_t current_viewport = 0; //determines what screen state you are on
 DISPLAY_TIMER_TRIGGERED = 0;
 HAL_TIM_Base_Start_IT(&htim17);
-//temp data replace with real data
-float velocity = 10;
-float heart = 11;
+
+// TEMP DATA
 float exhaustion = 12;
+
+// Set this pin ('D' on keypad) low for interrupt
+ HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 0);
+
+
+ // DUMMY DATA FOR TESTING DATA
+   struct arm_to_base armband_data;
+   struct base_to_arm buzzer;
+
+   armband_data.velocity = 12.3;
+   armband_data.heartrate = 98.54;
+   armband_data.steps = 20000;
+   uint16_t player_data_fill_height = 140;
+
+   char player_write_buffer[128];
+   char buffer[128];
+
   while (1)
   {
     /* USER CODE END WHILE */
@@ -206,7 +241,7 @@ float exhaustion = 12;
 	  if (lr == 2) {
 		  current_viewport = (current_viewport == 2) ? 2 : 1;
 		  // Clear dirty parts of the screen
-		  LCD_Fill(0, 5, 240, 120, C_BLACK);
+		  LCD_Fill(0, 5, 240, player_data_fill_height, C_BLACK);
 		  //allows for instant transition
 		  DISPLAY_TIMER_TRIGGERED = 1;
 	  }
@@ -214,52 +249,75 @@ float exhaustion = 12;
 	  else if(lr == 1){
 		  current_viewport = (current_viewport == 2) ? 2 : 0;
 		  // Clear dirty parts of the screen
-		  LCD_Fill(0, 5, 240, 120, C_BLACK);
+		  LCD_Fill(0, 5, 240, player_data_fill_height, C_BLACK);
 		  //allows for instant transition
 		  DISPLAY_TIMER_TRIGGERED = 1;
+	  }
+
+	  if(LoRaTransmit == 1){
+		  //Get data
+		  	  lora_mode_receive_continuous(&lora);
+		  	  lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+		  	  memcpy(&armband_data, &buffer, sizeof(armband_data));
+//		  	  if (res != LORA_OK) {
+//		  		  // Receive failed
+//		  	  }
+		  	  res = lora_send_packet(&lora, &buzzer, sizeof(buzzer));
+
+
+		  LoRaTransmit = 0;
 	  }
 
 	  // HOME SCREEN / RUNNER VIEW
 	  if (current_viewport == 0 && DISPLAY_TIMER_TRIGGERED == 1) {
 		  UG_FontSetTransparency(1);
 		  data = get_temp_hum();
-		  char buffer[128];
+
 		  // DO THE BELOW ONLY ON TIME INTERVAL
 		  LCD_Fill(80, 5, 240, 120, C_BLACK);
 		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f", data.temp, data.hum);
 		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
 //		  LCD_PutStr(50, 56, "Temp: " + data.temp + "\nHumid: " + data.hum, DEFAULT_FONT, C_GREEN, C_BLACK);
+		  // Why the HAL_Delays? don't these only trigger on a timer anyway?
 		  HAL_Delay(100);
 		  DISPLAY_TIMER_TRIGGERED = 0;
 	  }
-	  if(current_viewport == 1 && KeyPadSelect()){
+	  // We need an actual interrupt, otherwise can't listen for LoRa
+	  if(current_viewport == 1 && KeyPadSelect){
 		  current_viewport = 2;
-		  while(KeyPadSelect() == 1){}
+//		  while(KeyPadSelect == 1){}
 	  }
 
 	  if (current_viewport == 1 && DISPLAY_TIMER_TRIGGERED == 1) {
 		  UG_FontSetTransparency(1);
 		  //Get the data that will be displayed by each player
-		  char buffer[128];
-		  LCD_Fill(100, 5, 240, 120, C_BLACK);
-		  snprintf(buffer, sizeof(buffer), "Velocity: %.3f\nHeart Rate: %.3f\nExhaustion: %.3f", velocity, heart, exhaustion);
-		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
+
+//		  LCD_Fill(100, 5, 240, player_data_fill_height, C_BLACK);
+		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
+		  snprintf(player_write_buffer, sizeof(player_write_buffer), "Velocity: %.3f\nHeart Rate: %.3f\nExhaustion: %.3f\nStep Count: %d",
+				  armband_data.velocity, armband_data.heartrate, exhaustion, armband_data.steps);
+		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
 		  HAL_Delay(100);
 		  DISPLAY_TIMER_TRIGGERED = 0;
-		  ++velocity;
-		  ++heart;
+		  // TESTING BELOW
 		  ++exhaustion;
 	  }
 
 
 	  // WEIGHT AND AGE INPUT
 	  if (current_viewport == 2) {
-		  LCD_Fill(5, 5, 240, 120, C_BLACK);
+		  LCD_Fill(5, 5, 240, player_data_fill_height, C_BLACK);
+		  while ( HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_14) == GPIO_PIN_RESET) {
+		     }
+		  keypad_init();
 		  running();
+		  KeyPadSelect = 0;
 		  // Go back to runner screen
 		  current_viewport = 1;
-		  LCD_Fill(5, 5, 160, 30, C_BLACK);
+		  LCD_Fill(5, 5, 160, 40, C_BLACK);
 		  DISPLAY_TIMER_TRIGGERED = 1;
+		  // Listen to 'D' again
+		  HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 0);
 	  }
 
 
@@ -1349,6 +1407,12 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, GPIO_PIN_SET);
 
+  /*Configure GPIO pin : PF5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
+
   /*Configure GPIO pin : PA4 */
   GPIO_InitStruct.Pin = GPIO_PIN_4;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -1386,7 +1450,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PD14 */
   GPIO_InitStruct.Pin = GPIO_PIN_14;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
@@ -1426,6 +1490,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
   GPIO_InitStruct.Alternate = GPIO_AF12_SDMMC1;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

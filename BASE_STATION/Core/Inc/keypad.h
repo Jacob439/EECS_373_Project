@@ -28,7 +28,8 @@ uint8_t ASCII_Keypad_Lookup[4][4] = {{0x31, 0x32, 0x33, 0x41},
   // uint8_t heightCounter = 0; implement later
 
   uint8_t KeyPadReturn(int row, int col, int weightSel);
-  int KeyPadSelect();
+
+//  int KeyPadSelect();
   void running();
   void keypad_init();
 
