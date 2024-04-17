@@ -59,7 +59,7 @@ extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim17;
 /* USER CODE BEGIN EV */
 extern uint8_t KeyPadSelect;
-extern uint8_t LoRaTransmit;
+extern uint8_t LoRaRecieve;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -210,7 +210,7 @@ void EXTI9_5_IRQHandler(void)
   /* USER CODE END EXTI9_5_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_5);
   /* USER CODE BEGIN EXTI9_5_IRQn 1 */
-  LoRaTransmit = 1;
+  LoRaRecieve = 1;
 
   /* USER CODE END EXTI9_5_IRQn 1 */
 }

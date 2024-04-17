@@ -72,7 +72,7 @@ TIM_HandleTypeDef htim17;
 lora_sx1276 lora;
 uint8_t DISPLAY_TIMER_TRIGGERED;
 uint8_t KeyPadSelect = 0;
-uint8_t LoRaTransmit = 0;
+uint8_t LoRaRecieve = 0;
 
 //struct gps_data {
 //	float longitude;
@@ -82,8 +82,9 @@ uint8_t LoRaTransmit = 0;
 struct arm_to_base {
 //	struct gps_data data;
 	float velocity;
-	float heartrate;
-	uint16_t steps;
+	float distance;
+	int heartrate;
+	int steps;
 };
 
 // Or were we sending height and weight over LoRa???
@@ -183,17 +184,18 @@ int main(void)
 //  ENABLE_LORA_REPEATEDLY(&lora);
   // IDK why, but the function causes a hard fault, while keeping the loop here is safe
   uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
-  	     while (res != LORA_OK) {
-  	       // Initialization failed
-  	    	 HAL_Delay(100);
-  	    	 uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
-  	     }
+	 while (res != LORA_OK) {
+	   // Initialization failed
+		 HAL_Delay(100);
+		 uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
+	 }
 //  uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
 //  	     if (res != LORA_OK) {
 //  	       // Initialization failed
 //  	     }
 LCD_init();
 lora_enable_interrupt_rx_done(&lora);
+lora_mode_receive_continuous(&lora);
 JOYSTICK_INIT(hi2c1);
 TempHum_t data;
 initTempHumSensor(&hi2c2);
@@ -219,13 +221,15 @@ float exhaustion = 12;
    struct arm_to_base armband_data;
    struct base_to_arm buzzer;
 
-   armband_data.velocity = 12.3;
-   armband_data.heartrate = 98.54;
-   armband_data.steps = 20000;
+//   armband_data.velocity = 12.3;
+//   armband_data.heartrate = 98.54;
+//   armband_data.steps = 20000;
    uint16_t player_data_fill_height = 140;
 
    char player_write_buffer[128];
    char buffer[128];
+   int heartrate;
+   int stepcount;
 
   while (1)
   {
@@ -254,18 +258,21 @@ float exhaustion = 12;
 		  DISPLAY_TIMER_TRIGGERED = 1;
 	  }
 
-	  if(LoRaTransmit == 1){
+	  if(LoRaRecieve == 1){
 		  //Get data
-		  	  lora_mode_receive_continuous(&lora);
+//		  	  lora_mode_receive_continuous(&lora);
 		  	  lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
 		  	  memcpy(&armband_data, &buffer, sizeof(armband_data));
 //		  	  if (res != LORA_OK) {
 //		  		  // Receive failed
 //		  	  }
 		  	  res = lora_send_packet(&lora, &buzzer, sizeof(buzzer));
+		  	lora_mode_receive_continuous(&lora);
 
 
-		  LoRaTransmit = 0;
+
+		  	if (!lora_is_packet_available(&lora))
+		  		LoRaRecieve = 0;
 	  }
 
 	  // HOME SCREEN / RUNNER VIEW
@@ -294,7 +301,7 @@ float exhaustion = 12;
 
 //		  LCD_Fill(100, 5, 240, player_data_fill_height, C_BLACK);
 		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
-		  snprintf(player_write_buffer, sizeof(player_write_buffer), "Velocity: %.3f\nHeart Rate: %.3f\nExhaustion: %.3f\nStep Count: %d",
+		  snprintf(player_write_buffer, sizeof(player_write_buffer), "Velocity: %.3f\nHeart Rate: %d\nExhaustion: %.3f\nStep Count: %d",
 				  armband_data.velocity, armband_data.heartrate, exhaustion, armband_data.steps);
 		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
 		  HAL_Delay(100);
@@ -330,6 +337,10 @@ float exhaustion = 12;
 //	  //	  UG_Update();
 //	  	  LCD_PutStr(50,56, "TESTING", DEFAULT_FONT, C_GREEN, C_BLACK);
 //	  	  HAL_Delay(500);
+
+
+	  heartrate = armband_data.heartrate;
+	  stepcount = armband_data.steps;
   }
   /* USER CODE END 3 */
 }

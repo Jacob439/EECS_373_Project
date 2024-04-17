@@ -114,6 +114,8 @@ static inline void loraCallback(void);
 /* USER CODE BEGIN 0 */
 
 /* lora initiation helper, executes up to 100 times */
+// AHHHH, why recursion??
+// Stack frames, but idk if that matters...
 uint8_t lora_infINIT(int init_ctr) {
 	if (init_ctr < 100) {
 		uint8_t res = lora_init(&lora, &hspi1, GPIOB, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
@@ -161,6 +163,10 @@ inline void loraCallback(void) {
 	lora_data.distance = get_distance();	// distance from gps file
 	lora_data.heart_rate = get_BPM();	// bpm from pulse sensor file
 	lora_data.steps = get_step_count();	// step count from steps file
+//	lora_data.speed++;	// speed from gps file
+//	lora_data.distance++;	// distance from gps file
+//	lora_data.heart_rate++;	// bpm from pulse sensor file
+//	lora_data.steps++;	// step count from steps file
 	lora_send_packet(&lora, (uint8_t*)&lora_data, sizeof(lora_data));
 }
 
