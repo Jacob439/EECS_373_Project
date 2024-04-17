@@ -99,7 +99,7 @@ uint8_t check_ret(HAL_StatusTypeDef ret) {
 	} else {
 		// TODO:
 		// add more descriptive error
-		printf("i2c error!\n\r");
+		//printf("i2c error!\n\r");
 		return 0;
 	}
 }

@@ -32,6 +32,9 @@
 #include "IMU.h"
 #include "PulseSensor.h"
 #include "stdio.h"
+#include "speed.h"
+#include "steps.h"
+#include "vec.h"
 
 /* USER CODE END Includes */
 
@@ -42,7 +45,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define ACC_BUF_LEN 1000
+#define SPD_BUF_LEN 1000
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -66,16 +70,24 @@ TIM_HandleTypeDef htim7;
 
 /* USER CODE BEGIN PV */
 
-//flags
-static int pulse_flag = 0;
-static int gps_flag = 0;
-static int imu_flag = 0;
+lora_sx1276 lora;
 
-// vars
-int bpm = 0;
-int vel;
-int dist;
-double x, y, z;
+//flags
+static int steps_vtimer = 0;
+static char gps_flag = 0;
+static char vibrate_flag = 0;
+
+// vars --> most changed to non-static
+//static int bpm = 0;
+//static float vel;
+//static float dist;
+//static int steps;
+//static double x, y, z;
+//static vec_t acc_vec[ACC_BUF_LEN];
+//static int acc_vec_idx = 0;
+//static vec_t spd_vec[SPD_BUF_LEN];
+//static int spd_vec_idx = 0;
+static lora_data_t lora_data;
 
 /* USER CODE END PV */
 
@@ -92,19 +104,75 @@ static void MX_TIM7_Init(void);
 static void MX_I2C3_Init(void);
 /* USER CODE BEGIN PFP */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim);
+void IMUcallback(void);
+static inline void vibratorCallback(void);
+static inline void loraCallback(void);
+//void transmit_data_lora(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+/* lora initiation helper, executes up to 100 times */
+uint8_t lora_infINIT(int init_ctr) {
+	if (init_ctr < 100) {
+		uint8_t res = lora_init(&lora, &hspi1, GPIOB, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
+		if (res != LORA_OK) {
+			// Initialization failed
+			// retry lol
+			return lora_infINIT(init_ctr + 1);
+	  	} else {
+	  		return LORA_OK;
+	  	}
+	} else {
+		return LORA_ERROR;
+	}
+}
+
+/* called @ 200Hz, updates step count based on IMU data */
+inline void IMUcallback(void) {
+	vec_t acc_vec, gravity_vec;
+	lin_acc_vec(&hi2c3, &acc_vec.x);
+	grav_vec(&hi2c3, &gravity_vec.x);
+	input_step_data(gravity_vec, acc_vec);
+	//input_acc(gravity_vec, acc_vec);
+	// do somethign to add to speed vec or acc vec idk
+}
+
+/* called every 5 seconds, checks lora recieve interrupt flag */
+inline void vibratorCallback(void) {
+	if (vibrate_flag) { //
+		/* turn on vibrator */
+		/// possibly add more to create a sequence
+	}
+
+}
+
+/* loraCallback(): called after gps is read (5s period) to send relevant data */
+inline void loraCallback(void) {
+
+	/* NOTE */
+	// possibly send 5 seconds late
+	// before next* gps poll in order
+	// to send at a precise times
+	// --> 5 second delay should not have large effect
+
+	lora_data.speed = get_velocity();	// speed from gps file
+	lora_data.distance = get_distance();	// distance from gps file
+	lora_data.heart_rate = get_BPM();	// bpm from pulse sensor file
+	lora_data.steps = get_step_count();	// step count from steps file
+	lora_send_packet(&lora, (uint8_t*)&lora_data, sizeof(lora_data));
+}
+
+/* timer checker */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
-	if(htim == &htim1) {
-		// nothing to do
-	} else if (htim == &htim6) {
-		imu_flag = 1;
-		pulse_flag = 1;
+	if (htim == &htim6) {
+		IMUcallback();
+		updatePulseSensor();
 	} else if (htim == &htim7) {
+		/* timer controlling GPS and LoRa data */
 		gps_flag = 1;
+		//vibratorCallback();
 	}
 }
 
@@ -147,19 +215,18 @@ int main(void)
   MX_TIM7_Init();
   MX_I2C3_Init();
   /* USER CODE BEGIN 2 */
+  initPulseSensor(&hadc1);
+  init_IMU(&hi2c3);
+  uint8_t res = lora_infINIT(0);
+  if (res != LORA_OK) {
+	  // restart whole system idk
+  }
 
-  // initializations
+  // start your engines!
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
   HAL_TIM_Base_Start_IT(&htim6);
   HAL_TIM_Base_Start_IT(&htim7);
-  initPulseSensor(&hadc1);
-  init_IMU(&hi2c3);
-  lora_sx1276 lora;
-  uint8_t res = lora_init(&lora, &hspi1, GPIOB, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
-  if (res != LORA_OK) {
-    printf("epic fail!");
-    // Initialization failed
-  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -167,50 +234,12 @@ int main(void)
 
   while (1)
   {
-	  /* Pulse Sensor Poll */
-	  if (pulse_flag) {
-		  HAL_GPIO_WritePin(GPIOA, 5, 1);
-		  updatePulseSensor();
-		  bpm = get_BPM();
-		  pulse_flag = 0;
-		  HAL_GPIO_WritePin(GPIOA, 5, 0);
-	  }
-
-	  /* IMU Sensor Poll */
-	  if (imu_flag) {
-		  x = (double)x_lin_acc(&hi2c3);
-		  y = (double)y_lin_acc(&hi2c3);
-		  z = (double)z_lin_acc(&hi2c3);
-		  //20000 is 100 from imu, plus 200 for the time frame
-		  //printf("x: %f y: %f, z: %f\n\r", x, y, z);
-		  if((x>-.1)&&(x<.1)|(x>50) | (x<-50)){
-			  x = 0;
-		  }
-		  if((y>-.1)&&(y<.1)|(y>50) | (y<-50)){
-			  y = 0;
-		  }
-		  if((z>-.45)&&(z<.45)|(z>50) | (z<-50)){
-			  z = 0;
-		  }
-
-//		  inst_velx += x;
-//		  inst_vely += y;
-//		  inst_velz += z;
-//
-//		  if(imu_ctr == 1){
-//			  imu_ctr = 0;
-//			  inst_velx = 0;
-//			  inst_vely = 0;
-//			  inst_velz = 0;
-//		  }
-	  }
 
 	  /* GPS Polling */
 	  if (gps_flag) {
 		  updateGPS();
-		  vel = get_velocity();
-		  dist = get_distance();
 		  gps_flag = 0;
+		  loraCallback(); // transmit lora data after GPS bottleneck finishes
 	  }
 
 
@@ -645,7 +674,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
 
   /*Configure GPIO pin : PA5 */
   GPIO_InitStruct.Pin = GPIO_PIN_5;
@@ -659,22 +688,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PA9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_9;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PB7 */
-  GPIO_InitStruct.Pin = GPIO_PIN_7;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
-  GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
