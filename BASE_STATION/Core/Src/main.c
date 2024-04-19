@@ -187,7 +187,7 @@ int main(void)
 	 while (res != LORA_OK) {
 	   // Initialization failed
 		 HAL_Delay(100);
-		 uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
+		 res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
 	 }
 //  uint8_t res = lora_init(&lora, &hspi2, GPIOD, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
 //  	     if (res != LORA_OK) {
