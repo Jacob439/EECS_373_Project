@@ -179,6 +179,7 @@ int main(void)
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 //  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, GPIO_PIN_SET);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
 
 
 //  ENABLE_LORA_REPEATEDLY(&lora);
@@ -231,6 +232,8 @@ float exhaustion = 12;
    int heartrate;
    int stepcount;
 
+   uint8_t buzzing = 0;
+   uint8_t wait = 1;
   while (1)
   {
     /* USER CODE END WHILE */
@@ -270,6 +273,9 @@ float exhaustion = 12;
 		  	  // Conditions to send buzz
 		  	  if (armband_data.heartrate == 0 ||armband_data.heartrate > 100) {
 		  		res = lora_send_packet(&lora, &buzzer, 1);
+		  		// TEMP BUZZ DATA HERE
+		  		TIM3->CCR3 = 15000;
+		  		buzzing = 1;
 		  	  }
 
 		  	lora_mode_receive_continuous(&lora);
@@ -300,6 +306,16 @@ float exhaustion = 12;
 		  current_viewport = 2;
 //		  while(KeyPadSelect == 1){}
 	  }
+	  if (DISPLAY_TIMER_TRIGGERED == 1 && buzzing) {
+
+	  		  if (wait == 0) {
+	  			TIM3->CCR3 = 0;
+	  			buzzing = 0;
+	  			wait = 1;
+	  		  } else {
+	  			  wait = 0;
+	  		  }
+	  	  }
 
 	  if (current_viewport == 1 && DISPLAY_TIMER_TRIGGERED == 1) {
 		  UG_FontSetTransparency(1);
@@ -315,6 +331,8 @@ float exhaustion = 12;
 		  // TESTING BELOW
 		  ++exhaustion;
 	  }
+
+
 
 
 	  // WEIGHT AND AGE INPUT
@@ -1155,6 +1173,7 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 0 */
 
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
   TIM_MasterConfigTypeDef sMasterConfig = {0};
   TIM_OC_InitTypeDef sConfigOC = {0};
 
@@ -1167,6 +1186,15 @@ static void MX_TIM3_Init(void)
   htim3.Init.Period = 65535;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
   if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
   {
     Error_Handler();
@@ -1471,8 +1499,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PC8 PC9 */
-  GPIO_InitStruct.Pin = GPIO_PIN_8|GPIO_PIN_9;
+  /*Configure GPIO pin : PC9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_9;
   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
