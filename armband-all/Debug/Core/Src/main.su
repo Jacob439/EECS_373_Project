@@ -2,7 +2,7 @@
 ../Core/Src/main.c:135:13:IMUcallback	32	static
 ../Core/Src/main.c:154:13:loraCallback	8	static
 ../Core/Src/main.c:175:6:HAL_TIM_PeriodElapsedCallback	16	static
-../Core/Src/main.c:192:5:main	152	static
+../Core/Src/main.c:192:5:main	144	static
 ../Core/Src/main.c:293:6:SystemClock_Config	96	static
 ../Core/Src/main.c:338:13:MX_ADC1_Init	32	static
 ../Core/Src/main.c:396:13:MX_I2C3_Init	8	static

@@ -265,7 +265,7 @@ int main(void)
 	  		  //Get data
 	  //		  	  lora_mode_receive_continuous(&lora);
 
-	  		  	  lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+//	  		  	  lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
 	  		  	if (!lora_is_packet_available(&lora)) {
 	  		  		LoRaRecieve = 0;
 	  		  		buzz = 1;
