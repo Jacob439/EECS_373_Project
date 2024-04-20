@@ -49,7 +49,9 @@ void keypad_init(){
   uint8_t KeyPadReturn(int row, int col, int weightSel) {
 	  // Count of currently input characters
 	static uint8_t weightCounter = 0;
-    if (row == 0) {
+	// 1-based indexing, row 0 is nothing
+	// col 4 are letters
+    if (row == 0 || col == 4) {
       return 0;
     }
     HAL_Delay(10);

@@ -1,4 +1,4 @@
 ../Core/Src/keypad.c:15:5:RowChecker	16	static
 ../Core/Src/keypad.c:38:6:keypad_init	8	static
 ../Core/Src/keypad.c:49:11:KeyPadReturn	40	static
-../Core/Src/keypad.c:120:8:running	24	static
+../Core/Src/keypad.c:122:8:running	24	static

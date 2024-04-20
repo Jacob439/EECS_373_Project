@@ -99,7 +99,8 @@ int main(void)
     /* USER CODE END WHILE */
 
 	  //Speed 1: 75%
-	  TIM1->CCR1 = 46151;
+//	  TIM1->CCR1 = 46151;
+	  TIM1->CCR1 = 65534;
 	  HAL_Delay(1000);
 
 	  //Speed 2: 50%

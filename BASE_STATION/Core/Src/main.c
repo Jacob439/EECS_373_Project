@@ -218,8 +218,8 @@ float exhaustion = 12;
 
 
  // DUMMY DATA FOR TESTING DATA
-   struct arm_to_base armband_data;
-   struct base_to_arm buzzer;
+   struct arm_to_base armband_data = {0,0,0,0};
+   struct base_to_arm buzzer = {0};
 
 //   armband_data.velocity = 12.3;
 //   armband_data.heartrate = 98.54;
