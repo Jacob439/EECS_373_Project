@@ -69,7 +69,7 @@ void input_data(int bpm, float speed) {
 
 float get_strain_factor() {
   if (state != k_exercise) return -1;
-  return (current_strain - exercise_base_strain) / exercise_base_strain;
+  return (exercise_base_strain) / current_strain;
 }
 
 inline 
