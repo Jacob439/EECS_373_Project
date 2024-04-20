@@ -266,8 +266,14 @@ float exhaustion = 12;
 //		  	  if (res != LORA_OK) {
 //		  		  // Receive failed
 //		  	  }
-		  	  res = lora_send_packet(&lora, &buzzer, sizeof(buzzer));
+
+		  	  // Conditions to send buzz
+		  	  if (armband_data.heartrate == 0 ||armband_data.heartrate > 100) {
+		  		res = lora_send_packet(&lora, &buzzer, 1);
+		  	  }
+
 		  	lora_mode_receive_continuous(&lora);
+
 
 
 

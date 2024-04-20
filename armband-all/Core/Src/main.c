@@ -69,7 +69,7 @@ TIM_HandleTypeDef htim6;
 TIM_HandleTypeDef htim7;
 
 /* USER CODE BEGIN PV */
-
+uint8_t LoRaRecieve = 0;
 lora_sx1276 lora;
 
 //flags
@@ -168,6 +168,7 @@ inline void loraCallback(void) {
 //	lora_data.heart_rate++;	// bpm from pulse sensor file
 //	lora_data.steps++;	// step count from steps file
 	lora_send_packet(&lora, (uint8_t*)&lora_data, sizeof(lora_data));
+	lora_mode_receive_single(&lora);
 }
 
 /* timer checker */
@@ -237,6 +238,12 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  uint8_t buzz = 0;
+  // Wait at least 5 seconds before clearing buzzer
+  uint8_t wait = 1;
+  lora_enable_interrupt_rx_done(&lora);
+  char buffer[128];
+  lora_mode_receive_single(&lora);
 
   while (1)
   {
@@ -246,7 +253,30 @@ int main(void)
 		  updateGPS();
 		  gps_flag = 0;
 		  loraCallback(); // transmit lora data after GPS bottleneck finishes
+		  if (buzz && !wait) {
+		  		  TIM1->CCR1 = 0;
+		  		  buzz = 0;
+		  		  wait = 1;
+		  } else if (buzz) {
+			  wait = 0;
+		  }
 	  }
+	  if(LoRaRecieve == 1){
+	  		  //Get data
+	  //		  	  lora_mode_receive_continuous(&lora);
+
+	  		  	  lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
+	  		  	if (!lora_is_packet_available(&lora)) {
+	  		  		LoRaRecieve = 0;
+	  		  		buzz = 1;
+	  		  		lora_mode_receive_single(&lora);
+	  		  	}
+
+	  }
+	  if (buzz) {
+		  TIM1->CCR1 = 65534;
+	  }
+
 
 
     /* USER CODE END WHILE */
@@ -695,6 +725,16 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PB5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_5;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
