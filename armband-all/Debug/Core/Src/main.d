@@ -36,7 +36,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
  ../Core/Inc/gps.h ../Core/Inc/main.h ../Core/Inc/lora_sx1276.h \
  ../Core/Inc/IMU.h ../Core/Inc/PulseSensor.h ../Core/Inc/speed.h \
- ../Core/Inc/steps.h ../Core/Inc/vec.h
+ ../Core/Inc/step_inc/StepCountingAlgo.h ../Core/Inc/step_inc/config.h \
+ ../Core/Inc/step_inc/sqrt.h ../Core/Inc/vec.h
 ../Core/Inc/main.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
@@ -79,5 +80,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/IMU.h:
 ../Core/Inc/PulseSensor.h:
 ../Core/Inc/speed.h:
-../Core/Inc/steps.h:
+../Core/Inc/step_inc/StepCountingAlgo.h:
+../Core/Inc/step_inc/config.h:
+../Core/Inc/step_inc/sqrt.h:
 ../Core/Inc/vec.h:

@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (12.3.rel1)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -11,6 +11,7 @@ RM := rm -rf
 -include sources.mk
 -include Drivers/STM32L4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
+-include Core/Src/step_src/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk
 
@@ -60,8 +61,8 @@ all: main-build
 main-build: armband-all.elf secondary-outputs
 
 # Tool invocations
-armband-all.elf armband-all.map: $(OBJS) $(USER_OBJS) C:\Users\jakes\Documents\eecs373\EECS_373_Project\armband-all\STM32L432KCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "armband-all.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jakes\Documents\eecs373\EECS_373_Project\armband-all\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="armband-all.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+armband-all.elf armband-all.map: $(OBJS) $(USER_OBJS) /Users/masondevries/STM32CubeIDE/workspace_1.14.0/armband-all/STM32L432KCUX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "armband-all.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/masondevries/STM32CubeIDE/workspace_1.14.0/armband-all/STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="armband-all.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

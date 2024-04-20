@@ -1,0 +1,7 @@
+../Core/Inc/step_inc/sqrt.h:28:16:sqrt	3
+../Core/Src/step_src/StepCountingAlgo.c:45:13:increaseStepCallback	1
+../Core/Src/step_src/StepCountingAlgo.c:50:6:initAlgo	1
+../Core/Src/step_src/StepCountingAlgo.c:75:6:processSample	1
+../Core/Src/step_src/StepCountingAlgo.c:80:6:resetSteps	1
+../Core/Src/step_src/StepCountingAlgo.c:85:6:resetAlgo	1
+../Core/Src/step_src/StepCountingAlgo.c:100:9:getSteps	1

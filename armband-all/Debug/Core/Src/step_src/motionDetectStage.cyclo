@@ -1,0 +1,3 @@
+../Core/Inc/step_inc/sqrt.h:28:16:sqrt	3
+../Core/Src/step_src/motionDetectStage.c:40:6:initMotionDetectStage	1
+../Core/Src/step_src/motionDetectStage.c:47:6:motionDetectStage	6

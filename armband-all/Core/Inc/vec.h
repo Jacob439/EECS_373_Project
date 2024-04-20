@@ -14,8 +14,14 @@ typedef struct {
 	float z;
 } vec_t;
 
+typedef struct {
+	int16_t x;
+	int16_t y;
+	int16_t z;
+} vec_raw_t;
+
 // lora data
-// float + int + int = 3 * 4B data = 12B data
+// float + float + int + int = 4 * 4B data = 16B data
 typedef struct {
 	float speed;		// m/s
 	float distance;		// meters

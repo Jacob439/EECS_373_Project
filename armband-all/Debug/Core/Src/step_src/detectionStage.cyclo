@@ -1,0 +1,5 @@
+../Core/Inc/step_inc/sqrt.h:28:16:sqrt	3
+../Core/Src/step_src/detectionStage.c:46:6:initDetectionStage	1
+../Core/Src/step_src/detectionStage.c:57:6:detectionStage	6
+../Core/Src/step_src/detectionStage.c:103:6:resetDetection	1
+../Core/Src/step_src/detectionStage.c:110:6:changeDetectionThreshold	1

@@ -78,7 +78,7 @@ void GPS_Init()
 void GPS_UART_CallBack(){
 	int counter = 0;
 	while(1){
-		printf("hi2\n\r");
+		//printf("hi2\n\r");
 		HAL_UART_Receive(&huart1, &rx_data, 1, 1);
 		if (rx_data != '\n' && rx_index < sizeof(rx_buffer)) {
 			rx_buffer[rx_index++] = rx_data;
@@ -87,7 +87,7 @@ void GPS_UART_CallBack(){
 
 
 			//GPS_print((char*)rx_buffer);
-			GPS_print2();
+			//GPS_print2();
 
 			if(GPS_validate((char*) rx_buffer))
 				GPS_parse((char*) rx_buffer);
@@ -138,7 +138,7 @@ int GPS_validate(char *nmeastr){
     else
         return 0;// no checksum separator found there for invalid
 
-    sprintf(checkcalcstr,"%02X",calculated_check);
+    //sprintf(checkcalcstr,"%02X",calculated_check);
     return((checkcalcstr[0] == check[0])
         && (checkcalcstr[1] == check[1])) ? 1 : 0 ;
 }
@@ -199,7 +199,7 @@ updateGPS(){
 			  }
 			  temp[6] = '\0';
 			  for (int i = 0; i < 128; ++i){
-				  printf("%c", gps_buf[i]);////////
+				  //printf("%c", gps_buf[i]);////////
 			  }
 
 

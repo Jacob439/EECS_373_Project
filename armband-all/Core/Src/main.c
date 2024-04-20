@@ -33,7 +33,7 @@
 #include "PulseSensor.h"
 #include "stdio.h"
 #include "speed.h"
-#include "steps.h"
+#include "step_inc/StepCountingAlgo.h"
 #include "vec.h"
 
 /* USER CODE END Includes */
@@ -47,6 +47,9 @@
 /* USER CODE BEGIN PD */
 #define ACC_BUF_LEN 1000
 #define SPD_BUF_LEN 1000
+
+#define STEP_FREQ 20	// Hz
+#define STEP_PERIOD 50	// ms
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -69,13 +72,14 @@ TIM_HandleTypeDef htim6;
 TIM_HandleTypeDef htim7;
 
 /* USER CODE BEGIN PV */
+
 uint8_t LoRaRecieve = 0;
 lora_sx1276 lora;
 
 //flags
-static int steps_vtimer = 0;
 static char gps_flag = 0;
 static char vibrate_flag = 0;
+static time_t prog_time = 0;
 
 // vars --> most changed to non-static
 //static int bpm = 0;
@@ -114,8 +118,6 @@ static inline void loraCallback(void);
 /* USER CODE BEGIN 0 */
 
 /* lora initiation helper, executes up to 100 times */
-// AHHHH, why recursion??
-// Stack frames, but idk if that matters...
 uint8_t lora_infINIT(int init_ctr) {
 	if (init_ctr < 100) {
 		uint8_t res = lora_init(&lora, &hspi1, GPIOB, GPIO_PIN_0, LORA_BASE_FREQUENCY_US+FREQ_OFFSET);
@@ -133,12 +135,19 @@ uint8_t lora_infINIT(int init_ctr) {
 
 /* called @ 200Hz, updates step count based on IMU data */
 inline void IMUcallback(void) {
-	vec_t acc_vec, gravity_vec;
-	lin_acc_vec(&hi2c3, &acc_vec.x);
-	grav_vec(&hi2c3, &gravity_vec.x);
-	input_step_data(gravity_vec, acc_vec);
-	//input_acc(gravity_vec, acc_vec);
-	// do somethign to add to speed vec or acc vec idk
+	/* archaic step count code from the times of masons own library */
+//	vec_t acc_vec, gravity_vec;
+//	lin_acc_vec(&hi2c3, &acc_vec.x);
+//	grav_vec(&hi2c3, &gravity_vec.x);
+//	input_step_data(gravity_vec, acc_vec);
+
+	/* real good super awesome step count code! */
+	vec_raw_t acc_vec;
+	lin_acc_vec_raw(&hi2c3, &acc_vec.x);
+	processSample(prog_time, acc_vec.x, acc_vec.y, acc_vec.z);
+	prog_time += STEP_PERIOD;
+//	num_steps = getSteps();
+//	printf("steps: %i\n\r", num_steps);
 }
 
 /* called every 5 seconds, checks lora recieve interrupt flag */
@@ -162,13 +171,16 @@ inline void loraCallback(void) {
 	lora_data.speed = get_velocity();	// speed from gps file
 	lora_data.distance = get_distance();	// distance from gps file
 	lora_data.heart_rate = get_BPM();	// bpm from pulse sensor file
-	lora_data.steps = get_step_count();	// step count from steps file
-//	lora_data.speed++;	// speed from gps file
-//	lora_data.distance++;	// distance from gps file
-//	lora_data.heart_rate++;	// bpm from pulse sensor file
-//	lora_data.steps++;	// step count from steps file
+	lora_data.steps = getSteps();	// step count from steps file
 	lora_send_packet(&lora, (uint8_t*)&lora_data, sizeof(lora_data));
 	lora_mode_receive_single(&lora);
+
+	/* debug code for use without lora */
+	printf("sent to Base Station:\n\r");
+	printf("\t\tspeed: \t%f m/s\n\r", lora_data.speed);
+	printf("\tdistance: \t%f meters\n\r", lora_data.distance);
+	printf("\t\tpulse: \t%i bpm\n\r", lora_data.heart_rate);
+	printf("\t\tsteps: \t%i steps\n\n\r", lora_data.steps);
 }
 
 /* timer checker */
@@ -228,6 +240,7 @@ int main(void)
   if (res != LORA_OK) {
 	  // restart whole system idk
   }
+  initAlgo();
 
   // start your engines!
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
@@ -253,31 +266,33 @@ int main(void)
 		  updateGPS();
 		  gps_flag = 0;
 		  loraCallback(); // transmit lora data after GPS bottleneck finishes
-		  if (buzz && !wait) {
-		  		  TIM1->CCR1 = 0;
-		  		  buzz = 0;
-		  		  wait = 1;
+      if (buzz && !wait) {
+		  	TIM1->CCR1 = 0;
+        buzz = 0;
+        wait = 1;
 		  } else if (buzz) {
 			  wait = 0;
 		  }
-	  }
-	  if(LoRaRecieve == 1){
+    }
+
+    /* poll lora receipt */
+    if(LoRaRecieve == 1){
 	  		  //Get data
 	  //		  	  lora_mode_receive_continuous(&lora);
 
 //	  		  	  lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
-	  		  	if (!lora_is_packet_available(&lora)) {
-	  		  		LoRaRecieve = 0;
-	  		  		buzz = 1;
-	  		  		lora_mode_receive_single(&lora);
-	  		  	}
+      if (!lora_is_packet_available(&lora)) {
+        LoRaRecieve = 0;
+        buzz = 1;
+        lora_mode_receive_single(&lora);
+      }
 
 	  }
+
+    /* poll buzzer */
 	  if (buzz) {
 		  TIM1->CCR1 = 65534;
 	  }
-
-
 
     /* USER CODE END WHILE */
 
@@ -633,7 +648,7 @@ static void MX_TIM6_Init(void)
 
   /* USER CODE END TIM6_Init 1 */
   htim6.Instance = TIM6;
-  htim6.Init.Prescaler = 39;
+  htim6.Init.Prescaler = 399;
   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim6.Init.Period = 499;
   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;

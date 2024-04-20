@@ -8,11 +8,10 @@
 
 /* Macros */
 #define MAX_VOLT 3.2
-#define BUF_LENGTH 10
-#define SAMPLE_FREQ 200 		// 50 Hz sample frequency
-#define SAMPLE_PERIOD 5	// 20 ms sample frequency
+#define BUF_LENGTH 30
+#define SAMPLE_FREQ 20 		// 50 Hz sample frequency
+#define SAMPLE_PERIOD 50	// 20 ms sample frequency
 
-#define DICROTIC_BUFFER IBI (IBI * 3) / 5
 #define THRESH_DEFAULT MAX_VOLT / 2.0f
 
 /* Function Prototypes*/
