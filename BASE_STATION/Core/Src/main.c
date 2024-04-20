@@ -24,6 +24,7 @@
 #include "TempHumSensor.h"
 #include "lcd.h"
 #include "lora_sx1276.h"
+#include "strain.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -73,6 +74,7 @@ lora_sx1276 lora;
 uint8_t DISPLAY_TIMER_TRIGGERED;
 uint8_t KeyPadSelect = 0;
 uint8_t LoRaRecieve = 0;
+extern uint8_t age;
 
 //struct gps_data {
 //	float longitude;
@@ -285,6 +287,7 @@ float exhaustion = 12;
 
 		  	if (!lora_is_packet_available(&lora))
 		  		LoRaRecieve = 0;
+		  	input_data(armband_data.heartrate, armband_data.velocity);
 	  }
 
 	  // HOME SCREEN / RUNNER VIEW
@@ -323,13 +326,15 @@ float exhaustion = 12;
 
 //		  LCD_Fill(100, 5, 240, player_data_fill_height, C_BLACK);
 		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
-		  snprintf(player_write_buffer, sizeof(player_write_buffer), "Velocity: %.3f\nHeart Rate: %d\nExhaustion: %.3f\nStep Count: %d",
-				  armband_data.velocity, armband_data.heartrate, exhaustion, armband_data.steps);
+		  snprintf(player_write_buffer, sizeof(player_write_buffer),
+				  "Velocity: %.3f\nHeart Rate: %d\nStamina: %.3f\nDistance: %.3f\nStep Count: %d",
+				  armband_data.velocity, armband_data.heartrate, get_strain_factor(),
+				  armband_data.distance, armband_data.steps);
 		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
 		  HAL_Delay(100);
 		  DISPLAY_TIMER_TRIGGERED = 0;
 		  // TESTING BELOW
-		  ++exhaustion;
+//		  ++exhaustion;
 	  }
 
 
@@ -342,6 +347,7 @@ float exhaustion = 12;
 		     }
 		  keypad_init();
 		  running();
+		  init_analytics(age);
 		  KeyPadSelect = 0;
 		  // Go back to runner screen
 		  current_viewport = 1;

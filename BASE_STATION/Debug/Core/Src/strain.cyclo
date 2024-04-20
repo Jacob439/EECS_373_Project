@@ -1,0 +1,7 @@
+../Core/Src/strain.c:33:6:init_analytics	1
+../Core/Src/strain.c:39:6:input_data	9
+../Core/Src/strain.c:70:7:get_strain_factor	2
+../Core/Src/strain.c:76:7:get_strain	1
+../Core/Src/strain.c:80:6:update_data	1
+../Core/Src/strain.c:86:6:calculate_base_strain	2
+../Core/Src/strain.c:94:6:calculate_exercise_strain	2
