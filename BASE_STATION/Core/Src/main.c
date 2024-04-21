@@ -227,7 +227,7 @@ float exhaustion = 12;
 //   armband_data.velocity = 12.3;
 //   armband_data.heartrate = 98.54;
 //   armband_data.steps = 20000;
-   uint16_t player_data_fill_height = 140;
+   uint16_t player_data_fill_height = 145;
 
    char player_write_buffer[128];
    char buffer[128];
@@ -272,9 +272,13 @@ float exhaustion = 12;
 //		  		  // Receive failed
 //		  	  }
 
-		  	  // Conditions to send buzz
-		  	  if (armband_data.heartrate == 0 ||armband_data.heartrate > 100) {
+		  	  if (heartRateHigh(armband_data.heartrate, age) || heartRateLow(armband_data.heartrate, age)){
 		  		res = lora_send_packet(&lora, &buzzer, 1);
+		  	  }
+
+		  	  // Conditions to set buzz at base station
+		  	  if (get_strain_factor() < 50 && get_strain_factor() > 0) {
+
 		  		// TEMP BUZZ DATA HERE
 		  		TIM3->CCR3 = 15000;
 		  		buzzing = 1;
@@ -298,7 +302,8 @@ float exhaustion = 12;
 		  // DO THE BELOW ONLY ON TIME INTERVAL
 		  LCD_Fill(80, 5, 240, 120, C_BLACK);
 		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f", data.temp, data.hum);
-		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
+		  // Blue = Green
+		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, 0xE3CC, C_BLACK);
 //		  LCD_PutStr(50, 56, "Temp: " + data.temp + "\nHumid: " + data.hum, DEFAULT_FONT, C_GREEN, C_BLACK);
 		  // Why the HAL_Delays? don't these only trigger on a timer anyway?
 		  HAL_Delay(100);
@@ -330,6 +335,7 @@ float exhaustion = 12;
 				  "Velocity: %.3f\nHeart Rate: %d\nStamina: %.3f\nDistance: %.3f\nStep Count: %d",
 				  armband_data.velocity, armband_data.heartrate, get_strain_factor(),
 				  armband_data.distance, armband_data.steps);
+		  // Green = Red
 		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
 		  HAL_Delay(100);
 		  DISPLAY_TIMER_TRIGGERED = 0;

@@ -35,6 +35,21 @@ void init_analytics(int age) {
   state = k_init_baseline;
 }
 
+// Heart Rate too High
+uint8_t heartRateHigh(int bpm, int age) {
+	int maxHR = 220 - age;
+	if (maxHR*0.80 < bpm) return 1;
+	return 0;
+}
+
+// Heart Rate too Low
+uint8_t heartRateLow(int bpm, int age) {
+	int maxHR = 220 - age;
+	if (maxHR*0.60 < bpm) return 1;
+	return 0;
+}
+
+
 // Requires: speed in meters/s
 void input_data(int bpm, float speed) {
   switch (state) {
