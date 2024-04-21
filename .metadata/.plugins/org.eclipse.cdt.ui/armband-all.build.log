@@ -1,0 +1,35 @@
+19:14:25 **** Incremental Build of configuration Debug for project armband-all ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L432xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/step_inc/config.h:4,
+                 from ../Core/Inc/step_inc/StepCountingAlgo.h:28,
+                 from ../Core/Src/main.c:36:
+../Core/Inc/step_inc/sqrt.h:28:16: warning: conflicting types for built-in function 'sqrt'; expected 'double(double)' [-Wbuiltin-declaration-mismatch]
+   28 | static int64_t sqrt(int64_t number)
+      |                ^~~~
+../Core/Inc/step_inc/sqrt.h:1:1: note: 'sqrt' is declared in header '<math.h>'
+  +++ |+#include <math.h>
+    1 | /*
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:279:8: warning: unused variable 'buffer' [-Wunused-variable]
+  279 |   char buffer[128];
+      |        ^~~~~~
+../Core/Inc/step_inc/sqrt.h: At top level:
+../Core/Inc/step_inc/sqrt.h:28:16: warning: 'sqrt' defined but not used [-Wunused-function]
+   28 | static int64_t sqrt(int64_t number)
+      |                ^~~~
+arm-none-eabi-gcc -o "armband-all.elf" @"objects.list"   -mcpu=cortex-m4 -T"N:\trebuchet_git\EECS_373_Project\armband-all\STM32L432KCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="armband-all.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.14.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: armband-all.elf has a LOAD segment with RWX permissions
+Finished building target: armband-all.elf
+ 
+arm-none-eabi-size  armband-all.elf 
+arm-none-eabi-objdump -h -S armband-all.elf  > "armband-all.list"
+   text	   data	    bss	    dec	    hex	filename
+  66796	    552	   4048	  71396	  116e4	armband-all.elf
+Finished building: default.size.stdout
+ 
+Finished building: armband-all.list
+ 
+
+19:14:31 Build Finished. 0 errors, 4 warnings. (took 5s.854ms)
+

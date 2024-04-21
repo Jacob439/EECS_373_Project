@@ -1,0 +1,15 @@
+19:11:13 **** Incremental Build of configuration Debug for project l432kb-armband-all ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/IMU.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L412xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/IMU.d" -MT"Core/Src/IMU.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/IMU.o"
+../Core/Src/IMU.c:46:9: error: conflicting types for 'init_IMU'; have 'uint8_t(I2C_HandleTypeDef *)' {aka 'unsigned char(struct __I2C_HandleTypeDef *)'}
+   46 | uint8_t init_IMU(I2C_HandleTypeDef *hi2c){
+      |         ^~~~~~~~
+In file included from ../Core/Src/IMU.c:8:
+../Core/Inc/IMU.h:19:6: note: previous declaration of 'init_IMU' with type 'void(I2C_HandleTypeDef *)' {aka 'void(struct __I2C_HandleTypeDef *)'}
+   19 | void init_IMU(I2C_HandleTypeDef *hi2c);
+      |      ^~~~~~~~
+make: *** [Core/Src/subdir.mk:52: Core/Src/IMU.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+19:11:15 Build Failed. 2 errors, 0 warnings. (took 2s.205ms)
+

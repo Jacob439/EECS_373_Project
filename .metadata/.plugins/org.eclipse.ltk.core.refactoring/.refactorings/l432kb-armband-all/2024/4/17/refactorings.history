@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;l432kb-armband-all/Core/Src/gps.c.c&apos; to &apos;gps.c&apos;" description="Rename resource &apos;gps.c.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/gps.c.c" name="gps.c" stamp="1713736647254" updateReferences="true"/>
+</session>
