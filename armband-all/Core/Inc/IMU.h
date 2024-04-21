@@ -16,7 +16,7 @@
  * range = +/- 4Gs
  * unit = m/s^2
  */
-void init_IMU(I2C_HandleTypeDef *hi2c);
+uint8_t init_IMU(I2C_HandleTypeDef *hi2c);
 
 /**
  * init_IMU with custom parameters ( not really supported tbh)

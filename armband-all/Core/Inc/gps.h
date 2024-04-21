@@ -65,3 +65,4 @@ float GPS_nmea_to_dec(float deg_coord, char nsew);
 void updateGPS();
 double get_distance();
 double get_velocity();
+void UpdateGps_IT();

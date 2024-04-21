@@ -26,31 +26,34 @@ uint16_t fix_msb_loss(uint16_t val){
 	return val;
 }
 
-void startup_IMU(I2C_HandleTypeDef *hi2c){
+uint8_t startup_IMU(I2C_HandleTypeDef *hi2c){
 	uint8_t buf[10];
 
 	// verify i2c is working properly by reading chip id
 	read_to_buf(hi2c, 0x00, buf, 1);
 	if(buf[0] != 0xA0) {
-		printf("chip error, wrong/no chip ID returned\n\r");
-		return;
+		printf("IMU ERROR: wrong/no chip ID returned\n\r");
+		return 1;
 	}
+	printf("IMU success: chip ID returned\n\r");
 
 	// put chip in configuration mode
 	buf[0] = 0x3D;
 	buf[1] = 0x00;
 	transmit_buf(hi2c, buf, 2);
+	return 0;
 }
 
-void init_IMU(I2C_HandleTypeDef *hi2c){
+uint8_t init_IMU(I2C_HandleTypeDef *hi2c){
 	uint8_t buf[10];
 
-	startup_IMU(hi2c);
+	if(startup_IMU(hi2c)) return 1;
 
 	// put chip in IMU mode
 	buf[0] = 0x3D;
 	buf[1] = 0x08;
 	transmit_buf(hi2c, buf, 2);
+	return 0;
 }
 
 void init_IMU_custom(I2C_HandleTypeDef *hi2c, uint8_t mode, uint8_t range, uint8_t unit){

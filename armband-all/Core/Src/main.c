@@ -149,6 +149,14 @@ inline void IMUcallback(void) {
 //	num_steps = getSteps();
 //	printf("steps: %i\n\r", num_steps);
 }
+          //IMU_infINIT(&hi2c3);
+void IMU_infINIT(I2C_HandleTypeDef *hi2c) {
+	int num_tries = 0;
+	while (init_IMU(hi2c)) {
+		++num_tries;
+		if (num_tries > 100);
+	}
+}
 
 /* called every 5 seconds, checks lora recieve interrupt flag */
 inline void vibratorCallback(void) {
@@ -191,8 +199,18 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef* htim){
 	} else if (htim == &htim7) {
 		/* timer controlling GPS and LoRa data */
 		gps_flag = 1;
+		HAL_NVIC_EnableIRQ(USART1_IRQn);
 		//vibratorCallback();
 	}
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+
+ 	//printf("IN CALLBACK\n\r");
+ 	UpdateGps_IT();
+	//HAL_UART_Receive_IT(&huart1, &rx_data, 1);
+
 }
 
 /* USER CODE END 0 */
@@ -235,12 +253,15 @@ int main(void)
   MX_I2C3_Init();
   /* USER CODE BEGIN 2 */
   initPulseSensor(&hadc1);
-  init_IMU(&hi2c3);
+  IMU_infINIT(&hi2c3);
   uint8_t res = lora_infINIT(0);
   if (res != LORA_OK) {
 	  // restart whole system idk
   }
   initAlgo();
+
+  //GPS INIT, just calls HAL_UART_Receive_IT(&huart1, &rx_data, 1) to start
+    //GPS_Init();
 
   // start your engines!
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
