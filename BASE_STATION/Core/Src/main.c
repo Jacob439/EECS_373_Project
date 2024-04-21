@@ -213,9 +213,6 @@ uint8_t current_viewport = 0; //determines what screen state you are on
 DISPLAY_TIMER_TRIGGERED = 0;
 HAL_TIM_Base_Start_IT(&htim17);
 
-// TEMP DATA
-float exhaustion = 12;
-
 // Set this pin ('D' on keypad) low for interrupt
  HAL_GPIO_WritePin(GPIOF, GPIO_PIN_13, 0);
 
@@ -227,7 +224,7 @@ float exhaustion = 12;
 //   armband_data.velocity = 12.3;
 //   armband_data.heartrate = 98.54;
 //   armband_data.steps = 20000;
-   uint16_t player_data_fill_height = 145;
+   uint16_t player_data_fill_height = 170;
 
    char player_write_buffer[128];
    char buffer[128];
@@ -301,7 +298,7 @@ float exhaustion = 12;
 
 		  // DO THE BELOW ONLY ON TIME INTERVAL
 		  LCD_Fill(80, 5, 240, 120, C_BLACK);
-		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f", data.temp, data.hum);
+		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f\nR1 Stamina: %.3f", data.temp, data.hum, get_strain_factor());
 		  // Blue = Green
 		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, 0xE3CC, C_BLACK);
 //		  LCD_PutStr(50, 56, "Temp: " + data.temp + "\nHumid: " + data.hum, DEFAULT_FONT, C_GREEN, C_BLACK);
@@ -332,7 +329,7 @@ float exhaustion = 12;
 //		  LCD_Fill(100, 5, 240, player_data_fill_height, C_BLACK);
 		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
 		  snprintf(player_write_buffer, sizeof(player_write_buffer),
-				  "Velocity: %.3f\nHeart Rate: %d\nStamina: %.3f\nDistance: %.3f\nStep Count: %d",
+				  "R1 Statistics\nVelocity: %.3f\nHeart Rate: %d\nStamina: %.3f\nDistance: %.3f\nStep Count: %d",
 				  armband_data.velocity, armband_data.heartrate, get_strain_factor(),
 				  armband_data.distance, armband_data.steps);
 		  // Green = Red
