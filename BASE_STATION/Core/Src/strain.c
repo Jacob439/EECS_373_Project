@@ -20,57 +20,49 @@ static float current_strain;
 static State_t state = k_pre_init;   
 
 // strain variables
-static float standard_base_strain;
-static float exercise_base_strain;
-static float current_strain;
+static float exercise_base_strain = -1;
+static float current_strain = -1;
 
 // heartbeat threshold variables
 // (calculated from exercise baseline)
 // ~80% of minimum optimal heart rate 0.8 * 0.64*(220-age)
 static int age = 0;
-static float heart_threshold = INT_MAX;
+static int heart_threshold = INT_MAX;
 
 void init_analytics(int age) {
-  heart_threshold = (220-age)*0.5;
-  state = k_init_baseline;
+  heart_threshold = (220-age)*0.60;
+  state = k_post_init;
 }
 
 // Heart Rate too High
 uint8_t heartRateHigh(int bpm, int age) {
 	int maxHR = 220 - age;
-	if (maxHR*0.80 < bpm) return 1;
+	if (bpm > maxHR*0.80) return 1;
 	return 0;
 }
 
 // Heart Rate too Low
 uint8_t heartRateLow(int bpm, int age) {
 	int maxHR = 220 - age;
-	if (maxHR*0.60 < bpm) return 1;
+	if (bpm < maxHR*0.60) return 1;
 	return 0;
 }
-
 
 // Requires: speed in meters/s
 void input_data(int bpm, float speed) {
   switch (state) {
-    case k_init_baseline:
-      update_data(bpm, speed);
-      if (data_index == TWO_MIN_NUM_DATAPOINTS) {
-        calculate_base_strain();
-        data_index = 0;
-        state = k_post_init;
-      }
+    case k_pre_init:
+      /* idle until init is called */
       break;
     case k_post_init:
-      // based only on speed now, maybe add HR threshold
-      // based on standard baseline
+      // if athlete starts moving or heart indicates exercise
       if (speed > SPEED_THRESHOLD || bpm > heart_threshold) {
         state = k_exercise_baseline;
       }
       break;
     case k_exercise_baseline:
       update_data(bpm, speed);
-      if (data_index == TWO_MIN_NUM_DATAPOINTS) {
+      if (data_index == DATA_BUFFER_LENGTH) {
         calculate_exercise_strain();
         data_index = 0;
         state = k_exercise;
@@ -83,27 +75,22 @@ void input_data(int bpm, float speed) {
 }
 
 float get_strain_factor() {
-  if (state != k_exercise) return -1;
-  return (exercise_base_strain) / current_strain;
+  if (state != k_exercise || current_strain == -1) return -1;
+  return (exercise_base_strain / current_strain);
 }
 
 inline
 float get_strain(int bpm, float speed) {
-  return bpm / (speed * 60.0f);
+	// -1 if divide by zero, will not end up being pushed
+	// to data array or updating curr_strain
+  return (speed == 0) ? -1 : bpm / (speed * 60.0f);
 }
 
 void update_data(int bpm, float speed) {
   current_strain = get_strain(bpm, speed);
+  if (current_strain == -1) return;
   data[data_index] = current_strain;
   ++data_index;
-}
-
-void calculate_base_strain(void) {
-  standard_base_strain = 0;
-  for (int i = 0; i < DATA_BUFFER_LENGTH; ++i) {
-    standard_base_strain += data[i];
-  }
-  standard_base_strain /= DATA_BUFFER_LENGTH;
 }
 
 void calculate_exercise_strain(void) {

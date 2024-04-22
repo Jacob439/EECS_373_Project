@@ -1,9 +1,8 @@
-../Core/Src/strain.c:33:6:init_analytics	16	static
-../Core/Src/strain.c:39:9:heartRateHigh	32	static
-../Core/Src/strain.c:46:9:heartRateLow	32	static
-../Core/Src/strain.c:54:6:input_data	16	static
-../Core/Src/strain.c:85:7:get_strain_factor	4	static
-../Core/Src/strain.c:91:7:get_strain	16	static
-../Core/Src/strain.c:95:6:update_data	16	static
-../Core/Src/strain.c:101:6:calculate_base_strain	16	static
-../Core/Src/strain.c:109:6:calculate_exercise_strain	16	static
+../Core/Src/strain.c:32:6:init_analytics	16	static
+../Core/Src/strain.c:38:9:heartRateHigh	32	static
+../Core/Src/strain.c:45:9:heartRateLow	32	static
+../Core/Src/strain.c:52:6:input_data	16	static
+../Core/Src/strain.c:77:7:get_strain_factor	4	static
+../Core/Src/strain.c:83:7:get_strain	16	static
+../Core/Src/strain.c:89:6:update_data	16	static
+../Core/Src/strain.c:96:6:calculate_exercise_strain	16	static

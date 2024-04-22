@@ -14,16 +14,15 @@
 #include "main.h"
 
 // data buffer can hold 10 minutes of data
-#define INPUT_PERIOD 10   // seconds
-#define DATA_BUFFER_LENGTH 600/INPUT_PERIOD
-#define TWO_MIN_NUM_DATAPOINTS 180/INPUT_PERIOD
+#define INPUT_PERIOD 5   // seconds
+#define BASELINE_LENGTH_MINUTES	2
+#define DATA_BUFFER_LENGTH BASELINE_LENGTH_MINUTES * 60/INPUT_PERIOD
 
 // maybe
-#define SPEED_THRESHOLD 1.5f // speed threshold for start of workout?
+#define SPEED_THRESHOLD 1.0f // speed threshold for start of workout?
 
 typedef enum {
   k_pre_init,           // must init in order to start analyzing
-  k_init_baseline,      // in first 2 minutes (standard baseline)
   k_post_init,          // after baseline but before exercise
   k_exercise_baseline,  // in first 2 minutes of exercise
   k_exercise            // indefinite state of exercise
@@ -47,6 +46,9 @@ void input_data(int bpm, float speed);
 // not been calculated yet)
 float get_strain_factor(void);
 
+// self explanatory
+uint8_t heartRateHigh(int bpm, int age);
+uint8_t heartRateLow(int bpm, int age);
 
 /* private function prototypes (for use in analytics.c) */
 
