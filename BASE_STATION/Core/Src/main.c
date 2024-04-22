@@ -315,15 +315,25 @@ HAL_TIM_Base_Start_IT(&htim17);
 //		  float stamina = get_strain_factor();
 
 		  //Stamina stuff below
+		  // ERASE FIRST
+		  LCD_PutStr(5, 260, stamina_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
+		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
+		  // Add field to buffer
 		  snprintf(stamina_write_buffer, sizeof(stamina_write_buffer), "\nR1 Stamina: ");
+		  // Add value to a second buffer
 		  float stamina = get_strain_factor();
 		  snprintf(stamina_data_write_buffer, sizeof(stamina_data_write_buffer), "%.3f", stamina);
+		  // Write field buffer
 		  LCD_PutStr(5, 260, stamina_write_buffer, DEFAULT_FONT, C_WHITE, C_BLACK);
+		  // Write value buffer
 		  uint16_t stamina_color;
-		  if (stamina == -1 ){
+		  if (stamina == -1 || stamina < 50){
 			  stamina_color = 0b0000011111100000; // RED
+		  } else if (stamina > 100) {
+			  stamina_color = 0b0000011111111111; // YELLOW
 		  } else {
-			  stamina_color = C_WHITE;
+  //			  stamina_color = C_WHITE;
+			  stamina_color = 0b0000000000011111; // GREEN
 		  }
 		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, stamina_color, C_BLACK);
 
@@ -364,10 +374,13 @@ HAL_TIM_Base_Start_IT(&htim17);
 		  snprintf(stamina_data_write_buffer, sizeof(stamina_data_write_buffer), "%.3f", stamina);
 		  LCD_PutStr(5, 260, stamina_write_buffer, DEFAULT_FONT, C_WHITE, C_BLACK);
 		  uint16_t stamina_color;
-		  if (stamina == -1 ){
+		  if (stamina == -1 || stamina < 50){
 			  stamina_color = 0b0000011111100000; // RED
+		  } else if (stamina > 100) {
+			  stamina_color = 0b0000011111111111; // YELLOW
 		  } else {
-			  stamina_color = C_WHITE;
+//			  stamina_color = C_WHITE;
+			  stamina_color = 0b0000000000011111; // GREEN
 		  }
 		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, stamina_color, C_BLACK);
 //		  HAL_Delay(100);
