@@ -60,8 +60,8 @@ all: main-build
 main-build: DISPLAY_TEST.elf secondary-outputs
 
 # Tool invocations
-DISPLAY_TEST.elf DISPLAY_TEST.map: $(OBJS) $(USER_OBJS) E:\EECS_373_Project\BASE_STATION\STM32L4R5ZITXP_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "DISPLAY_TEST.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\EECS_373_Project\BASE_STATION\STM32L4R5ZITXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="DISPLAY_TEST.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+DISPLAY_TEST.elf DISPLAY_TEST.map: $(OBJS) $(USER_OBJS) C:\Users\jakes\Documents\eecs373\EECS_373_Project\BASE_STATION\STM32L4R5ZITXP_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "DISPLAY_TEST.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\jakes\Documents\eecs373\EECS_373_Project\BASE_STATION\STM32L4R5ZITXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="DISPLAY_TEST.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

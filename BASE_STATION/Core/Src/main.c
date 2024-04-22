@@ -225,8 +225,11 @@ HAL_TIM_Base_Start_IT(&htim17);
 //   armband_data.heartrate = 98.54;
 //   armband_data.steps = 20000;
    uint16_t player_data_fill_height = 170;
+   uint16_t player_data_fill_bottom = 50;
 
    char player_write_buffer[128];
+   char stamina_write_buffer[16];
+   char stamina_data_write_buffer[16];
    char buffer[128];
    int heartrate;
    int stepcount;
@@ -248,6 +251,7 @@ HAL_TIM_Base_Start_IT(&htim17);
 		  current_viewport = (current_viewport == 2) ? 2 : 1;
 		  // Clear dirty parts of the screen
 		  LCD_Fill(0, 5, 240, player_data_fill_height, C_BLACK);
+		  LCD_Fill(0, player_data_fill_bottom, 240, 320, C_BLACK);
 		  //allows for instant transition
 		  DISPLAY_TIMER_TRIGGERED = 1;
 	  }
@@ -256,6 +260,7 @@ HAL_TIM_Base_Start_IT(&htim17);
 		  current_viewport = (current_viewport == 2) ? 2 : 0;
 		  // Clear dirty parts of the screen
 		  LCD_Fill(0, 5, 240, player_data_fill_height, C_BLACK);
+		  LCD_Fill(0, player_data_fill_bottom, 240, 320, C_BLACK);
 		  //allows for instant transition
 		  DISPLAY_TIMER_TRIGGERED = 1;
 	  }
@@ -298,12 +303,30 @@ HAL_TIM_Base_Start_IT(&htim17);
 
 		  // DO THE BELOW ONLY ON TIME INTERVAL
 		  LCD_Fill(80, 5, 240, 120, C_BLACK);
-		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f\nR1 Stamina: %.3f", data.temp, data.hum, get_strain_factor());
+		  snprintf(buffer, sizeof(buffer), "Temp: %.3f\nHumid: %.3f", data.temp, data.hum);
 		  // Blue = Green
-		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, 0xE3CC, C_BLACK);
+		  // 0b1111100000000000 = Blue
+		  // 0b0000011111100000 = Red
+		  // 0b0000000000011111 = Green
+
+		  LCD_PutStr(5, 5, buffer, DEFAULT_FONT, C_WHITE, C_BLACK);
+
 //		  LCD_PutStr(50, 56, "Temp: " + data.temp + "\nHumid: " + data.hum, DEFAULT_FONT, C_GREEN, C_BLACK);
-		  // Why the HAL_Delays? don't these only trigger on a timer anyway?
-		  HAL_Delay(100);
+//		  float stamina = get_strain_factor();
+
+		  //Stamina stuff below
+		  snprintf(stamina_write_buffer, sizeof(stamina_write_buffer), "\nR1 Stamina: ");
+		  float stamina = get_strain_factor();
+		  snprintf(stamina_data_write_buffer, sizeof(stamina_data_write_buffer), "%.3f", stamina);
+		  LCD_PutStr(5, 260, stamina_write_buffer, DEFAULT_FONT, C_WHITE, C_BLACK);
+		  uint16_t stamina_color;
+		  if (stamina == -1 ){
+			  stamina_color = 0b0000011111100000; // RED
+		  } else {
+			  stamina_color = C_WHITE;
+		  }
+		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, stamina_color, C_BLACK);
+
 		  DISPLAY_TIMER_TRIGGERED = 0;
 	  }
 	  // We need an actual interrupt, otherwise can't listen for LoRa
@@ -328,13 +351,26 @@ HAL_TIM_Base_Start_IT(&htim17);
 
 //		  LCD_Fill(100, 5, 240, player_data_fill_height, C_BLACK);
 		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
+		  LCD_PutStr(5, 260, stamina_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
+		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
 		  snprintf(player_write_buffer, sizeof(player_write_buffer),
-				  "R1 Statistics\nVelocity: %.3f\nHeart Rate: %d\nStamina: %.3f\nDistance: %.3f\nStep Count: %d",
-				  armband_data.velocity, armband_data.heartrate, get_strain_factor(),
+				  "R1 Statistics\nVelocity: %.3f\nHeart Rate: %d\nDistance: %.3f\nStep Count: %d",
+				  armband_data.velocity, armband_data.heartrate,
 				  armband_data.distance, armband_data.steps);
 		  // Green = Red
-		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_GREEN, C_BLACK);
-		  HAL_Delay(100);
+		  LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_WHITE, C_BLACK);
+		  snprintf(stamina_write_buffer, sizeof(stamina_write_buffer), "\nStamina: ");
+		  float stamina = get_strain_factor();
+		  snprintf(stamina_data_write_buffer, sizeof(stamina_data_write_buffer), "%.3f", stamina);
+		  LCD_PutStr(5, 260, stamina_write_buffer, DEFAULT_FONT, C_WHITE, C_BLACK);
+		  uint16_t stamina_color;
+		  if (stamina == -1 ){
+			  stamina_color = 0b0000011111100000; // RED
+		  } else {
+			  stamina_color = C_WHITE;
+		  }
+		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, stamina_color, C_BLACK);
+//		  HAL_Delay(100);
 		  DISPLAY_TIMER_TRIGGERED = 0;
 		  // TESTING BELOW
 //		  ++exhaustion;
@@ -372,8 +408,8 @@ HAL_TIM_Base_Start_IT(&htim17);
 //	  	  HAL_Delay(500);
 
 
-	  heartrate = armband_data.heartrate;
-	  stepcount = armband_data.steps;
+//	  heartrate = armband_data.heartrate;
+//	  stepcount = armband_data.steps;
   }
   /* USER CODE END 3 */
 }
