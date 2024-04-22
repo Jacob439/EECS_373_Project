@@ -219,6 +219,7 @@ HAL_TIM_Base_Start_IT(&htim17);
 
  // DUMMY DATA FOR TESTING DATA
    struct arm_to_base armband_data = {0,0,0,0};
+   struct arm_to_base TEMPCOPY = {0,0,0,0};
    struct base_to_arm buzzer = {0};
 
 //   armband_data.velocity = 12.3;
@@ -236,6 +237,9 @@ HAL_TIM_Base_Start_IT(&htim17);
 
    uint8_t buzzing = 0;
    uint8_t wait = 1;
+   // Only buzz once when someone passes the threshold
+   // Will reset when user drops back below the threshold
+   uint8_t buzz_triggered = 0;
   while (1)
   {
     /* USER CODE END WHILE */
@@ -269,7 +273,11 @@ HAL_TIM_Base_Start_IT(&htim17);
 		  //Get data
 //		  	  lora_mode_receive_continuous(&lora);
 		  	  lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
-		  	  memcpy(&armband_data, &buffer, sizeof(armband_data));
+		  	  memcpy(&TEMPCOPY, &buffer, sizeof(armband_data));
+		  	  if (TEMPCOPY.heartrate < 1 || TEMPCOPY.heartrate > 300) {
+		  		armband_data = TEMPCOPY;
+//		  		  swap(armband_data, TEMPCOPY);
+		  	  }
 //		  	  if (res != LORA_OK) {
 //		  		  // Receive failed
 //		  	  }
@@ -281,9 +289,13 @@ HAL_TIM_Base_Start_IT(&htim17);
 		  	  // Conditions to set buzz at base station
 		  	  if (get_strain_factor() < 50 && get_strain_factor() > 0) {
 
-		  		// TEMP BUZZ DATA HERE
+		  		if (!buzz_triggered){
 		  		TIM3->CCR3 = 15000;
 		  		buzzing = 1;
+		  		buzz_triggered = 1;
+		  		}
+		  	  } else {
+		  		  buzz_triggered = 0;
 		  	  }
 
 		  	lora_mode_receive_continuous(&lora);
@@ -317,7 +329,7 @@ HAL_TIM_Base_Start_IT(&htim17);
 		  //Stamina stuff below
 		  // ERASE FIRST
 		  LCD_PutStr(5, 260, stamina_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
-		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
+		  LCD_PutStr(150, 288, stamina_data_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
 		  // Add field to buffer
 		  snprintf(stamina_write_buffer, sizeof(stamina_write_buffer), "\nR1 Stamina: ");
 		  // Add value to a second buffer
@@ -335,7 +347,7 @@ HAL_TIM_Base_Start_IT(&htim17);
   //			  stamina_color = C_WHITE;
 			  stamina_color = 0b0000000000011111; // GREEN
 		  }
-		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, stamina_color, C_BLACK);
+		  LCD_PutStr(150, 288, stamina_data_write_buffer, DEFAULT_FONT, stamina_color, C_BLACK);
 
 		  DISPLAY_TIMER_TRIGGERED = 0;
 	  }
@@ -364,7 +376,7 @@ HAL_TIM_Base_Start_IT(&htim17);
 		  LCD_PutStr(5, 260, stamina_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
 		  LCD_PutStr(120, 288, stamina_data_write_buffer, DEFAULT_FONT, C_BLACK, C_BLACK);
 		  snprintf(player_write_buffer, sizeof(player_write_buffer),
-				  "R1 Statistics\nVelocity: %.3f\nHeart Rate: %d\nDistance: %.3f\nStep Count: %d",
+				  "R1 Statistics\n \nVelocity: %.3f\nHeart Rate: %d\nDistance: %.3f\nStep Count: %d",
 				  armband_data.velocity, armband_data.heartrate,
 				  armband_data.distance, armband_data.steps);
 		  // Green = Red
