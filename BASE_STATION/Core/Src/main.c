@@ -296,14 +296,14 @@ int main(void) {
     if (LoRaRecieve == 1) {
       // Get data from LoRa
       lora_receive_packet_blocking(&lora, buffer, sizeof(buffer), 10000, &res);
-      memcpy(&armband_data, &buffer, sizeof(armband_data));
+      // memcpy(&armband_data, &buffer, sizeof(armband_data));
       // This is for discarding packets that are not ours
-      // memcpy(&TEMPCOPY, &buffer, sizeof(TEMPCOPY));
-      // if (TEMPCOPY.heartrate > 1 && TEMPCOPY.heartrate < 300) {
-      //  armband_data = TEMPCOPY;
-      // Update values for Stamina calculations
-      input_data(armband_data.heartrate, armband_data.velocity);
-      //		  	  }
+      memcpy(&TEMPCOPY, &buffer, sizeof(TEMPCOPY));
+      if (TEMPCOPY.heartrate > 1 && TEMPCOPY.heartrate < 300) {
+        armband_data = TEMPCOPY;
+        // Update values for Stamina calculations
+        input_data(armband_data.heartrate, armband_data.velocity);
+      }
 
       //		  	  if (res != LORA_OK) {
       //		  		  // Receive failed
