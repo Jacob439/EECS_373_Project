@@ -1,0 +1,8 @@
+../Core/Src/strain.c:35:6:init_analytics	1
+../Core/Src/strain.c:41:9:heartRateHigh	2
+../Core/Src/strain.c:48:9:heartRateLow	2
+../Core/Src/strain.c:55:6:input_data	13
+../Core/Src/strain.c:104:7:get_strain_factor	2
+../Core/Src/strain.c:110:7:get_strain	2
+../Core/Src/strain.c:117:6:update_data	2
+../Core/Src/strain.c:124:6:calculate_exercise_strain	2

@@ -45,7 +45,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/ugui_button.h ../Core/Inc/ugui_checkbox.h \
  ../Core/Inc/ugui_fonts.h ../Core/Inc/ugui_image.h \
  ../Core/Inc/ugui_progress.h ../Core/Inc/ugui_textbox.h \
- ../Core/Inc/lora_sx1276.h
+ ../Core/Inc/lora_sx1276.h ../Core/Inc/strain.h
 ../Core/Inc/main.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../Core/Inc/stm32l4xx_hal_conf.h:
@@ -102,3 +102,4 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/ugui_progress.h:
 ../Core/Inc/ugui_textbox.h:
 ../Core/Inc/lora_sx1276.h:
+../Core/Inc/strain.h:

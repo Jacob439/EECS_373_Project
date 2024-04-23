@@ -79,6 +79,15 @@ void keypad_init(){
       }
       else{
     	  ASCII_Age[weightCounter] = '\0';
+    	  age = 0;
+//    	  for (size_t i = weightCounter - 1; i <= 0; i++) {
+//    		  age += ASCII_Age[i] * ;
+//    	  }
+    	  int i = 0;
+    	  while (ASCII_Age[i] != '\0') {
+    		  age *= 10;
+    		  age += ASCII_Age[i++] - 48;
+    	  }
       }
       weightCounter = 0;
       // Wipe screen
@@ -111,6 +120,7 @@ void keypad_init(){
     	ASCII_Age[weightCounter] = ASCII_Value;
     	LCD_PutChar(80 + weightCounter*20, 5, ASCII_Value, DEFAULT_FONT, C_GREEN, C_BLACK);
     	UG_FontSetTransparency(1);
+
     }
 
     weightCounter++;
@@ -180,6 +190,7 @@ void keypad_init(){
   	      finished = KeyPadReturn(val, 1, 0);
   	      HAL_GPIO_WritePin(GPIOF, GPIO_PIN_14, 1);
   	}
+
   }
 
 

@@ -223,6 +223,7 @@ typedef enum{
 }lcd_cmds;
 
 #define color565(r, g, b) (((r & 0xF8) << 8) | ((g & 0xFC) << 3) | ((b & 0xF8) >> 3))
+//#define color565(r, g, b) (((b & 0xF8) << 8) | ((r & 0xFC) << 3) | ((g & 0xF8) >> 3))
 #define ABS(x) ((x) > 0 ? (x) : -(x))
 
 #define LCD_CON(a,b)  a##b
