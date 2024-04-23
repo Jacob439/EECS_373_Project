@@ -17,15 +17,16 @@
 #define INPUT_PERIOD 5   // seconds
 #define BASELINE_LENGTH_MINUTES	2
 #define DATA_BUFFER_LENGTH BASELINE_LENGTH_MINUTES * 60/INPUT_PERIOD
+#define STRAIN_BUF_LENGTH 6
 
 // maybe
 #define SPEED_THRESHOLD 1.0f // speed threshold for start of workout?
 
 typedef enum {
-  k_pre_init,           // must init in order to start analyzing
-  k_post_init,          // after baseline but before exercise
-  k_exercise_baseline,  // in first 2 minutes of exercise
-  k_exercise            // indefinite state of exercise
+  k_pre_init = 0,           // must init in order to start analyzing
+  k_post_init = 1,          // after baseline but before exercise
+  k_exercise_baseline = 2,  // in first 2 minutes of exercise
+  k_exercise = 3            // indefinite state of exercise
 } State_t;
 
 

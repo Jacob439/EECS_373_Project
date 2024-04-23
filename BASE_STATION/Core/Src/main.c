@@ -251,6 +251,7 @@ int main(void) {
 
   uint8_t buzzing = 0;
   uint8_t wait = 1;
+  float distance = 0;
   // Only buzz once when someone passes the threshold
   // Will reset when user drops back below the threshold
   uint8_t buzz_triggered = 0;
@@ -299,8 +300,9 @@ int main(void) {
       // memcpy(&armband_data, &buffer, sizeof(armband_data));
       // This is for discarding packets that are not ours
       memcpy(&TEMPCOPY, &buffer, sizeof(TEMPCOPY));
-      if (TEMPCOPY.heartrate > 1 && TEMPCOPY.heartrate < 300) {
+      if (TEMPCOPY.heartrate > 1 && TEMPCOPY.heartrate < 300 && TEMPCOPY.distance < 500 && TEMPCOPY.velocity < 100) {
         armband_data = TEMPCOPY;
+        distance += armband_data.distance;
         // Update values for Stamina calculations
         input_data(armband_data.heartrate, armband_data.velocity);
       }
@@ -396,8 +398,7 @@ int main(void) {
       snprintf(player_write_buffer, sizeof(player_write_buffer),
                "R1 Statistics\n \nVelocity: %.3f\nHeart Rate: %d\nDistance: "
                "%.3f\nStep Count: %d",
-               armband_data.velocity, armband_data.heartrate,
-               armband_data.distance, armband_data.steps);
+               armband_data.velocity, armband_data.heartrate, distance, armband_data.steps);
       // Write runner data to display
       LCD_PutStr(5, 5, player_write_buffer, DEFAULT_FONT, C_WHITE, C_BLACK);
       // Read in runner stamina label

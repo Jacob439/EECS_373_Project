@@ -14,13 +14,16 @@
 /* static variables */
 static float data[DATA_BUFFER_LENGTH];  // vector of strain values
 static unsigned int data_index = 0;
-static float current_strain;   
+static float current_strain;
+static float avg_strain = 1;
 
 // state variable
 static State_t state = k_pre_init;   
 
 // strain variables
 static float exercise_base_strain = -1;
+static float strain_buf[STRAIN_BUF_LENGTH];
+static uint8_t first_strain = 1;
 static float current_strain = -1;
 
 // heartbeat threshold variables
@@ -68,15 +71,39 @@ void input_data(int bpm, float speed) {
         state = k_exercise;
       }
       break;
-    case k_exercise:
-      current_strain = get_strain(bpm, speed);
+    case k_exercise: {
+    	avg_strain = exercise_base_strain;
+        float temp_strain = get_strain(bpm, speed);
+
+		  if (first_strain && temp_strain != -1) {
+			  current_strain = temp_strain;
+			  for (int i = 0; i < STRAIN_BUF_LENGTH; ++i) {
+				  strain_buf[i] = current_strain;
+				  avg_strain = current_strain;
+			  }
+			  first_strain = 0;
+		  } else if (temp_strain != -1) {
+			  current_strain = temp_strain;
+			  float running_total = 0;
+			  for (int i = 0; i < STRAIN_BUF_LENGTH - 1; ++i) {
+				  strain_buf[i] = strain_buf[i + 1];
+				  running_total += strain_buf[i];
+			  }
+			  strain_buf[STRAIN_BUF_LENGTH - 1] = current_strain;
+			  running_total += current_strain;
+			  running_total /= STRAIN_BUF_LENGTH;
+			  avg_strain = running_total;
+		  }
+      }
       break;
   }
+
+
 }
 
 float get_strain_factor() {
-  if (state != k_exercise || current_strain == -1) return -1;
-  return (exercise_base_strain / current_strain);
+  if (state != k_exercise) return state;
+  return 100 * (exercise_base_strain / avg_strain);
 }
 
 inline
@@ -84,6 +111,7 @@ float get_strain(int bpm, float speed) {
 	// -1 if divide by zero, will not end up being pushed
 	// to data array or updating curr_strain
   return (speed == 0) ? -1 : bpm / (speed * 60.0f);
+  //return (state == k_exercise) ? current_strain : state;
 }
 
 void update_data(int bpm, float speed) {
