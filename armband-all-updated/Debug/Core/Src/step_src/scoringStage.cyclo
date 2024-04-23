@@ -1,0 +1,4 @@
+../Core/Inc/step_inc/sqrt.h:28:16:sqrt2	3
+../Core/Src/step_src/scoringStage.c:41:6:initScoringStage	1
+../Core/Src/step_src/scoringStage.c:52:6:scoringStage	4
+../Core/Src/step_src/scoringStage.c:90:6:changeWindowSize	1

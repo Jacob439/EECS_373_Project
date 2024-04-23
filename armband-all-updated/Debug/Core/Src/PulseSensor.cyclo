@@ -1,0 +1,6 @@
+../Core/Src/PulseSensor.c:43:6:initPulseSensor	1
+../Core/Src/PulseSensor.c:47:6:updatePulseSensor	1
+../Core/Src/PulseSensor.c:52:6:read_ADC	1
+../Core/Src/PulseSensor.c:62:6:get_pulse	17
+../Core/Src/PulseSensor.c:137:5:get_BPM	1
+../Core/Src/PulseSensor.c:141:5:get_IBI	1
